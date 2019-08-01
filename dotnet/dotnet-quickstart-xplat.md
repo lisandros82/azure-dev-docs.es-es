@@ -2,12 +2,13 @@
 title: Implementación en Azure desde la línea de comandos con .NET Core
 description: En este artículo se describe cómo implementar una aplicación de ASP.NET Core en Azure App Service mediante herramientas de la línea de comandos.
 ms.date: 06/20/2017
-ms.openlocfilehash: 78ea8b3afc947cb29ed5285872b5cb52eddfc0d8
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.topic: quickstart
+ms.openlocfilehash: a9fcb465cf84ef3996cb072baf55a9a3eb23907a
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68280826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691324"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Implementación en Azure desde la línea de comandos con .NET Core
 

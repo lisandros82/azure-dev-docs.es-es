@@ -3,17 +3,18 @@ title: Cómo usar Spring y Cosmos DB con App Service en Linux
 description: Este artículo le guiará en el proceso de creación, configuración, implementación, solución de problemas y escalado de aplicaciones web de Java en Azure App Service en Linux.
 documentationcenter: java
 author: bmitchell287
-ms.author: brendm; joshuapa
+ms.author: brendm
+ms.reviewer: joshuapa
 ms.date: 4/24/2019
 ms.devlang: java
 ms.service: app-service, cosmos-db
 ms.topic: article
-ms.openlocfilehash: 16cbcfa99400d56692679d2ccd0ad6b962af7fb9
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: e7360067deaa9d038440978892f093dfb28db499
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691156"
 ---
 # <a name="how-to-use-spring-and-cosmos-db-with-app-service-on-linux"></a>Cómo usar Spring y Cosmos DB con App Service en Linux
 
@@ -37,7 +38,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 - [Maven 3](http://maven.apache.org/)
 
 ## <a name="clone-the-sample-java-web-app-repository"></a>Clonación del repositorio de aplicaciones web de Java de ejemplo
-Para este ejercicio va a usar la aplicación Todo de Spring, que es una aplicación de Java creada con [Spring Boot](https://spring.io/projects/spring-boot), [Spring Data para Cosmos DB](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db?view=azure-java-stable) y [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction).
+Para este ejercicio va a usar la aplicación Todo de Spring, que es una aplicación de Java creada con [Spring Boot](https://spring.io/projects/spring-boot), [Spring Data para Cosmos DB](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db) y [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction).
 1. Clone la aplicación Todo de Spring y copie el contenido de la carpeta **.prep** para inicializar el proyecto:
 
     Para bash:
