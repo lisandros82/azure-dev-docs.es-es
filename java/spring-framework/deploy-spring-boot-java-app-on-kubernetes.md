@@ -15,12 +15,12 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.custom: mvc
-ms.openlocfilehash: f7bb539e59b8d9d6afcf736560348748d311b49a
-ms.sourcegitcommit: 4cc7f5e1e4601065bfcb4c2eeb7d47ad0bec61f8
+ms.openlocfilehash: 3363e1a4600328e012b99bd940cf88bb47e2ee57
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68430934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691714"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Kubernetes Service
 
@@ -226,9 +226,9 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
    ```
    En este comando:
 
-   * El nombre del contenedor `gs-spring-boot-docker` se especifica inmediatamente después del comando `expose deployment`
+   * El nombre del contenedor `gs-spring-boot-docker` se especifica inmediatamente después del comando `expose deployment`.
 
-   * El parámetro `--type` especifica que el clúster utiliza equilibrador de carga
+   * El parámetro `--type` especifica que el clúster utiliza equilibrador de carga.
 
    * El parámetro `--port` especifica el puerto TCP de acceso público, el 80. El acceso a la aplicación se realiza a través de este puerto.
 
@@ -253,7 +253,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
    az aks browse --resource-group=wingtiptoys-kubernetes --name=wingtiptoys-akscluster
    ```
 
-1. Cuando el sitio web para la configuración de Kubernetes se abra en el explorador, haga clic en el vínculo para **implementar una aplicación en contenedores**:
+1. Cuando el sitio web para la configuración de Kubernetes se abra en el explorador, seleccione el vínculo para **implementar una aplicación en contenedores**:
 
    ![Sitio web para la configuración de Kubernetes][KB01]
 
@@ -280,7 +280,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
    ![Servicios de Kubernetes][KB06]
 
-1. Si hace clic en el vínculo de **External endpoints** (Puntos de conexión externos), puede ver que la aplicación Spring Boot se ejecuta en Azure.
+1. Si selecciona el vínculo **External endpoints** (Puntos de conexión externos), puede ver que la aplicación Spring Boot se ejecuta en Azure.
 
    ![Servicios de Kubernetes][KB07]
 

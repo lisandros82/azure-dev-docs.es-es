@@ -1,5 +1,5 @@
 ---
-title: Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en contenedor en Azure
+title: Uso de Maven para Azure Web Apps para implementar una aplicación de Spring Boot en Azure
 description: Aprenda a usar el complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en Azure.
 services: app-service
 documentationcenter: java
@@ -14,12 +14,13 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 476aeefb7806c67eacecbbd9b3f8ee51ea211ce6
-ms.sourcegitcommit: 4cc7f5e1e4601065bfcb4c2eeb7d47ad0bec61f8
+ms.custom: seo-java-july2019
+ms.openlocfilehash: a953289bcab2f00a06d6139620ce93013326da5b
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68430921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691706"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-containerized-spring-boot-app-to-azure"></a>Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en contenedor en Azure
 

@@ -1,5 +1,5 @@
 ---
-title: Implementación de una aplicación de archivo JAR de Spring Boot en la nube con Maven y Azure
+title: Implementación de una aplicación de archivo JAR de Spring Boot en Azure con Maven
 description: Obtenga información acerca de cómo implementar una aplicación de Spring Boot en la nube con el complemento de Maven para Azure Web Apps para Linux.
 services: app-service
 documentationcenter: java
@@ -11,12 +11,13 @@ ms.date: 12/19/2018
 ms.devlang: java
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: 83bc65357f14b17ad60d0eb15adaac328dbc0386
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.custom: seo-java-july2019
+ms.openlocfilehash: e4aec4beb141025d49afbe200a090a40e327a12c
+ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68281466"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68691096"
 ---
 # <a name="deploy-a-spring-boot-jar-file-web-app-to-azure-app-service-on-linux"></a>Implementación de una aplicación web de archivo JAR de Spring Boot en Azure App Service en Linux
 
@@ -201,6 +202,14 @@ Cuando se haya implementado la web, podrá administrarla mediante [Azure Portal]
    ![Determinar la dirección URL de la aplicación web][AP02]
 
 Compruebe que la implementación se realizó correctamente mediante el mismo comando de cURL utilizado antes, utilizando la dirección URL de la aplicación web del portal en lugar de `localhost`. Debería ver el mensaje siguiente mostrado: **Greetings from Spring Boot!** 
+
+## <a name="clean-up-resources"></a>Limpieza de recursos
+Cuando los recursos de Azure ya no sean necesarios, limpie los recursos que implementó eliminando el grupo de recursos.
+
+- En Azure Portal, seleccione el grupo de recursos en el menú de la izquierda.
+- Escriba **gs-spring-boot-** en el campo **Filtrar por nombre**; el grupo de recursos creado en este tutorial debe tener este prefijo.
+- Seleccione el grupo de recursos que creó en este tutorial.
+- Seleccione Eliminar grupo de recursos en el menú superior.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
