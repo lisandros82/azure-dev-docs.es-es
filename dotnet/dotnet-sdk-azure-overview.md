@@ -2,13 +2,15 @@
 title: API de Azure .NET
 description: Introducción a las API de Azure para .NET
 ms.date: 10/19/2017
+author: CamSoper
+ms.author: casoper
 ms.topic: conceptual
-ms.openlocfilehash: 7b7a3dacec2a6ee706baa545621b4d6609a43ebf
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 029ca917bcdb08a64d2604b35545fe6ea70f4855
+ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691396"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69633065"
 ---
 # <a name="azure-net-apis"></a>API de Azure .NET
 

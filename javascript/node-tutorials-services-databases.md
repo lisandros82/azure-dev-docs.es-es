@@ -1,19 +1,19 @@
 ---
 title: Tutoriales de las bases de datos de Azure con Node.js
 description: Tutoriales para conectarse a bases de datos de Azure con Node.js y utilizarlas
-author: karlerickson
-manager: douge
+author: kraigb
+manager: barbkess
 ms.devlang: nodejs
 ms.topic: article
 ms.service: azure-nodejs
 ms.date: 06/17/2017
-ms.author: karler
-ms.openlocfilehash: 961e070d096f9e72972e3b4022da23d27f0cce4b
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.author: kraigb
+ms.openlocfilehash: deda55e5d547293cb83640608ce96cf48f1c131f
+ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68690688"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69889745"
 ---
 # <a name="tutorials-for-using-azure-databases-with-nodejs"></a>Tutoriales para utilizar bases de datos de Azure con Node.js
 
