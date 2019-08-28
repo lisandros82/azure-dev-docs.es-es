@@ -54,7 +54,7 @@ Puede obtener una lista completa de los módulos disponibles en GoDoc para los [
 | [github.com/Azure/go-autorest/autorest][autorest] | Objetos para el control de la autenticación del cliente del servicio |
 | [github.com/Azure/go-autorest/autorest/azure][autorest/azure] | Constantes para las interacciones con los servicios de Azure |
 | [github.com/Azure/go-autorest/autorest/adal][autorest/adal] | Mecanismos de autenticación para el acceso a los servicios de Azure |
-| [github.com/Azure/go-autorest/autorest/to][autorest/to] | Aplicaciones auxiliares de aserción de tipos para trabajar con las estructuras de datos del SDK de Azure |
+| [github.com/Azure/go-autorest/autorest/to][autorest/to] | Asistentes de aserción de tipos para trabajar con las estructuras de datos del SDK de Azure |
 
 [autorest]: https://godoc.org/github.com/Azure/go-autorest/autorest
 [autorest/azure]: https://godoc.org/github.com/Azure/go-autorest/autorest/azure
