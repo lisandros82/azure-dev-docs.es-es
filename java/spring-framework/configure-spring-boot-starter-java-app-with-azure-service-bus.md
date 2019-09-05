@@ -8,12 +8,12 @@ ms.date: 08/21/2019
 ms.devlang: java
 ms.service: azure-java
 ms.topic: article
-ms.openlocfilehash: f41486c7063a6b0fa26ca4055d5f10e625676e8a
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 58d8dd00deeb90b1a1b8935bcbbab471255328d4
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892379"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181989"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-service-bus-jms"></a>Cómo usar Spring Boot Starter para JMS en Azure Service Bus
 
@@ -25,16 +25,13 @@ Spring Boot Starter para JMS en Azure Service Bus proporciona integración de Sp
 
 En este artículo se muestra cómo usar Spring Boot Starter para JMS en Azure Service Bus para enviar y recibir mensajes de `queues` y `topics` de Service Bus.
 
-> [!NOTE]
-> Actualmente, en este artículo se usa la versión `SNAPSHOT` de Starter.
-
 ## <a name="prerequisites"></a>Requisitos previos
 
 Se necesitan los siguientes requisitos previos para este artículo:
 
 1. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) o registrarse para obtener una [cuenta gratuita](https://azure.microsoft.comfree/).
 
-1. Un kit de desarrollo de Java (JDK) compatible (versión 8 o posterior). Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
+1. Un kit de desarrollo de Java (JDK) compatible (versión 8 o posterior). Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 
 1. Apache [Maven](http://maven.apache.org/) (versión 3.2 o posterior).
 
@@ -66,28 +63,11 @@ Se necesitan los siguientes requisitos previos para este artículo:
     <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
-        <version>2.1.7-SNAPSHOT</version>
+        <version>2.1.7</version>
     </dependency>
     ```
 
-    ![Agregue la sección de dependencia al archivo pom.xml.](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-dependency-section.png)
-
-1. Agregue la configuración de [repositorios de Maven](https://maven.apache.org/settings.html#Repositories) para usar la versión SNAPSHOT:
-
-    ```xml
-    <repositories>
-        <repository>
-            <id>nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-    ```
-
-    ![Agregue la sección del repositorio al archivo pom.xml.](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-repository-section.png)
+    ![Agregue la sección de dependencia al archivo pom.xml.](./media/configure-spring-boot-starter-java-app-with-azure-service-bus/add-dependency-section-new.png)
 
 1. Guarde y cierre el archivo *pom.xml*.
 
@@ -121,7 +101,7 @@ En esta sección, verá cómo configurar la aplicación para usar una cola o un 
     | `spring.jms.servicebus.connection-string` | Especifique la cadena de conexión que obtuvo en el espacio de nombres de Service Bus desde Azure Portal. |
     | `spring.jms.servicebus.idle-timeout`      | Especifique el tiempo de expiración de inactividad en milisegundos. El valor recomendado para este tutorial es 1800000.   |
 
-3. Guarde y cierre el archivo *application.properties*.
+1. Guarde y cierre el archivo *application.properties*.
 
 ### <a name="use-service-bus-topic"></a>Usar un tema de Service Bus
 
@@ -353,7 +333,7 @@ En esta sección, creará las clases Java necesarias para enviar mensajes a la c
     mvn clean spring-boot:run
     ```
 
-3. Una vez que se esté ejecutando la aplicación, puede usar *curl* para probarla:
+1. Una vez que se esté ejecutando la aplicación, puede usar *curl* para probarla:
 
     ```shell
     curl -X POST localhost:8080/messages?message=hello
