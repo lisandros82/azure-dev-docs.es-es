@@ -7,11 +7,11 @@ ms.topic: include
 ms.prod: azure
 ms.technology: azure-cli
 ms.openlocfilehash: a51c8667c74a2611ae8769aa42fd1a94f9253bc8
-ms.sourcegitcommit: 4eee7d9a484e35eb695248c011a63b27603d354b
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69642949"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180794"
 ---
 [Azure SDK para Go](https://github.com/Azure/azure-sdk-for-go) es compatible con las versiones de Go 1.8 y posteriores. Para entornos con [perfiles de Azure Stack](/azure/azure-stack/user/azure-stack-version-profiles-go), la versión 1.9 de Go es el requisito mínimo.
 Si tiene que instalar Go, siga [las instrucciones de instalación de Go](https://golang.org/doc/install).
