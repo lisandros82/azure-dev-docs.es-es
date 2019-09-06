@@ -12,14 +12,14 @@ ms.devlang: java
 ms.service: app-service
 ms.topic: article
 ms.custom: seo-java-july2019, seo-java-august2019
-ms.openlocfilehash: 05d9fb7817eafea56e095667c260075c5e02c6da
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.openlocfilehash: 415c0447cbe02a9514d38e3b79bbd57fad91a485
+ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69889818"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70181967"
 ---
-# <a name="deploy-a-spring-boot-web-app-to-azure-app-service-on-linux"></a>Implementación de una aplicación web de Spring Boot en Azure App Service en Linux
+# <a name="deploy-a-spring-boot-jar-file-app-to-azure-app-service-with-maven-and-azure-on-linux"></a>Implementación de una aplicación de archivo JAR de Spring Boot en Azure App Service con Maven y Azure en Linux
 
 En este artículo se muestra cómo usar el [complemento de Maven para Azure App Service Web Apps](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme) para implementar una aplicación de Spring Boot empaquetada como un archivo JAR de Java SE en [Azure App Service en Linux](/azure/app-service/containers/). Puede optar por la implementación de Java SE en lugar de [Tomcat y archivos WAR](/azure/app-service/containers/quickstart-java) cuando desee consolidar las dependencias, el entorno de ejecución y la configuración de la aplicación en un único artefacto implementable.
 
