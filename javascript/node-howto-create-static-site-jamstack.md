@@ -1,5 +1,5 @@
 ---
-title: Compilar sitios estáticos con Node.js en Azure
+title: Creación de sitios estáticos en Azure con Node.js, API y marcado
 description: Cómo usar Azure para compilar una aplicación JAMstack (JavaScript, API y marcado)
 author: kraigb
 manager: barbkess
@@ -8,12 +8,13 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
-ms.openlocfilehash: ed0e922c2d18a35b12c09533fcf1444487d0e95c
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.custom: seo-javascript-september2019
+ms.openlocfilehash: dc1d376be0f57d7d79a7a67d43dca49c30163c90
+ms.sourcegitcommit: 52fa18873a6a8dc7f28c063cca0175bae2720b2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892459"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808466"
 ---
 # <a name="how-to-build-jamstack-static-site-web-apps-with-azure"></a>Cómo compilar aplicaciones web JAMstack (sitio estático) con Azure
 
