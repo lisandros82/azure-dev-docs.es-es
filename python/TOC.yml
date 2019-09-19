@@ -60,6 +60,54 @@
           href: /azure/event-grid/custom-event-quickstart?toc=/azure/python/toc.json&bc=/azure/python/breadcrumb/toc.json
         - name: Queue Storage
           href: /azure/storage/queues/storage-python-how-to-use-queue-storage?toc=/azure/python/toc.json&bc=/azure/python/breadcrumb/toc.json
+- name: Tutoriales
+  items:
+    - name: "Implementación en App Service con VS\_Code"
+      items:
+        - name: Introducción y requisitos previos
+          href: tutorial-deploy-app-service-on-linux-01.md
+        - name: Preparación de la aplicación
+          href: tutorial-deploy-app-service-on-linux-02.md
+        - name: Creación del servicio de aplicaciones
+          href: tutorial-deploy-app-service-on-linux-03.md
+        - name: Configuración del archivo de inicio
+          href: tutorial-deploy-app-service-on-linux-04.md
+        - name: Implementar la aplicación
+          href: tutorial-deploy-app-service-on-linux-05.md
+        - name: Transmisión de registros
+          href: tutorial-deploy-app-service-on-linux-06.md
+        - name: Limpieza de recursos
+          href: tutorial-deploy-app-service-on-linux-07.md
+    - name: "Implementación de contenedores con VS\_Code"
+      items:
+        - name: Introducción y requisitos previos
+          href: tutorial-deploy-containers-01.md
+        - name: Implementación de la imagen de contenedor
+          href: tutorial-deploy-containers-02.md
+        - name: Cambios y reimplementación
+          href: tutorial-deploy-containers-03.md
+        - name: Transmisión de registros
+          href: tutorial-deploy-containers-04.md
+        - name: Limpieza de recursos
+          href: tutorial-deploy-containers-05.md
+    - name: Implementación de Azure Functions con VS Code
+      items:
+        - name: Introducción y requisitos previos
+          href: tutorial-vs-code-serverless-python-01.md
+        - name: Creación de la función de Python
+          href: tutorial-vs-code-serverless-python-02.md
+        - name: Examen de los archivos de código
+          href: tutorial-vs-code-serverless-python-03.md
+        - name: Depuración local
+          href: tutorial-vs-code-serverless-python-04.md
+        - name: Implementar en Azure
+          href: tutorial-vs-code-serverless-python-05.md
+        - name: Adición de una segunda función
+          href: tutorial-vs-code-serverless-python-06.md
+        - name: Adición de una enlace de almacenamiento
+          href: tutorial-vs-code-serverless-python-07.md
+        - name: Limpieza de recursos
+          href: tutorial-vs-code-serverless-python-08.md
 - name: Guías de procedimientos
   items:
     - name: Instalación del SDK
