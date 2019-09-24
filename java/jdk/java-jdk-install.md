@@ -8,16 +8,16 @@ ms.date: 04/19/2019
 ms.devlang: java
 ms.topic: conceptual
 ms.service: azure
-ms.openlocfilehash: 58fb77c44c290ad86f64a6f71b1e750e364363a6
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 7d3d2af845ba2d8d1ba16b6dcd34b21c0853633f
+ms.sourcegitcommit: 4a95777874ae3a3c760365148de868f937fdfd2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691724"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094880"
 ---
 # <a name="install-the-jdk-for-azure-and-azure-stack"></a>Instalación del JDK para Azure y Azure Stack
 
-Las compilaciones del OpenJDK de Azul Zulu Enterprise son una distribución gratuita, multiplataforma y lista para producción del OpenJDK para Azure y Azure Stack respaldado por Microsoft y Azul Systems. Contienen todos los componentes para la creación y ejecución de aplicaciones de Java SE.
+Las compilaciones del JDK Azul Zulu for Azure - Enterprise Edition son una distribución gratuita, multiplataforma y lista para producción del OpenJDK para Azure y Azure Stack, con la tecnología de Microsoft y Azul Systems. Contienen todos los componentes para la creación y ejecución de aplicaciones de Java SE.
 
 Hay [varios tipos de paquete de descarga admitidos para cada sistema operativo cliente](https://www.azul.com/downloads/azure-only/zulu/). También puede obtener una imagen de máquina virtual desde la galería de Azure Marketplace para las plataformas siguientes:
 
@@ -33,13 +33,13 @@ Hay [varios tipos de paquete de descarga admitidos para cada sistema operativo c
 >
 >  También se proporcionan paquetes de Java 11 en la [página de descargas de Azure de Azul](https://www.azul.com/downloads/azure-only/zulu/).
 
-## <a name="download-and-install-the-azul-zulu-jdks-for-windows"></a>Descarga e instalación de los JDK de Azul Zulu para Windows 
+## <a name="download-and-install-the-azul-zulu-for-azure---enterprise-edition-jdk-builds-for-windows"></a>Descarga e instalación de las compilaciones del JDK Azul Zulu for Azure - Enterprise Edition para Windows 
 
 1. [Descargue el JDK 8 de 64 bits de Azul Zulu como un archivo MSI](https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.3/zulu-11-azure-jdk_11.31.11-11.0.3-win_x64.msi) en una ubicación del cliente, como `C:\Users\<your_login>\Downloads`. (También se proporcionan paquetes .ZIP en la [página de descargas de Azure de Azul](https://www.azul.com/downloads/azure-only/zulu/)).
 
 2. Vaya al directorio y haga doble clic en el archivo MSI descargado para comenzar la instalación.
 
-## <a name="download-and-install-the-azul-zulu-jdks-for-mac"></a>Descarga e instalación de los JDK de Azul Zulu para Mac 
+## <a name="download-and-install-the-azul-zulu-for-azure---enterprise-edition-jdk-builds-for-mac"></a>Descarga e instalación de las compilaciones del JDK Azul Zulu for Azure - Enterprise Edition para Mac 
 
 Estos pasos descargan un archivo ZIP en el equipo Mac. También hay disponible una versión DMG.
 
@@ -51,7 +51,7 @@ Estos pasos descargan un archivo ZIP en el equipo Mac. También hay disponible u
 unzip <name_of_zulu_package>.zip
 ```
 
-## <a name="download-and-install-the-azul-zulu-jdks-for-alpine-linux"></a>Descarga e instalación de los JDK de Azul Zulu para Alpine Linux
+## <a name="download-and-install-the-azul-zulu-for-azure---enterprise-edition-jdk-builds-for-alpine-linux"></a>Descarga e instalación de las compilaciones del JDK Azul Zulu for Azure - Enterprise Edition para Alpine Linux
 
 1. [Descargue JDK 8 de 64 bits de Azul Zulu como un archivo TAR](https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.3/zulu-11-azure-jdk_11.31.11-11.0.3-linux_x64.tar.gz) en una ubicación del cliente, como `/usr/lib/jvm`. (También se proporcionan paquetes .RPM y .DEB en la [página de descargas de Azure de Azul](https://www.azul.com/downloads/azure-only/zulu/)).
 
@@ -76,7 +76,7 @@ OpenJDK 64-Bit Server VM (Zulu 8.38.0.13-macosx)-Microsoft-Azure-restricted (bui
 
 ```
 
-## <a name="download-and-install-the-azul-zulu-jdks-from-a-yum-repository"></a>Descarga e instalación de los JDK de Azul Zulu desde un repositorio Yum
+## <a name="download-and-install-the-azul-zulu-for-azure---enterprise-edition-jdks-from-a-yum-repository"></a>Descarga e instalación de las compilaciones del JDK Azul Zulu for Azure - Enterprise Edition desde un repositorio de Yum
 
 Azul proporciona los JDK de Azul Zulu en un [repositorio Yum](https://repos.azul.com/azure-only/zulu-azure.repo).
 
