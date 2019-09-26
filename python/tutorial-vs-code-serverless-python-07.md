@@ -8,18 +8,18 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 8fdb78024cc6ac1df0ee961fc424878f5f634cf2
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 4595b6a60aa83d3818b41ddd1e4f06a44bb1eec1
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019943"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186123"
 ---
 # <a name="add-a-binding-to-write-messages-to-azure-storage"></a>Adición de un enlace para escribir mensajes en Azure Storage
 
 [Paso anterior: implementación de una segunda función](tutorial-vs-code-serverless-python-06.md)
 
-Un _enlace_ le permite conectar el código de la función a los recursos, como Azure Storage, sin escribir ningún código de acceso a datos. Un enlace se define en el archivo *function.json* y puede representar tanto la entrada como la salida. Una función puede utilizar varios enlaces de entrada y de salida, pero solo un desencadenador. Para más información, consulte [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings.md).
+Un _enlace_ le permite conectar el código de la función a los recursos, como Azure Storage, sin escribir ningún código de acceso a datos. Un enlace se define en el archivo *function.json* y puede representar tanto la entrada como la salida. Una función puede utilizar varios enlaces de entrada y de salida, pero solo un desencadenador. Para más información, consulte [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 En esta sección, agregará un enlace de almacenamiento a la función HttpExample que creó anteriormente en este tutorial. La función utiliza este enlace para escribir mensajes en el almacenamiento con cada solicitud. El almacenamiento en cuestión usa la misma cuenta de almacenamiento predeterminada que la aplicación de funciones. Sin embargo, si planea hacer un uso intensivo del almacenamiento, debería considerar la posibilidad de crear una cuenta independiente.
 
@@ -92,9 +92,9 @@ En esta sección, agregará un enlace de almacenamiento a la función HttpExampl
 
     1. Inicie sesión en [Azure Portal](https://portal.azure.com) y vaya al grupo de recursos que contiene el proyecto de Functions. Dentro de ese grupo de recursos, busque y vaya a la cuenta de almacenamiento del proyecto y, a continuación, vaya a **Colas**. En esa página, vaya a "outqueue", que debería mostrar todos los mensajes registrados.
 
-    1. Examine la cola con el Explorador de Azure Storage, que se integra con Visual Studio, tal y como se describe en [Conectar Functions a Azure Storage con Visual Studio Code](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code.md), especialmente la sección [Examen de la cola de salida](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code.md#examine-the-output-queue).
+    1. Examine la cola con el Explorador de Azure Storage, que se integra con Visual Studio, tal y como se describe en [Conectar Functions a Azure Storage con Visual Studio Code](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code), especialmente la sección [Examen de la cola de salida](/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code#examine-the-output-queue).
 
-    1. Use la CLI de Azure para consultar la cola de almacenamiento, tal como se describe en [Consulta de la cola de almacenamiento](/azure/azure-functions/functions-add-output-binding-storage-queue-python.md#query-the-storage-queue).
+    1. Use la CLI de Azure para consultar la cola de almacenamiento, tal como se describe en [Consulta de la cola de almacenamiento](/azure/azure-functions/functions-add-output-binding-storage-queue-python#query-the-storage-queue).
 
 1. Para probar en a nube, vuelva a implementar el código mediante la opción **Implementar en aplicación de funciones** en el explorador de **Azure: Functions**. Si se le solicita, seleccione la aplicación de funciones creada previamente. Una vez finalizada la implementación (tarda unos minutos), la ventana **Salida** muestra de nuevo los puntos de conexión públicos con los que puede repetir las pruebas.
 

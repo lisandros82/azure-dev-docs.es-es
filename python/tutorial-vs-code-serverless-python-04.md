@@ -8,12 +8,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 06e09ee8dd8128fe3ea65b7004a775c4dabbe161
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 28df4c9a8a8b3a6ab6308449e9ae2e1ebd2cc6e4
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019633"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186144"
 ---
 # <a name="debug-the-function-code-locally"></a>Depuración local del código de función
 
@@ -52,7 +52,7 @@ ms.locfileid: "71019633"
 
     Como alternativa, puede crear un archivo como *data.json* que contenga `{"name":"Visual Studio Code"}` y usar el comando `curl --header "Content-Type: application/json" --request POST --data @data.json http://localhost:7071/api/HttpExample`.
 
-1. Para probar la depuración de la función, establezca un punto de interrupción en la línea que lee `name = req.params.get('name')` y vuelva a realizar una solicitud a la dirección URL. El depurador de Visual Studio Code debe detenerse en esa línea, lo que le permite examinar las variables y recorrer el código. (Para un breve tutorial de depuración básica, consulte [Tutorial de Visual Studio Code: configurar y ejecutar el depurador](https://code.visualstudio.com/docs/python/python-tutorial.md#configure-and-run-the-debugger)).
+1. Para probar la depuración de la función, establezca un punto de interrupción en la línea que lee `name = req.params.get('name')` y vuelva a realizar una solicitud a la dirección URL. El depurador de Visual Studio Code debe detenerse en esa línea, lo que le permite examinar las variables y recorrer el código. (Para un breve tutorial de depuración básica, consulte [Tutorial de Visual Studio Code: configurar y ejecutar el depurador](https://code.visualstudio.com/docs/python/python-tutorial#configure-and-run-the-debugger)).
 
 1. Cuando esté seguro de que ha probado exhaustivamente la función de forma local, detenga el depurador (con el comando de menú **Depurar** > **Detener depuración** o el comando **Desconectar** de la barra de herramientas de depuración).
 

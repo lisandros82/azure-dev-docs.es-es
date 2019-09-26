@@ -8,12 +8,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 4427137000e7fca7706b782a73a45db03782872f
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: 9af09298c479f7584ffaece422c135e75138f0fc
+ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019563"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186163"
 ---
 # <a name="create-the-python-function"></a>Creación de la función de Python
 
@@ -29,7 +29,7 @@ ms.locfileid: "71019563"
     | --- | --- | --- |
     | Especifique una carpeta para el proyecto | Carpeta abierta actual | Carpeta en la que se va a crear el proyecto. Puede que desee crear el proyecto en una subcarpeta. |
     | Seleccionar el lenguaje para el proyecto de la aplicación de funciones | **Python** | Lenguaje que se va a usar para la función, lo que determina la plantilla que se usa para el código. |
-    | Seleccionar una plantilla para la primera función de su proyecto | **desencadenador HTTP** | Una función que usa un desencadenador HTTP se ejecuta cuando se realiza una solicitud HTTP al punto de conexión de la función. (Existen otros desencadenadores para Azure Functions. Para más información, consulte [¿Qué puedo hacer con las funciones?](/azure/azure-functions/functions-overview.md#what-can-i-do-with-functions)). |
+    | Seleccionar una plantilla para la primera función de su proyecto | **desencadenador HTTP** | Una función que usa un desencadenador HTTP se ejecuta cuando se realiza una solicitud HTTP al punto de conexión de la función. (Existen otros desencadenadores para Azure Functions. Para más información, consulte [¿Qué puedo hacer con las funciones?](/azure/azure-functions/functions-overview#what-can-i-do-with-functions)). |
     | Proporcionar un nombre de función | HttpExample | El nombre se usa para una subcarpeta que contiene el código de la función junto con los datos de configuración y también define el nombre del punto de conexión HTTP. Use "HttpExample" en lugar de aceptar el valor predeterminado "HTTPTrigger" para distinguir la propia función del desencadenador. |
     | Nivel de autorización | **Anónimo** | La autorización anónima hace que la función sea accesible públicamente para cualquier usuario. |
     | Seleccionar cómo desea que se abra el proyecto | **Abrir en la ventana actual** | Abre el proyecto en la ventana de Visual Studio Code actual. |
