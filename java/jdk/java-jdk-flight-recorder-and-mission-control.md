@@ -9,12 +9,12 @@ ms.devlang: java
 ms.topic: conceptual
 ms.service: azure
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
-ms.openlocfilehash: 02c8a59849ff24058a1d9d0727842c41e993711c
-ms.sourcegitcommit: cf5881235569c754c829a8f819642a6f5aed30be
+ms.openlocfilehash: c33b4586b801bda58493efdebc6e6fb6b8136992
+ms.sourcegitcommit: 50fbde9a640468147953d62f7ae0fca4685ed5e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904861"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71225234"
 ---
 # <a name="monitor-and-manage-java-workloads-with-java-flight-recorder-jfr-and-zulu-mission-control"></a>Supervisión y administración de cargas de trabajo de Java con Java Flight Recorder (JFR) y Zulú Mission Control
 
@@ -88,7 +88,7 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     En Windows, *zmc.exe* usará la instalación de JVM predeterminada configurada en el registro. Zulu Mission Control se debe iniciar desde un JDK completo para poder detectar automáticamente las instancias locales de JVM. Si se trata de una versión de JRE, verá la siguiente advertencia:
 
     > [!div class="mx-imgBorder"]
-    ![Advertencia si la instalación JDK es solo JRE](../media/jdk/azul-jfr-1.png)
+    ![Advertencia si la instalación JDK es solo JRE](../media/jdk/jfr-jre-warning-message.png)
 
     Para cambiar la versión de JVM utilizada por Mission Control, siga estos pasos: 
     1.  Abra el archivo de configuración *zmc.ini*, ubicado en el mismo directorio que el archivo *zmc.exe*
@@ -101,7 +101,7 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     2.  Seleccione y expanda el elemento de la lista de la parte superior izquierda de la instancia de JVM que ejecuta la aplicación.
 
     > [!div class="mx-imgBorder"]
-    ![Expansión del elemento de la lista de la parte superior izquierda de la instancia de JVM](../media/jdk/azul-jfr-2.png)
+    ![Expansión del elemento de la lista de la parte superior izquierda de la instancia de JVM](../media/jdk/jfr-jvm-instance-dashboard.png)
 
 
 8.  Inicie una operación Flight Recording, si es necesario
@@ -109,7 +109,7 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     2.  Seleccione una grabación de duración fija o una grabación continua y una configuración de generación de perfiles (específica) o una configuración continua (con menor sobrecarga) y, a continuación, seleccione **Finish** (Finalizar).
 
     > [!div class="mx-imgBorder"]
-    ![Inicio de una operación Flight Recording](../media/jdk/azul-jfr-3.png)
+    ![Inicio de una operación Flight Recording](../media/jdk/jfr-start-flight-recording.png)
 
 9.  Volcado de la operación Flight Recording
     1.  Debería aparecer un elemento Flight Recording debajo de la línea de Flight Recorder en el explorador de JVM. Haga clic con el botón derecho en la línea que representa la operación Flight Recording y seleccione **Dump whole recording** (Volcar la grabación completa).
@@ -119,7 +119,7 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     1.  Si aún no está activada, seleccione la pestaña etiquetada **Outline** (Esquema) en el panel izquierdo de la ventana de Zulu Mission Control. Esta pestaña contiene vistas diferentes de los datos recopilados en la operación Flight Recording.
  
     > [!div class="mx-imgBorder"]
-    ![Revisión de la grabación de Flight Recording](../media/jdk/azul-jfr-4.png)
+    ![Revisión del registro del vuelo](../media/jdk/jfr-zulu-mission-control-data.png)
 
 ## <a name="resources"></a>Recursos
 
