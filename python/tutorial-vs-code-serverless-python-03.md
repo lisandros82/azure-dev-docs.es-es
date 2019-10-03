@@ -6,14 +6,14 @@ author: kraigb
 manager: barbkess
 ms.service: azure-functions
 ms.topic: conceptual
-ms.date: 00/02/2019
+ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 10deffd63eeae22155f070e117e8f935990bcf93
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.openlocfilehash: b1ed7f69656797822b17c11bcf0f2ece0caa09e2
+ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020013"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71707340"
 ---
 # <a name="examine-the-code-files"></a>Examen de los archivos de código
 
@@ -88,7 +88,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 Las partes importantes del código son las siguientes:
 
 - Debe importar `func` desde `azure.functions`; la importación del módulo de registro es opcional, pero se recomienda.
-- La función de Python obligatoria `main` recibe un objeto `func.request` llamado `req` y devuelve un valor de tipo `func.HttpResponse`. Puede encontrar más información sobre las funcionalidades de estos objetos en las referencias de [func.HttpRequest](/python/api/azure-functions/azure.functions.httprequest?view=azure-python) y [func.HttpResponse](/python/api/azure-functions/azure.functions.httpresponse?view=azure-python).
+- La función de Python obligatoria `main` recibe un objeto `func.HttpRequest` llamado `req` y devuelve un valor de tipo `func.HttpResponse`. Puede encontrar más información sobre las funcionalidades de estos objetos en las referencias de [func.HttpRequest](/python/api/azure-functions/azure.functions.httprequest?view=azure-python) y [func.HttpResponse](/python/api/azure-functions/azure.functions.httpresponse?view=azure-python).
 - Después, el cuerpo de `main` procesa la solicitud y genera una respuesta. En este caso, el código busca un parámetro `name` en la dirección URL. Si no es así, comprueba si el cuerpo de la solicitud contiene un elemento JSON (mediante `func.HttpRequest.get_json`) y si el elemento JSON contiene un valor `name` (mediante el método `get` del objeto JSON devuelto por `get_json`).
 - Si se encuentra un nombre, el código devuelve la cadena "Hello" con el nombre anexado; en caso contrario, devuelve un mensaje de error.
 
