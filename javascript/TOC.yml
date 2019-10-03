@@ -84,6 +84,78 @@
               href: /azure/cognitive-services/Computer-vision/Quickstarts/node-analyze?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
             - name: Reconocimiento de voz
               href: /azure/cognitive-services/speech-service/get-started?toc=/azure/javascript/toc.json&bc=/azure/javascript/breadcrumb/toc.json
+    - name: Tutoriales
+      items:
+        - name: Implementación de Azure Functions con VS Code
+          items:
+            - name: Introducción y requisitos previos
+              href: tutorial-vscode-serverless-node-01.md
+            - name: Creación de la aplicación de funciones
+              href: tutorial-vscode-serverless-node-02.md
+            - name: Prueba local de la función
+              href: tutorial-vscode-serverless-node-03.md
+            - name: Implementación de la aplicación de funciones
+              href: tutorial-vscode-serverless-node-04.md
+            - name: Limpieza de recursos
+              href: tutorial-vscode-serverless-node-05.md
+        - name: "Implementación en App Service con VS\_Code"
+          items:
+            - name: Introducción y requisitos previos
+              href: tutorial-vscode-azure-app-service-node-01.md
+            - name: Creación de la aplicación
+              href: tutorial-vscode-azure-app-service-node-02.md
+            - name: Implementación del sitio web
+              href: tutorial-vscode-azure-app-service-node-03.md
+            - name: Transmisión de registros
+              href: tutorial-vscode-azure-app-service-node-04.md
+            - name: Limpieza de recursos
+              href: tutorial-vscode-azure-app-service-node-05.md
+        - name: "Implementación de contenedores con VS\_Code"
+          items:
+            - name: Introducción y requisitos previos
+              href: tutorial-vscode-docker-node-01.md
+            - name: Uso de un registro de contenedor
+              href: tutorial-vscode-docker-node-02.md
+            - name: Creación de la imagen de aplicación
+              href: tutorial-vscode-docker-node-03.md
+            - name: Implementación de la imagen de aplicación
+              href: tutorial-vscode-docker-node-04.md
+            - name: Cambios y reimplementación
+              href: tutorial-vscode-docker-node-05.md
+            - name: Transmisión de registros
+              href: tutorial-vscode-docker-node-06.md
+            - name: Limpieza de recursos
+              href: tutorial-vscode-docker-node-07.md
+        - name: Implementación en App Service con la CLI de Azure
+          items:
+            - name: Introducción y requisitos previos
+              href: tutorial-vscode-azure-cli-node-01.md
+            - name: Creación de la aplicación
+              href: tutorial-vscode-azure-cli-node-02.md
+            - name: Creación del servicio de aplicaciones
+              href: tutorial-vscode-azure-cli-node-03.md
+            - name: Implementar la aplicación
+              href: tutorial-vscode-azure-cli-node-04.md
+            - name: Transmisión de registros
+              href: tutorial-vscode-azure-cli-node-05.md
+            - name: Cambios y reimplementación
+              href: tutorial-vscode-azure-cli-node-06.md
+            - name: Limpieza de recursos
+              href: tutorial-vscode-azure-cli-node-07.md
+        - name: "Creación de un sitio web estático con VS\_Code"
+          items:
+            - name: Introducción y requisitos previos
+              href: tutorial-vscode-static-website-node-01.md
+            - name: Creación del código de la aplicación
+              href: tutorial-vscode-static-website-node-02.md
+            - name: Creación de una cuenta de Storage
+              href: tutorial-vscode-static-website-node-03.md
+            - name: Implementación en Azure Storage
+              href: tutorial-vscode-static-website-node-04.md
+            - name: Cambios y reimplementación
+              href: tutorial-vscode-static-website-node-05.md
+            - name: Limpieza de recursos
+              href: tutorial-vscode-static-website-node-06.md
     - name: Guías de procedimientos
       items:
         - name: "Node.js de un extremo a otro con VS\_Code"
