@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
-ms.openlocfilehash: c58cd1ed3480fae88d9839b44f0f4062c825a068
-ms.sourcegitcommit: f519a1ee8017850b2fa37049af3bac1ea5ca5516
+ms.custom: seo-javascript-september2019
+ms.openlocfilehash: 1d9cfc4d58355f374877941747138d8e8f53c8ea
+ms.sourcegitcommit: 945e92dae2fa4521eebdc049c65273ae6b5470ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69892349"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71813694"
 ---
-# <a name="how-to-deploy-web-apps-to-azure"></a>Implementar aplicaciones web en Azure
+# <a name="deploy-nodejs-web-apps-to-azure-app-service"></a>Implementación de aplicaciones web de Node.js en Azure App Service
 
 En Azure, tiene varias opciones para hospedar aplicaciones web:
 

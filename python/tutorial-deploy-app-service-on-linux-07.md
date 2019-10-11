@@ -1,5 +1,5 @@
 ---
-title: Limpieza de recursos después de la implementación en Azure App Service en Linux desde Visual Studio Code
+title: 'Tutorial: Limpieza de recursos después de la implementación en Azure App Service en Linux desde Visual Studio Code'
 description: Paso 7 del tutorial, limpieza de recursos de Azure
 services: app-service
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: a86207477deb4652ef1d98c1130329bc3e0c91fc
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 4ffadce6a6895041efe6737b271d7ab11c830095
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71019613"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172474"
 ---
-# <a name="clean-up-resources"></a>Limpieza de recursos
+# <a name="tutorial-clean-up-resources-after-deploying-to-azure-app-service-on-linux-from-visual-studio-code"></a>Tutorial: Limpieza de recursos después de la implementación en Azure App Service en Linux desde Visual Studio Code
 
 [Paso anterior: transmisión de registros](tutorial-deploy-app-service-on-linux-06.md)
 

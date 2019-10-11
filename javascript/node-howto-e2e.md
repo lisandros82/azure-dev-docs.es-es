@@ -11,14 +11,14 @@ ms.topic: article
 ms.date: 06/25/2017
 ms.author: karler
 ms.custom: seo-javascript-september2019
-ms.openlocfilehash: da1436106b681508ef226ad33ccfc10160485d42
-ms.sourcegitcommit: d3349f1a2a8a7eab1ffe2fcb1d05f22cac91dffb
+ms.openlocfilehash: 51ed46032d0cff0f2e35c0a69e9b339158bad867
+ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923122"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71710258"
 ---
-# <a name="nodejs-development-with-visual-studio-code-and-azure"></a>Desarrollo de Node.js con Visual Studio Code y Azure
+# <a name="develop-and-deploy-a-containerized-nodejs-app-with-visual-studio-code-and-azure"></a>Desarrollo e implementación de una aplicación de Node.js en contenedor con Visual Studio Code y Azure
 
 En este tutorial se muestra cómo tomar una aplicación Node.js existente, incluirla en un contenedor Docker e implementarla en Azure mediante Visual Studio Code.
 
