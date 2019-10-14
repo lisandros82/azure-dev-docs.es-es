@@ -1,5 +1,5 @@
 ---
-title: Creación e implementación de Azure Functions sin servidor en Python con Visual Studio Code
+title: 'Tutorial: Creación e implementación de Azure Functions sin servidor en Python con Visual Studio Code'
 description: Paso 1 del tutorial, introducción y requisitos previos.
 services: functions
 author: kraigb
@@ -8,16 +8,17 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: bf6dd180d5fabc04c8fe3bf09c8277bb7b22ea47
-ms.sourcegitcommit: 86aec15e2d25b5b706092feb4271fb958c29d5fa
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 792c9962d738a8e70f29d5df78c44b6303a63b77
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71710204"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172287"
 ---
-# <a name="deploy-python-to-azure-functions-with-visual-studio-code"></a>Implementación de Python en Azure Functions con Visual Studio Code
+# <a name="tutorial-create-and-deploy-serverless-azure-functions-in-python-with-visual-studio-code"></a>Tutorial: Creación e implementación de Azure Functions sin servidor en Python con Visual Studio Code
 
-En este tutorial, usará Visual Studio Code y la extensión de Azure Functions para crear un punto de conexión HTTP sin servidor con Python y agregar también una conexión (o "enlace") al almacenamiento. Azure Functions ejecuta el código en un entorno sin servidor sin necesidad de aprovisionar una máquina virtual ni publicar una aplicación web. La extensión de Azure Functions para Visual Studio Code simplifica considerablemente el proceso de uso de Functions mediante la administración automática de muchos trabajos de configuración.
+En este artículo, usará Visual Studio Code y la extensión de Azure Functions para crear un punto de conexión HTTP sin servidor con Python y agregar también una conexión (o "enlace") al almacenamiento. Azure Functions ejecuta el código en un entorno sin servidor sin necesidad de aprovisionar una máquina virtual ni publicar una aplicación web. La extensión de Azure Functions para Visual Studio Code simplifica considerablemente el proceso de uso de Functions mediante la administración automática de muchos trabajos de configuración.
 
 Si tiene problemas con cualquiera de los pasos de este tutorial, nos encantaría conocer los detalles. Use el botón **He tenido un problema** al final de cada artículo para enviar sus comentarios.
 

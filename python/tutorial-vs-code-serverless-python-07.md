@@ -1,5 +1,5 @@
 ---
-title: Adición de un enlace de almacenamiento para Azure Functions en Python con Visual Studio Code
+title: 'Tutorial: Adición de un enlace de almacenamiento para Azure Functions en Python con Visual Studio Code'
 description: Paso 7 del tutorial, agregar un enlace en Python para escribir mensajes en Azure Storage.
 services: functions
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
-ms.openlocfilehash: 4595b6a60aa83d3818b41ddd1e4f06a44bb1eec1
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: e9f23e138dc9ddc0022199296320ff5c04e6c3d6
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186123"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172122"
 ---
-# <a name="add-a-binding-to-write-messages-to-azure-storage"></a>Adición de un enlace para escribir mensajes en Azure Storage
+# <a name="tutorial-add-a-storage-binding-for-azure-functions-in-python"></a>Tutorial: Adición de un enlace de almacenamiento para Azure Functions en Python
 
 [Paso anterior: implementación de una segunda función](tutorial-vs-code-serverless-python-06.md)
 

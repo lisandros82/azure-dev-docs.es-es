@@ -1,5 +1,5 @@
 ---
-title: Implementación de contenedores de Docker en Azure App Service con Visual Studio Code
+title: 'Tutorial: Implementación de contenedores de Docker en Azure App Service con Visual Studio Code'
 description: Paso 1 del tutorial, introducción y requisitos previos.
 services: app-service
 author: kraigb
@@ -8,16 +8,17 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 0135761f8294b3fbbb8fe821540b46126c107109
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: f6cdd345fddf0123cb26549ddbc498f156737799
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186180"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172298"
 ---
-# <a name="deploy-containers-to-azure-app-service"></a>Implementación de contenedores en Azure App Service
+# <a name="tutorial-deploy-docker-containers-to-azure-app-service-with-visual-studio-code"></a>Tutorial: Implementación de contenedores de Docker en Azure App Service con Visual Studio Code
 
-En este tutorial se describe cómo usar Visual Studio Code para implementar una imagen de contenedor desde un registro de contenedor en [Azure App Service](https://azure.microsoft.com/services/app-service/containers/), todo dentro de Visual Studio Code.
+En este artículo se describe cómo usar Visual Studio Code para implementar una imagen de contenedor desde un registro de contenedor en [Azure App Service](https://azure.microsoft.com/services/app-service/containers/), todo dentro de Visual Studio Code.
 
 Si tiene problemas con cualquiera de los pasos de este tutorial, nos encantaría conocer los detalles. Use el vínculo **He tenido un problema** al final de cada artículo para enviar sus comentarios.
 

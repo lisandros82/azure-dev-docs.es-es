@@ -1,5 +1,5 @@
 ---
-title: Implementación de una imagen de contenedor en Azure App Service con Visual Studio Code
+title: 'Tutorial: Implementación de una imagen de contenedor en Azure App Service con Visual Studio Code'
 description: Paso 2 del tutorial, implementación de la imagen de Docker real en Azure App Service desde un registro de contenedor.
 services: app-service
 author: kraigb
@@ -8,14 +8,15 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 27cc6e68892821170c1e438378f8635bd320afe5
-ms.sourcegitcommit: 74e28a479c87a3a53592646420b78e69852dd86a
+ms.custom: seo-python-october2019
+ms.openlocfilehash: a099e25134615fc05508cde3c0f128a3be813402
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71020093"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172269"
 ---
-# <a name="deploy-the-image-to-azure"></a>Implementación de la imagen en Azure
+# <a name="tutorial-deploy-a-container-image-to-azure-app-service"></a>Tutorial: Implementación de una imagen de contenedor en Azure App Service
 
 [Paso anterior: requisitos previos](tutorial-deploy-containers-01.md)
 

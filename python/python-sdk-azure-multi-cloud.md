@@ -1,5 +1,5 @@
 ---
-title: Nubes múltiples
+title: 'Conexión a todas las regiones: SDK de Azure para Python (nubes múltiples)'
 description: uso de Azure en todas las regiones
 author: sptramer
 ms.author: sttramer
@@ -7,14 +7,15 @@ manager: carmonm
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.devlang: python
-ms.openlocfilehash: dd063ca7aa4e6620832aa59961f98c0ecca4dd49
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 03c2a42463332cbeaffdcc7373c04967018af804
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285746"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172501"
 ---
-# <a name="multi-cloud---use-azure-on-all-regions"></a>Nubes múltiples: uso de Azure en todas las regiones
+# <a name="multi-cloud-connect-to-all-regions-with-the-azure-sdk-for-python"></a>Nubes múltiples: Conexión a todas las regiones con el SDK de Azure para Python
 
 Puede usar el SDK de Azure para Python para conectarse a todas las regiones en las que Azure está [disponible](https://azure.microsoft.com/regions/services).
 

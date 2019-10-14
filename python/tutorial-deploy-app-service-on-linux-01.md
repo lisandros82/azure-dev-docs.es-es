@@ -1,5 +1,5 @@
 ---
-title: Implementación de aplicaciones de Python en Azure App Service en Linux desde Visual Studio Code
+title: 'Tutorial: Implementación de aplicaciones de Python en Azure App Service en Linux desde Visual Studio Code'
 description: Paso 1 del tutorial, introducción, requisitos previos e inicio de sesión en Azure.
 services: app-service
 author: kraigb
@@ -8,16 +8,17 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
-ms.openlocfilehash: 1b1e3d7fa1daa408584e4caf22c553d7f47bccea
-ms.sourcegitcommit: d6575ac86449380b5a9c6c66aa722cb33ed53438
+ms.custom: seo-python-october2019
+ms.openlocfilehash: 24f615f5f456276b1ed78fc431e3cdd929e2d1cd
+ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186191"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172521"
 ---
-# <a name="deploy-to-azure-app-service-on-linux"></a>Implementación en App Service en Linux
+# <a name="tutorial-deploy-python-apps-to-azure-app-service-on-linux-from-visual-studio-code"></a>Tutorial: Implementación de aplicaciones de Python en Azure App Service en Linux desde Visual Studio Code
 
-Este tutorial le guía por el uso de Visual Studio Code para implementar una aplicación de Python en Azure App Service en Linux con la extensión [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice).
+Este artículo le guía por el uso de Visual Studio Code para implementar una aplicación de Python en Azure App Service en Linux con la extensión [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice).
 
 Si tiene problemas con cualquiera de los pasos de este tutorial, nos encantaría conocer los detalles. Use el vínculo **He tenido un problema** al final de cada artículo para enviar sus comentarios.
 
