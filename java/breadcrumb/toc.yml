@@ -2,13 +2,13 @@
   tocHref: /azure
   topicHref: /azure/index
   items:
-    - name: Java en Azure
+    - name: Azure para desarrolladores de Java
       tocHref: /azure/java
       topicHref: /azure/java/index
       items:
         - name: Spring en Azure
           tocHref: /azure/java/spring-framework
           topicHref: /azure/java/spring-framework/index
-        - name: Eclipse MicroProfiles
+        - name: Eclipse MicroProfile en Azure
           tocHref: /azure/java/microprofile
           topicHref: /azure/java/microprofile/index
