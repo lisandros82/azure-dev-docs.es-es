@@ -9,22 +9,24 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 231aefd696b3f4c91e5da8156dc339f4b355c1c7
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 9acf6e4c0ecc5357580957e2ea9295cd89f441f0
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172180"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278549"
 ---
 # <a name="tutorial-deploy-azure-functions-in-python"></a>Tutorial: Implementación de Azure Functions en Python
 
 [Paso anterior: depuración local](tutorial-vs-code-serverless-python-04.md)
 
-En estos pasos, se usa la extensión de Functions para crear una aplicación de función en Azure, junto con otros recursos de Azure necesarios. Una Function App permite agrupar funciones como una unidad lógica para facilitar la administración, la implementación y el uso compartido de recursos. También se requiere una cuenta de Azure Storage para los datos y un [plan de hospedaje](/azure/azure-functions/functions-scale#hosting-plan-support). Todos estos recursos están organizados dentro de un único grupo de recursos.
+En este artículo, se usa la extensión de Azure Functions para crear una aplicación de funciones en Azure, junto con otros recursos de Azure necesarios. Una Function App permite agrupar funciones como una unidad lógica para facilitar la administración, la implementación y el uso compartido de recursos.
+
+Una aplicación de funciones también necesita una cuenta de Azure Storage para los datos y un [plan de hospedaje](/azure/azure-functions/functions-scale#hosting-plan-support). Todos estos recursos están organizados dentro de un único grupo de recursos.
 
 1. En el área **Azure: Functions**, seleccione el comando **Implementar en aplicación de funciones** o abra la paleta de comandos (**F1**) y seleccione el comando **Azure Functions: Implementar en aplicación de funciones**. De nuevo, la aplicación de funciones es donde se ejecuta el proyecto de Python en Azure.
 
-    ![Comando Implementar en aplicación de funciones](media/tutorial-vs-code-serverless-python/deploy-command.png)
+    ![Implementación de la función de Python en una aplicación de funciones de Azure](media/tutorial-vs-code-serverless-python/deploy-a-python-fuction-to-azure-function-app.png)
 
 1. Cuando se le solicite, seleccione **Crear nueva aplicación de funciones en Azure** y proporcione un nombre que sea único en Azure (normalmente con el nombre personal o de la compañía junto con otros identificadores únicos; puede usar letras, números y guiones). Si creó anteriormente una aplicación de funciones, su nombre aparecerá en esta lista de opciones.
 
@@ -36,11 +38,11 @@ En estos pasos, se usa la extensión de Functions para crear una aplicación de 
 
     El explorador de **Azure: Functions** también muestra el progreso:
 
-    ![Indicador de progreso de la implementación en el explorador de Azure: Functions](media/tutorial-vs-code-serverless-python/deploy-progress.png)
+    ![Indicador de progreso de la implementación en el explorador de Azure: Functions](media/tutorial-vs-code-serverless-python/deployment-progress-indicator-in-azure-function-explorer.png)
 
 1. Una vez completada la implementación, la extensión de Azure Functions muestra un mensaje con botones para tres acciones adicionales:
 
-    ![Mensaje que indica una implementación correcta con acciones adicionales](media/tutorial-vs-code-serverless-python/deployment-popup.png)
+    ![Mensaje que indica una implementación correcta con acciones adicionales](media/tutorial-vs-code-serverless-python/azure-functions-deployment-success-with-additional-actions.png)
 
     Para **Transmitir registros** y **Cargar configuración**, consulte las secciones siguientes. Para **Ver la salida**, consulte el paso 5 siguiente.
 

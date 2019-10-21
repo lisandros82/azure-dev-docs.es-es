@@ -9,20 +9,22 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 691e64ae9b407ba4277ddde2a62a583623e53484
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: b87ca4bdefafbfa3e23c9538d6c77357dc9ba99b
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172481"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278738"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>Tutorial: Creación de una función de Python en Azure Functions
 
 [Paso anterior: requisitos previos](tutorial-vs-code-serverless-python-01.md)
 
-1. El código de Azure Functions se administra dentro de un _proyecto_ de Functions, que se crea antes de crear el código. En el explorador de **Azure: Functions** (se abre con el icono de Azure en el lado izquierdo), seleccione el icono del comando **Nuevo proyecto** o abra la paleta de comandos (F1 ) y seleccione **Azure Functions: Crear nuevo proyecto**.
+En este artículo, creará una función de Python para Azure Functions con Visual Studio Code. El código de Azure Functions se administra dentro de un _proyecto_ de Functions, que se crea antes de crear el código.
 
-    ![Botón Crear nuevo proyecto en el explorador de Functions](media/tutorial-vs-code-serverless-python/project-create-new.png)
+1. En el explorador de **Azure: Functions** (se abre con el icono de Azure en el lado izquierdo), seleccione el icono del comando **Nuevo proyecto** o abra la paleta de comandos (F1 ) y seleccione **Azure Functions: Crear nuevo proyecto**.
+
+    ![Crear un nuevo proyecto en el explorador de Azure Functions](media/tutorial-vs-code-serverless-python/create-a-new-project-in-azure-functions-explorer.png)
 
 1. En las peticiones siguientes:
 
@@ -37,17 +39,17 @@ ms.locfileid: "72172481"
 
 1. Tras un breve período de tiempo, se muestra un mensaje para indicar que se ha creado el nuevo proyecto. En el **Explorador** está la subcarpeta creada para la función y Visual Studio Code abre el archivo *\_\_init\_\_.py*, que contiene el código predeterminado de la función:
 
-    [![Resultado de la creación de un nuevo proyecto de funciones de Python](media/tutorial-vs-code-serverless-python/project-create-results.png)](media/tutorial-vs-code-serverless-python/project-create-results.png)
+    ![Resultado de la creación de un nuevo proyecto de Python en Azure Functions](media/tutorial-vs-code-serverless-python/display-results-of-new-python-project-in-azure-functions.png)
 
     > [!NOTE]
     > Si Visual Studio Code le indica que no tiene un intérprete de Python seleccionado cuando abre *\_\_init\_\_.py*, abra la paleta de comandos (**F1**) y seleccione el comando **Python: seleccionar intérprete** y, a continuación, seleccione el entorno virtual en la carpeta `.env` local (que se creó como parte del proyecto). El entorno debe basarse en Python 3.6x específicamente, como se indicó en el artículo anterior, en la sección [Requisitos previos](tutorial-vs-code-serverless-python-01.md#prerequisites).
     >
-    > ![Selección del entorno virtual creado con el proyecto](media/tutorial-vs-code-serverless-python/select-venv-interpreter.png)
+    > ![Selección del entorno virtual creado con el proyecto de Python](media/tutorial-vs-code-serverless-python/select-virtual-environment-created-with-the-python-project.png)
 
 > [!TIP]
 > Cuando desee crear otra función en el mismo proyecto, use el comando **Crear función** en el explorador de **Azure: Functions** o abra la paleta de comandos (**F1**) y seleccione el comando **Azure Functions: Create Function** (Crear función). Ambos comandos solicitan un nombre de función (que es el nombre del punto de conexión) y, a continuación, se crea una subcarpeta con los archivos predeterminados.
 >
-> ![Comando Nueva función en el explorador de Azure: Functions](media/tutorial-vs-code-serverless-python/function-create-new.png)
+> ![Creación de funciones con la función New en el explorador de Azure Functions](media/tutorial-vs-code-serverless-python/create-new-functions-in-azure-functions-explorer.png)
 
 > [!div class="nextstepaction"]
 > [He creado la función](tutorial-vs-code-serverless-python-03.md)

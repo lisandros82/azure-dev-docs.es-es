@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: e9f23e138dc9ddc0022199296320ff5c04e6c3d6
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: f8cfe602676c64f516f0a95ae73801b58f35076c
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172122"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278536"
 ---
 # <a name="tutorial-add-a-storage-binding-for-azure-functions-in-python"></a>Tutorial: Adición de un enlace de almacenamiento para Azure Functions en Python
 
 [Paso anterior: implementación de una segunda función](tutorial-vs-code-serverless-python-06.md)
 
-Un _enlace_ le permite conectar el código de la función a los recursos, como Azure Storage, sin escribir ningún código de acceso a datos. Un enlace se define en el archivo *function.json* y puede representar tanto la entrada como la salida. Una función puede utilizar varios enlaces de entrada y de salida, pero solo un desencadenador. Para más información, consulte [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
+Puede agregar un enlace de almacenamiento para Azure Functions. Un _enlace_ permite conectar el código de la función a los recursos, como Azure Storage, sin escribir ningún código de acceso a datos.
+
+Un enlace se define en el archivo *function.json* y puede representar tanto la entrada como la salida. Una función puede utilizar varios enlaces de entrada y de salida, pero solo un desencadenador. Para más información, consulte [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 En esta sección, agregará un enlace de almacenamiento a la función HttpExample que creó anteriormente en este tutorial. La función utiliza este enlace para escribir mensajes en el almacenamiento con cada solicitud. El almacenamiento en cuestión usa la misma cuenta de almacenamiento predeterminada que la aplicación de funciones. Sin embargo, si planea hacer un uso intensivo del almacenamiento, debería considerar la posibilidad de crear una cuenta independiente.
 
@@ -28,7 +30,7 @@ En esta sección, agregará un enlace de almacenamiento a la función HttpExampl
 
 1. En la carpeta `HttpExample`, haga clic con el botón derecho en *function.json* y seleccione **Agregar enlace**:
 
-    ![Comando Agregar enlace en el explorador de Visual Studio Code](media/tutorial-vs-code-serverless-python/add-binding-command.png)
+    ![Comando Agregar enlace en el explorador de Visual Studio Code](media/tutorial-vs-code-serverless-python/add-binding-command-to-azure-functions-in-visual-studio-code.png)
 
 1. En los mensajes que siguen en Visual Studio Code, seleccione o proporcione los siguientes valores:
 

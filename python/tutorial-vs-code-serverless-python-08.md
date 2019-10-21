@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: aac220a57c83b274c46886f4548e41b41ec8327e
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 8c3110b14d70c787f81a18aa5d0b5bb3bde41ec1
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172420"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278437"
 ---
 # <a name="tutorial-clean-up-azure-resources-for-azure-functions"></a>Tutorial: Limpieza de los recursos de Azure para Azure Functions
 
 [Paso anterior: adición de un enlace de almacenamiento](tutorial-vs-code-serverless-python-07.md)
 
-La aplicación de funciones que ha creado incluye recursos que pueden incurrir en costos mínimos (consulte [Precios de Functions](https://azure.microsoft.com/pricing/details/functions/)). Para limpiar los recursos, haga clic con el botón derecho en el explorador de **Azure: Functions** y seleccione **Eliminar aplicación de funciones**.
+En este artículo se muestra cómo quitar los recursos de Azure creados en este tutorial. La aplicación de funciones de Azure que ha creado con Visual Studio Code incluye recursos que pueden incurrir en costos mínimos.
+
+Para limpiar los recursos, haga clic con el botón derecho en el explorador de **Azure: Functions** y seleccione **Eliminar aplicación de funciones**. Para más información, consulte los [precios de Azure Functions](https://azure.microsoft.com/pricing/details/functions/).
 
 También puede visitar [Azure Portal](https://portal.azure.com), seleccionar **Grupos de recursos** en el panel de navegación izquierdo, seleccionar el grupo de recursos que se creó en el proceso de este tutorial y, a continuación, usar el comando **Eliminar grupo de recursos**.
 
@@ -36,7 +38,7 @@ Para más información sobre los servicios de Azure que puede usar desde Python,
 
 También hay otras extensiones de Azure para Visual Studio Code que pueden resultarle útiles. Solo tiene que buscar "Azure" en el explorador de extensiones:
 
-![Extensiones de Azure para Visual Studio Code](media/tutorial-vs-code-serverless-python/azure-extensions.png)
+![Extensiones de Azure para Visual Studio Code](media/tutorial-vs-code-serverless-python/azure-extensions-for-visual-studio-code.png)
 
 Algunas extensiones populares son:
 

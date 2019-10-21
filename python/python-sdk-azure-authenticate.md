@@ -8,16 +8,16 @@ ms.date: 04/11/2019
 ms.topic: conceptual
 ms.devlang: python
 ms.custom: seo-python-october2019
-ms.openlocfilehash: cb5881ed9da546d9d9d2b639e475d5fdf815e2cd
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: afeaafb4289544b92324154d5c45d3410cbb3b02
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172394"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279099"
 ---
-# <a name="authenticate-with-the-azure--management-libraries-for-python"></a>Autenticación con las bibliotecas de administración de Azure para Python
+# <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Autenticación con las bibliotecas de administración de Azure para Python
 
-Hay varias opciones para autenticar la aplicación en Azure cuando se usan las bibliotecas de administración para Python para crear y administrar recursos.
+En este artículo se muestra cómo autenticar la aplicación cuando se usan las bibliotecas de administración de Python. Tiene varias opciones para autenticar la aplicación con Azure.
 
 ## <a name="mgmt-auth-token"></a>Autenticación con credenciales de token
 

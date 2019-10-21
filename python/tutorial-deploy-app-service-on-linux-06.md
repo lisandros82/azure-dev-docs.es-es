@@ -9,20 +9,22 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: f4aac132e9c01a0c428e243e06e811357defc2aa
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: a60c8fd0202e935960f14a9ab5570f86a78fab6e
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172234"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278920"
 ---
 # <a name="tutorial-stream-logs-from-azure-app-service-into-visual-studio-code"></a>Tutorial: Transmisión de registros desde Azure App Service a Visual Studio Code
 
 [Paso anterior: implementación de la aplicación](tutorial-deploy-app-service-on-linux-05.md)
 
+Use este procedimiento para transmitir los registros desde un servicio de aplicaciones de Azure a Visual Studio Code.
+
 1. En Visual Studio Code, abra el explorador **Azure: App Service**, haga clic con el botón derecho en el servicio de aplicaciones y seleccione **Iniciar transmisión de registros**:
 
-   ![Comando Iniciar transmisión de registros](media/deploy-azure/start-streaming-logs-command.png)
+   ![Inicio de la transmisión de registros desde el explorador de App Service](media/deploy-azure/start-streaming-logs-in-visual-studio-code.png)
 
 1. Cuando se le pida que habilite el registro de archivos y reinicie la aplicación web, seleccione **Sí**. Mientras se reinicia la aplicación, la ventana **Salida** de VS Code muestra el progreso. Habilitar el registro es un proceso que se realiza una sola vez.
 

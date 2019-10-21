@@ -9,14 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 351d7853eb3ebbf5a62e7798eb0696657b0ca216
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 0a3e04759573769d1ed00e59a294caddfc4ef0cc
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172459"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278721"
 ---
 # <a name="tutorial-clean-up-azure-resources"></a>Tutorial: Limpieza de los recursos de Azure
+
+[Paso anterior: transmisión de registros](tutorial-deploy-containers-04.md)
+
+En este artículo se muestra cómo quitar los recursos de Azure que creó al implementar una aplicación en Azure App Service con Visual Studio Code.
 
 Los distintos recursos de Azure que creó en este tutorial pueden incurrir en costos continuos. Para limpiarlos, lo mejor es visitar [Azure Portal](https://portal.azure.com), seleccionar **Grupos de recursos** en el panel de navegación izquierdo, seleccionar el grupo de recursos que se creó en el proceso de este tutorial y, a continuación, usar el comando **Eliminar grupo de recursos**.
 
@@ -28,14 +32,14 @@ Para más información sobre los servicios de Azure que puede usar desde Python,
 
 También hay otras extensiones de Azure para VS Code que pueden resultarle útiles. Solo tiene que buscar "Azure" en el explorador de extensiones:
 
-![Extensiones de Azure para VS Code](media/deploy-containers/azure-extensions.png)
+![Extensiones de Azure para VS Code](media/deploy-containers/azure-extensions-for-visual-studio-code.png)
 
 Algunas extensiones populares son:
 
 - [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 - [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Herramientas de la CLI de Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
-- [Herramientas de Azure Resource Manager (ARM)](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+- [Herramientas de Azure Resource Manager](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
 > [!div class="nextstepaction"]
 > [Ya he terminado](https://docs.microsoft.com/python/azure/?view=azure-python)

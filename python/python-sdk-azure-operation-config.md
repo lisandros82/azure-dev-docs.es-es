@@ -8,16 +8,18 @@ ms.date: 03/07/2018
 ms.topic: conceptual
 ms.devlang: python
 ms.custom: seo-python-october2019
-ms.openlocfilehash: ca69b72789f28445c4654e635e641e2954890a38
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 0730cec8470a3b55421c6c0cafa08f88819cb1d8
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172371"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279084"
 ---
 # <a name="parameters-for-operation-configuration"></a>Parámetros para la configuración de las operaciones
 
-Los métodos en operaciones tienen parámetros adicionales que se pueden proporcionar en elementos `kwargs`. Esto se denomina operation_config.
+Puede proporcionar parámetros adicionales para los métodos de las operaciones en Azure SDK para Python.
+
+Se proporcionan parámetros adicionales en `kwargs`. Esta funcionalidad se llama *operation_config*.
 
 Las opciones de configuración de operaciones son:
 

@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0c57729fd3ab1f671b2533f3e15056aec99cb6c9
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: a8ce5de518ef4eeec2140ec82ef560f3b487783e
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172448"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278697"
 ---
 # <a name="tutorial-redeploy-a-container-to-azure-app-service-after-making-changes"></a>Tutorial: Reimplementación de un contenedor en Azure App Service después de realizar cambios
 
 [Paso anterior: implementación de la imagen en Azure](tutorial-deploy-containers-02.md)
+
+En este artículo se explica cómo reimplementar un contenedor en Azure App Service después de realizar cambios en Visual Studio Code.
 
 Como es inevitable realizar cambios en la aplicación, es necesario recompilar y reimplementar el contenedor muchas veces. Por suerte, el proceso es sencillo:
 

@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 0f002444d2454b734821e067e65fa513619a68bf
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 12cc4880a7001fc51b0e70f89f177390c5fd0f45
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172220"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278700"
 ---
 # <a name="tutorial-stream-logs-from-azure-app-service-for-a-container"></a>Tutorial: Transmisión de registros desde Azure App Service para un contenedor
 
 [Paso anterior: cambios y reimplementación](tutorial-deploy-containers-03.md)
+
+Use este procedimiento para transmitir los registros desde un servicio de aplicaciones de Azure para un contenedor a Visual Studio Code.
 
 Desde VS Code, puede ver los registros del sitio en ejecución en Azure App Service, que captura cualquier salida en la consola desde instrucciones `print` y las enruta al panel **Salida** de VS Code.
 

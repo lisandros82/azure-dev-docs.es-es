@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 4ffadce6a6895041efe6737b271d7ab11c830095
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 1eeb8f66040a757809aad9df374f3d6a5f9390d2
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172474"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278905"
 ---
 # <a name="tutorial-clean-up-resources-after-deploying-to-azure-app-service-on-linux-from-visual-studio-code"></a>Tutorial: Limpieza de recursos después de la implementación en Azure App Service en Linux desde Visual Studio Code
 
 [Paso anterior: transmisión de registros](tutorial-deploy-app-service-on-linux-06.md)
 
-El servicio de aplicaciones que ha creado incluye un plan de App Service de respaldo que puede incurrir en costos. Para limpiar los recursos, haga clic con el botón derecho en el servicio de aplicaciones, en el explorador de **Azure: App Service**, y seleccione **Eliminar**.
+El servicio de aplicaciones de Azure que ha creado incluye un plan de App Service de respaldo que puede incurrir en costos. Para limpiar los recursos, haga clic con el botón derecho en el servicio de aplicaciones, en el explorador de **Azure: App Service**, y seleccione **Eliminar**.
 
 También puede visitar [Azure Portal](https://portal.azure.com), seleccionar **Grupos de recursos** en el panel de navegación izquierdo, seleccionar el grupo de recursos que se creó en el proceso de este tutorial y, a continuación, usar el comando **Eliminar grupo de recursos**.
 
@@ -34,7 +34,7 @@ Para más información sobre los servicios de Azure que puede usar desde Python,
 
 También hay otras extensiones de Azure para VS Code que pueden resultarle útiles. Solo tiene que buscar "Azure" en el explorador de extensiones:
 
-![Extensiones de Azure para VS Code](media/deploy-containers/azure-extensions.png)
+![Extensiones de Azure para Visual Studio Code](media/deploy-containers/azure-extensions-for-visual-studio-code.png)
 
 Algunas extensiones populares son:
 

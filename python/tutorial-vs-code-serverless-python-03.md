@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: c09323e35c20a0b9fb5162c08f7fa223969d83fe
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 4a8ef594b461df406846f16ad71e595b64ffee5e
+ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172111"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72278782"
 ---
 # <a name="tutorial-examine-the-python-code-files-in-visual-studio-code"></a>Tutorial: Examen de los archivos de código de Python en Visual Studio Code
 
 [Paso anterior: creación de la función](tutorial-vs-code-serverless-python-02.md)
+
+Examine los archivos de Python en la carpeta de la función mediante Visual Studio Code.
 
 En la subcarpeta de la función recién creada hay tres archivos: *\_\_init\_\_.py* contiene el código de la función, *function.json* describe la función para Azure Functions y *sample.dat* es un archivo de datos de ejemplo. Puede eliminar *sample.dat* si lo desea, ya que solo existe para mostrar que puede agregar otros archivos en la subcarpeta.
 
