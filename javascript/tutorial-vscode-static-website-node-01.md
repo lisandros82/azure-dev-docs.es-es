@@ -8,16 +8,16 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: kraigb
-ms.openlocfilehash: 45dfb1f32d98385b2cb944340b4601de804e133f
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 0e5a7e12d234b56899e3c814cb577002125ea052
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685909"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587131"
 ---
 # <a name="deploy-a-static-website-to-azure-from-visual-studio-code"></a>Implementación de un sitio web estático en Azure desde Visual Studio Code
 
-En este tutorial, creará e implementará un sitio web estático en Azure mediante [Azure Storage](https://docs.microsoft.com/azure/storage). Un sitio web estático se compone de HTML, CSS, JavaScript y otros archivos estáticos, como imágenes o fuentes. Normalmente, un sitio estático es una aplicación de una sola página (o [SPA](https://en.wikipedia.org/wiki/Single-page_application)) escrita con Angular o React. Sin embargo, la aplicación se diseña y los archivos se hospedan directamente desde el *almacenamiento* en lugar de usar un servidor web. El hospedaje en el almacenamiento es más sencillo y menos costoso que el mantenimiento de un servidor web.
+En este tutorial, creará e implementará un sitio web estático en Azure mediante [Azure Storage](https://docs.microsoft.com/azure/storage). Un sitio web estático se compone de HTML, CSS, JavaScript y otros archivos estáticos, como imágenes o fuentes. Normalmente, un sitio estático es una aplicación de una sola página (o [SPA](https://en.wikipedia.org/wiki/Single-page_application)) escrita con Angular, React o Vue. Sin embargo, la aplicación se diseña y los archivos se hospedan directamente desde el _almacenamiento_ en lugar de usar un servidor web. El hospedaje en el almacenamiento es más sencillo y menos costoso que el mantenimiento de un servidor web.
 
 > [!NOTE]
 > Si tiene su propio código de servidor, como una aplicación de Node.js/Express, siga el [tutorial de App Service](tutorial-vscode-azure-app-service-node-01.md) en su lugar.

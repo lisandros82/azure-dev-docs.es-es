@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 24f615f5f456276b1ed78fc431e3cdd929e2d1cd
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 389b1ef07bd997ea6cd7d3d46fcaeffb36f6eaae
+ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172521"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587121"
 ---
 # <a name="tutorial-deploy-python-apps-to-azure-app-service-on-linux-from-visual-studio-code"></a>Tutorial: Implementación de aplicaciones de Python en Azure App Service en Linux desde Visual Studio Code
 
@@ -23,7 +23,7 @@ Este artículo le guía por el uso de Visual Studio Code para implementar una a
 Si tiene problemas con cualquiera de los pasos de este tutorial, nos encantaría conocer los detalles. Use el vínculo **He tenido un problema** al final de cada artículo para enviar sus comentarios.
 
 > [!TIP]
-> [Azure App Service en Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro), actualmente en versión preliminar para Python, ejecuta el código fuente en un contenedor de Docker predefinido. Ese contenedor ejecuta aplicaciones con Python 3.7 mediante el servidor web [Gunicorn](https://gunicorn.org). Las características de este contenedor se describen en [Configuración de aplicaciones de Python para App Service en Linux](https://docs.microsoft.com/azure/app-service/containers/how-to-configure-python). La propia definición de contenedor se encuentra en [github.com/Azure-App-Service/python](https://github.com/Azure-App-Service/python/tree/master/3.7).
+> [Azure App Service en Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro) ejecuta el código fuente en un contenedor de Docker predefinido. Ese contenedor ejecuta aplicaciones con Python 3.7 mediante el servidor web [Gunicorn](https://gunicorn.org). Las características de este contenedor se describen en [Configuración de aplicaciones de Python para App Service en Linux](https://docs.microsoft.com/azure/app-service/containers/how-to-configure-python). La propia definición de contenedor se encuentra en [github.com/Azure-App-Service/python](https://github.com/Azure-App-Service/python/tree/master/3.7).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
