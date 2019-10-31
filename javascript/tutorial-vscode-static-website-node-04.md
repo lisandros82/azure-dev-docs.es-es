@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: buhollan
-ms.openlocfilehash: 705256291709c6715f90f19c220a7e3e127f923f
-ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
+ms.openlocfilehash: 671e600471402dbd6ca71d385a238caeee889497
+ms.sourcegitcommit: 66cc8d1839dbd7cc01b33030f188e15bf5f24dae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587153"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72916680"
 ---
 # <a name="deploy-the-website-to-azure-storage"></a>Implementación del sitio web en Azure Storage
 
@@ -26,10 +26,6 @@ En este paso, usará Visual Studio Code para implementar los archivos del sitio
 1. En Visual Studio Code, vaya al explorador de **Azure Storage**, expanda su suscripción, expanda el nodo de la cuenta de Azure Storage que creó en el paso anterior y, a continuación, expanda el nodo **Blob Containers**. El contenedor `$web` es donde se implementa el código de la aplicación.
 
    ![Nodos de Azure Storage en el explorador de Azure Storage](media/static-website/storage-nodes.png)
-
-1. Seleccione el explorador **Files** (Archivos), haga clic con el botón derecho en la carpeta _dist/my-static-app_ y elija **Deploy to Static Website** (Implementar en sitio web estático):
-
-    ![Comando Deploy to Static Website (Implementar en sitio web estático)](media/static-website/deploy-build-angular.png)
 
 1. Seleccione el explorador **Files** (Archivos), haga clic con el botón derecho en la carpeta _dist/my-static-app_ y elija **Deploy to Static Website** (Implementar en sitio web estático):
 
@@ -48,10 +44,6 @@ En este paso, usará Visual Studio Code para implementar los archivos del sitio
 1. En Visual Studio Code, vaya al explorador de **Azure Storage**, expanda su suscripción, expanda el nodo de la cuenta de Azure Storage que creó en el paso anterior y, a continuación, expanda el nodo **Blob Containers**. El contenedor `$web` es donde se implementa el código de la aplicación.
 
    ![Nodos de Azure Storage en el explorador de Azure Storage](media/static-website/storage-nodes.png)
-
-1. Seleccione el explorador **Files** (Archivos), haga clic con el botón derecho en la carpeta _build_ y elija **Deploy to Static Website** (Implementar en sitio web estático):
-
-    ![Comando Deploy to Static Website (Implementar en sitio web estático)](media/static-website/deploy-build-react.png)
 
 1. Seleccione el explorador **Files** (Archivos), haga clic con el botón derecho en la carpeta _build_ y elija **Deploy to Static Website** (Implementar en sitio web estático):
 
