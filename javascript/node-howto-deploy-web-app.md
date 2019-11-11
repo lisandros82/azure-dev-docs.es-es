@@ -9,12 +9,12 @@ ms.service: azure-nodejs
 ms.date: 08/20/2019
 ms.author: kraigb
 ms.custom: seo-javascript-september2019, seo-javascript-october2019
-ms.openlocfilehash: 89a2ce8214e6e3706b6387f657715fe3ee7f4fbe
-ms.sourcegitcommit: bed07b313eeab51281d1a6d4eba67a75524b2f57
+ms.openlocfilehash: 07112f988856df2598d1f336c779a3982f9342c1
+ms.sourcegitcommit: 7e5392a0af419c650225cfaa10215d1e0e56ce71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172414"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568178"
 ---
 # <a name="deploy-nodejs-web-apps-to-azure-app-service"></a>Implementación de aplicaciones web de Node.js en Azure App Service
 
@@ -30,7 +30,7 @@ En Azure, tiene varias opciones para implementar y hospedar aplicaciones web:
 
 - Puede compilar sus propios contenedores e implementarlos en Azure mediante Azure Container Registry y Azure Kubernetes Service. Para obtener más información, consulte [How to deploy Node.js containers to Azure](node-howto-deploy-containers.md) (Cómo implementar contenedores de Node.js en Azure).
 
-- Si quiere trabajar principalmente con código sin servidor, consulte [How to write serverless Node.js code on Azure](node-howto-write-serverless-code.md) (Cómo escribir código Node.js sin servidor en Azure).
+- Si quiere trabajar principalmente con código sin servidor, consulte [Cómo escribir código Node.js sin servidor en Azure](node-howto-write-serverless-code.md).
 
 - Para más información sobre cómo crear un sitio JAMstack (estático), consulte [How to build JAMstack (static site) web apps with Azure](node-howto-create-static-site-jamstack.md) (Cómo compilar aplicaciones web JAMstack [sitio estático] con Azure).
 
