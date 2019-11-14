@@ -8,12 +8,12 @@ ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
 ms.author: kraigb
-ms.openlocfilehash: 769ca61ef7716eaa08d45e109a9bf50e5801721c
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 0ee7b185532b3febe8aab720e40ff10cf4b079b7
+ms.sourcegitcommit: ad1b12d9ebb6113991ce48255f5b491364490079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686192"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73842203"
 ---
 # <a name="create-your-nodejs-application"></a>Creación de una aplicación de Node.js
 
@@ -26,7 +26,7 @@ También puede usar la aplicación del [tutorial de Node.js para Visual Studio�
 1. En un terminal o símbolo del sistema, use el siguiente comando para ejecutar el generador de Express y aplicar la técnica de scaffolding a una nueva aplicación de Express denominada "myExpressApp". (Los parámetros `--view pug --git` indican al generador que use el motor de plantillas [pug](https://pugjs.org/api/getting-started.html), antes conocido como Jade, y que cree un archivo *.gitignore*).
 
     ```bash
-    npx express-generator myExpressApp --view pug –git
+    npx express-generator myExpressApp --view pug -–git
     ```
 
 1. Instale las dependencias de la aplicación ejecutando `npm install` en la carpeta de la aplicación:
