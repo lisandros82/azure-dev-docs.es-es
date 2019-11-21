@@ -93,9 +93,10 @@
       items:
         - name: Información general
           href: java-azure-tools.md
-        - name: Soporte técnico a largo plazo de Java
-          href: jdk/index.md
+        - name: Compatibilidad con Java
           items:
+            - name: Soporte técnico a largo plazo de Java
+              href: jdk/index.md
             - name: Instalación de Java JDK
               href: jdk/java-jdk-install.md
             - name: Imágenes de Docker en Java para Azure
