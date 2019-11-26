@@ -4,26 +4,20 @@ description: Aprenda a configurar una aplicación creada con Spring Boot Initial
 services: event-hubs
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
 ms.service: event-hubs
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 074c7bb28907b3c71c981f261ae69d5477c21028
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 5d1f1d40eba0f4b4a6aa2718f09124b765a06a82
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282626"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118334"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-apache-kafka-with-azure-event-hubs"></a>Cómo usar el iniciador de Spring Boot para Apache Kafka con Azure Event Hubs
-
-## <a name="overview"></a>Información general
 
 En este artículo se muestra cómo configurar una aplicación de Spring Cloud Stream Binder basada en Java creada con Spring Boot Initializer para usar [Apache Kafka] con Azure Event Hubs.
 
@@ -46,18 +40,21 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
-1. Haga clic en **+Crear un recurso**, en **Internet de las cosas** y en **Event Hubs**.
+1. Haga clic en **+ Crear un recurso**, luego en **Internet de las cosas** y, a continuación, busque *Event Hubs**.
+
+1. Haga clic en **Create**(Crear).
 
    ![Creación de un espacio de nombres del centro de eventos de Azure][IMG01]
 
 1. En la página **Crear espacio de nombres**, escriba la información siguiente:
 
    * Escriba un **Nombre** único, que pasará a formar parte del identificador URI del espacio de nombres del centro de eventos. Por ejemplo: si escribió **wingtiptoys** para el **Nombre**, el identificador URI sería *wingtiptoys.servicebus.windows.net*.
-   * Elija un **Plan de tarifa** para el espacio de nombres del centro de eventos.
+   * Plan de tarifa.
    * Especifique **Habilitar Kafka** para el espacio de nombres.
    * Elija la **Suscripción** que quiere usar para el espacio de nombres.
    * Especifique si quiere crear un nuevo **Grupo de recursos** para el espacio de nombres o elija un grupo de recursos existente.
    * Especifique la **Ubicación** del espacio de nombres del centro de eventos.
+   * También puede especificar las **Unidades de procesamiento** para el espacio de nombres.
 
    ![Especificación de las opciones del espacio de nombres del centro de eventos de Azure][IMG02]
 
@@ -65,23 +62,17 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ### <a name="create-an-azure-event-hub-in-your-namespace"></a>Creación de un centro de eventos de Azure en el espacio de nombres
 
-1. Vaya a Azure Portal en <https://portal.azure.com/>.
+Una vez implementado el espacio de nombres, puede crear un centro de eventos en el espacio de nombres.
 
-1. Haga clic en **Todos los recursos** y, a continuación, en el espacio de nombres que ha creado.
+1. Vaya al espacio de nombres creado en el paso anterior.
 
-   ![Selección del espacio de nombres del centro de eventos de Azure][IMG03]
+1. Haga clic en **+ Centro de eventos** en la barra de menús superior.
 
-1. Haga clic en **Event Hubs** y, a continuación, haga clic en **+Centro de eventos**.
+1. Asigne un nombre al centro de eventos.
 
-   ![Adición de un nuevo centro de eventos de Azure][IMG04]
+1. Haga clic en **Create**(Crear).
 
-1. En la página **Crear centro de eventos**, escriba un **Nombre** único para el centro de eventos y haga clic en **Crear**.
-
-   ![Creación de un Centro de eventos de Azure][IMG05]
-
-1. Cuando se haya creado el centro de eventos, se mostrará en la página **Event Hubs**.
-
-   ![Creación de un Centro de eventos de Azure][IMG06]
+   ![Crear centro de eventos][IMG05]
 
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>Creación de una aplicación sencilla de Spring Boot con Spring Initializr
 
@@ -104,8 +95,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Generate Project** (Generar proyecto).
 
 1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
-
-   ![Descarga del proyecto de Spring][SI02]
 
 1. Después de extraer los archivos en el sistema local, la aplicación sencilla de Spring Boot estará lista para editarla.
 
@@ -229,7 +218,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    spring.cloud.azure.credential-file-path=my.azureauth
    spring.cloud.azure.resource-group=wingtiptoysresources
    spring.cloud.azure.region=West US
-   spring.cloud.azure.eventhub.namespace=wingtiptoysnamespace
+   spring.cloud.azure.eventhub.namespace=wingtiptoys
 
    spring.cloud.stream.bindings.input.destination=wingtiptoyshub
    spring.cloud.stream.bindings.input.group=$Default

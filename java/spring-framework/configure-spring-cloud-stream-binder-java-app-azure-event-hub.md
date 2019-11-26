@@ -4,9 +4,6 @@ description: Obtenga información sobre cómo configurar una aplicación de Spri
 services: event-hubs
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
@@ -14,16 +11,14 @@ ms.service: event-hubs
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 48dfa19177c52da4f296b3e19ae26e91b1d44c33
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 56ac71007af04d3294da811a879ebcf37f54ae73
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282706"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118133"
 ---
 # <a name="how-to-create-a-spring-cloud-stream-binder-application-with-azure-event-hubs"></a>Cómo crear una aplicación de Spring Cloud Stream Binder con Azure Event Hubs
-
-## <a name="overview"></a>Información general
 
 En este artículo se muestra cómo configurar una aplicación de Spring Cloud Stream Binder basada en Java creada con Spring Boot Initializer con Azure Event Hubs.
 
@@ -42,67 +37,69 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="create-an-azure-event-hub-using-the-azure-portal"></a>Creación de un centro de eventos de Azure mediante Azure Portal
 
+En el procedimiento siguiente se crea un centro de eventos de Azure.
+
 ### <a name="create-an-azure-event-hub-namespace"></a>Creación de un espacio de nombres del centro de eventos de Azure
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
-1. Haga clic en **+Crear un recurso**, en **Internet de las cosas** y en **Event Hubs**.
+1. Haga clic en **+ Crear un recurso** y busque *Event Hubs**.
+
+1. Haga clic en **Create**(Crear).
 
    ![Creación de un espacio de nombres del centro de eventos de Azure][IMG01]
 
 1. En la página **Crear espacio de nombres**, escriba la información siguiente:
 
    * Escriba un **Nombre** único, que pasará a formar parte del identificador URI del espacio de nombres del centro de eventos. Por ejemplo: si escribió **wingtiptoys** para el **Nombre**, el identificador URI sería *wingtiptoys.servicebus.windows.net*.
-   * Elija un **Plan de tarifa** para el espacio de nombres del centro de eventos.
+   * Plan de tarifa.
    * Elija la **Suscripción** que quiere usar para el espacio de nombres.
    * Especifique si quiere crear un nuevo **Grupo de recursos** para el espacio de nombres o elija un grupo de recursos existente.
    * Especifique la **Ubicación** del espacio de nombres del centro de eventos.
+   * También puede especificar las **Unidades de procesamiento** para el espacio de nombres.
 
    ![Especificación de las opciones del espacio de nombres del centro de eventos de Azure][IMG02]
 
 1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Crear** para crear el espacio de nombres.
 
-### <a name="create-an-azure-event-hub-in-your-namespace"></a>Creación de un centro de eventos de Azure en el espacio de nombres
+## <a name="create-an-azure-event-hub-in-your-namespace"></a>Creación de un centro de eventos de Azure en el espacio de nombres
 
-1. Vaya a Azure Portal en <https://portal.azure.com/>.
+Una vez implementado el espacio de nombres, puede crear un centro de eventos en el espacio de nombres.
 
-1. Haga clic en **Todos los recursos** y, a continuación, en el espacio de nombres que ha creado.
+1. Vaya al espacio de nombres creado en el paso anterior.
 
-   ![Selección del espacio de nombres del centro de eventos de Azure][IMG03]
+1. Haga clic en **+ Centro de eventos** en la barra de menús superior.
 
-1. Haga clic en **Event Hubs** y, a continuación, haga clic en **+Centro de eventos**.
+1. Asigne un nombre al centro de eventos.
 
-   ![Adición de un nuevo centro de eventos de Azure][IMG04]
+1. Haga clic en **Create**(Crear).
 
-1. En la página **Crear centro de eventos**, escriba un **Nombre** único para el centro de eventos y haga clic en **Crear**.
-
-   ![Creación de un Centro de eventos de Azure][IMG05]
-
-1. Cuando se haya creado el centro de eventos, se mostrará en la página **Event Hubs**.
-
-   ![Creación de un Centro de eventos de Azure][IMG06]
+   ![Crear centro de eventos][IMG05]
 
 ### <a name="create-an-azure-storage-account-for-your-event-hub-checkpoints"></a>Creación de una cuenta de Azure Storage para los puntos de comprobación del centro de eventos
 
+En el procedimiento siguiente se crea una cuenta de almacenamiento para los puntos de comprobación del centro de eventos.
+
 1. Vaya a Azure Portal en <https://portal.azure.com/>.
 
-1. Haga clic en **+Crear un recurso**, en **Almacenamiento** y en **Cuenta de almacenamiento**.
+1. Haga clic en **+Crear**, en **Almacenamiento** y en **Cuenta de almacenamiento**.
 
-   ![Creación de una cuenta de Azure Storage][IMG07]
+1. En la página **Crear cuenta de almacenamiento**, escriba la siguiente información:
 
-1. En la página **Crear espacio de nombres**, escriba la información siguiente:
-
-   * Escriba un **Nombre** único, que pasará a formar parte del identificador URI de la cuenta de almacenamiento. Por ejemplo: si escribió **wingtiptoys** para el **Nombre**, el identificador URI sería *wingtiptoys.core.windows.net*.
-   * Elija **Blob Storage** para **Tipo de cuenta**.
-   * Especifique la **Ubicación** de la cuenta de almacenamiento.
    * Elija la **Suscripción** que quiere usar para la cuenta de almacenamiento.
    * Especifique si quiere crear un nuevo **Grupo de recursos** para la cuenta de almacenamiento o elija un grupo de recursos existente.
+   * Escriba un **Nombre** único para la cuenta de almacenamiento.
+   * Especifique la **Ubicación** de la cuenta de almacenamiento.
 
    ![Especificación de las opciones de la cuenta de Azure Storage][IMG08]
 
-1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Crear** para crear la cuenta de almacenamiento.
+1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Revisar y crear** para crear la cuenta de almacenamiento.
+
+1. Revise las especificaciones y haga clic en **Crear**.  La implementación tardará varios minutos.
 
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>Creación de una aplicación sencilla de Spring Boot con Spring Initializr
+
+En el procedimiento siguiente se crea una aplicación de Spring Boot.
 
 1. Vaya a <https://start.spring.io/>.
 
@@ -123,8 +120,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Generate Project** (Generar proyecto).
 
 1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
-
-   ![Descarga del proyecto de Spring][SI02]
 
 1. Después de extraer los archivos en el sistema local, la aplicación sencilla de Spring Boot estará lista para editarla.
 
@@ -245,7 +240,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    spring.cloud.azure.eventhub.checkpoint-storage-account=wingtiptoysstorage
    spring.cloud.stream.bindings.input.destination=wingtiptoyshub
    spring.cloud.stream.bindings.input.group=$Default
-   spring.cloud.stream.bindings.output.destination=wingtiptoyshub
    spring.cloud.stream.eventhub.bindings.input.consumer.checkpoint-mode=MANUAL
    ```
    Donde:
@@ -364,6 +358,8 @@ En esta sección se crean las clases de Java necesarias para enviar eventos al c
 1. Guarde y cierre el archivo *EventhubSink.java*.
 
 ## <a name="build-and-test-your-application"></a>Compilación y prueba de la aplicación
+
+Use los procedimientos siguientes para compilar y probar la aplicación.
 
 1. Abra un símbolo del sistema y cambie el directorio a la carpeta donde se encuentra el archivo *pom.xml*; por ejemplo:
 

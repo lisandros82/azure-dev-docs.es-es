@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/02/2019
 ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: b87ca4bdefafbfa3e23c9538d6c77357dc9ba99b
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: 4c4fab3227194884e1b9a77439efbe87099a6812
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72278738"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118091"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>Tutorial: Creación de una función de Python en Azure Functions
 
@@ -36,6 +36,9 @@ En este artículo, creará una función de Python para Azure Functions con Visua
     | Proporcionar un nombre de función | HttpExample | El nombre se usa para una subcarpeta que contiene el código de la función junto con los datos de configuración y también define el nombre del punto de conexión HTTP. Use "HttpExample" en lugar de aceptar el valor predeterminado "HTTPTrigger" para distinguir la propia función del desencadenador. |
     | Nivel de autorización | **Anónimo** | La autorización anónima hace que la función sea accesible públicamente para cualquier usuario. |
     | Seleccionar cómo desea que se abra el proyecto | **Abrir en la ventana actual** | Abre el proyecto en la ventana de Visual Studio Code actual. |
+
+    > [!NOTE]
+    > Si tiene instalado Python 3.6 y 3.7, Visual Studio Code usa Python 3.6 de forma predeterminada para el proyecto de Azure Functions. Para usar Python 3.7 en la actualidad, cree y active primero un entorno de Python 3.7 y, a continuación, use el comando `func init` desde un terminal. A continuación, reinicie Visual Studio Code desde esa carpeta mediante el comando `code .`.
 
 1. Tras un breve período de tiempo, se muestra un mensaje para indicar que se ha creado el nuevo proyecto. En el **Explorador** está la subcarpeta creada para la función y Visual Studio Code abre el archivo *\_\_init\_\_.py*, que contiene el código predeterminado de la función:
 

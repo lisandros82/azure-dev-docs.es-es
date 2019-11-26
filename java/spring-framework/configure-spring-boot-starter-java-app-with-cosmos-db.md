@@ -12,12 +12,12 @@ ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 07481fa72186c02d9cd3bd082ecf6e57a44671d8
-ms.sourcegitcommit: 60c41faa59dbb59406eb7c1715f5708b5ed892c2
+ms.openlocfilehash: 192550b74a35eb24620c58e86e6a55e86e5e90ab
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036071"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118175"
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de la utilidad Spring Boot Starter con SQL API de Azure Cosmos DB
 
@@ -36,8 +36,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> y haga clic en **Crear un recurso**.
 
-    ![Portal de Azure][AZ01]
-
 1. Haga clic en **Bases de datos** y luego haga clic en **Azure Cosmos DB**.
 
     ![Portal de Azure][AZ02]
@@ -50,13 +48,11 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
     * Elija **Core (SQL)** como API.
     * Especifique la **ubicación** de la base de datos.
 
-    Cuando haya especificado estas opciones, haga clic en **Revisar y crear** para crear la base de datos.
+    Cuando haya especificado estas opciones, haga clic en **Revisar y crear**, revise las especificaciones y haga clic en **Crear**.
 
     ![Portal de Azure][AZ03]
 
 1. Cuando se ha creado la base de datos, se muestra en el **panel** de Azure, así como en las páginas **Todos los recursos** y **Azure Cosmos DB**. Puede hacer clic en la base de datos en cualquiera de esas ubicaciones para abrir la página de propiedades de la caché.
-
-    ![Portal de Azure][AZ04]
 
 1. Cuando se muestre la página de propiedades de la base de datos, haga clic en **Claves** y copie el identificador URI y las claves de acceso de la base de datos; usará estos valores en su aplicación de Spring Boot.
 

@@ -4,26 +4,20 @@ description: Aprenda a configurar una aplicación de Spring Boot Initializer con
 services: storage
 documentationcenter: java
 author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
 ms.author: brendm
 ms.date: 12/19/2018
 ms.devlang: java
 ms.service: storage
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: c4cc70cb97ec5e2199b41d768dbfd6313b19edcb
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: fe6f2869d775961cf69e7f109fe788d3dfad8b28
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282976"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118063"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Cómo usar el iniciador de Spring Boot para Azure Storage
-
-## <a name="overview"></a>Información general
 
 Este artículo explica cómo crear una aplicación personalizada con **Spring Initializr** y, a continuación, agregar el iniciador de almacenamiento de Azure a la aplicación y usar la aplicación para cargar un blob en la cuenta de Azure Storage.
 
@@ -32,7 +26,7 @@ Este artículo explica cómo crear una aplicación personalizada con **Spring In
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) o registrarse para obtener una [cuenta de Azure gratuita](https://azure.microsoft.com/pricing/free-trial/).
-* La [Interfaz de la línea de comandos (CLI) de Azure](http://docs.microsoft.com/cli/azure/overview).
+* La [Interfaz de la línea de comandos (CLI) de Azure](https://docs.microsoft.com/cli/azure/index).
 * Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
 
@@ -43,43 +37,42 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="create-an-azure-storage-account-and-blob-container-for-your-application"></a>Creación de una cuenta de Azure Storage y un contenedor de blobs para la aplicación
 
+En el procedimiento siguiente se crea una cuenta de Azure Storage y un contenedor.
+
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **+Crear un recurso**, en **Almacenamiento** y en **Cuenta de almacenamiento**.
 
    ![Creación de una cuenta de Azure Storage][IMG01]
 
-1. En la página **Crear espacio de nombres**, escriba la información siguiente:
+1. En la página **Crear cuenta de almacenamiento**, escriba la siguiente información:
 
-   * Escriba un **Nombre** único, que pasará a formar parte del identificador URI de la cuenta de almacenamiento. Por ejemplo: si escribió **wingtiptoysstorage** para el **Nombre**, el identificador URI sería *wingtiptoysstorage.core.windows.net*.
-   * Elija **Blob Storage** para **Tipo de cuenta**.
+   * Seleccione**Suscripción**.
+   * Seleccione un **Grupo de recursos** o cree uno nuevo.
+   * Escriba un **Nombre de cuenta de almacenamiento** único, que pasará a formar parte del identificador URI de la cuenta de almacenamiento. Por ejemplo: si escribió **wingtiptoysstorage** para el **Nombre**, el identificador URI sería *wingtiptoysstorage.core.windows.net*.
    * Especifique la **Ubicación** de la cuenta de almacenamiento.
-   * Elija la **Suscripción** que quiere usar para la cuenta de almacenamiento.
-   * Especifique si quiere crear un nuevo **Grupo de recursos** para la cuenta de almacenamiento o elija un grupo de recursos existente.
+1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Revisar y crear**. 
+1. Revise las especificaciones y, a continuación, haga clic en **Crear** para crear la cuenta de almacenamiento.
+1. Cuando la implementación finalice, haga clic en **Ir al recurso**.
+1. Haga clic en **Containers**(Contenedores).
+1. Haga clic en **+ Contenedor**.
+   * Nombre del contenedor.
+   * Seleccione *Blob* en la lista desplegable.
 
-   ![Especificación de las opciones de la cuenta de Azure Storage][IMG02]
-
-1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Crear** para crear la cuenta de almacenamiento.
-
-1. Cuando Azure Portal ha creado la cuenta de almacenamiento, haga clic en **Blobs** y, a continuación, haga clic en **+Contenedor**.
-
-   ![Creación de un contenedor de blobs][IMG03]
-
-1. Escriba un **Nombre** para el contenedor de blobs y, a continuación, haga clic en **Aceptar**.
-
-   ![Especificación de las opciones del contenedor de blobs][IMG04]
+   ![Creación de un contenedor de blobs][IMG02]
 
 1. Azure Portal enumerará el contenedor de blobs una vez se haya creado.
 
-   ![Revisión de la lista de contenedores de blobs][IMG05]
-
 ## <a name="create-a-simple-spring-boot-application-with-the-spring-initializr"></a>Creación de una aplicación sencilla de Spring Boot con Spring Initializr
+
+En el procedimiento siguiente se crea la aplicación de Spring Boot.
 
 1. Vaya a <https://start.spring.io/>.
 
 1. Especifique las opciones siguientes:
 
-   * Genere un proyecto de **Maven** con **Java**.
+   * Genere un proyecto de **Maven**.
+   * Especifique **Java**.
    * Especifique una versión de **Spring Boot** igual o superior a la 2.0.
    * Especifique los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de la aplicación.
    * Agregue la dependencia **Web**.
@@ -91,15 +84,15 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    > Spring Initializr usa los nombres de **Group** (Grupo) y **Artifact** (Artefacto) para crear el nombre del paquete, por ejemplo: *com.wingtiptoys.storage*.
    >
 
-1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Generate Project** (Generar proyecto).
+1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Generate** (Generar).
 
 1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
-
-   ![Descarga del proyecto de Spring][SI02]
 
 1. Después de extraer los archivos en el sistema local, la aplicación sencilla de Spring Boot estará lista para editarla.
 
 ## <a name="configure-your-spring-boot-app-to-use-the-azure-storage-starter"></a>Configuración de la aplicación de Spring Boot para usar el iniciador de Azure Storage
+
+El siguiente procedimiento configura la aplicación de Spring Boot para que use Azure Storage.
 
 1. Busque el archivo *pom.xml* en el directorio raíz de la aplicación, por ejemplo:
 
@@ -124,6 +117,8 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Guarde y cierre el archivo *pom.xml*.
 
 ## <a name="create-an-azure-credential-file"></a>Creación de un archivo de credenciales de Azure
+
+En el procedimiento siguiente se crea el archivo de credenciales de Azure.
 
 1. Abra el símbolo del sistema.
 
@@ -200,6 +195,8 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="configure-your-spring-boot-app-to-use-your-azure-storage-account"></a>Configuración de la aplicación de Spring Boot para usar la cuenta de Azure Storage
 
+En el siguiente procedimiento se configura la aplicación de Spring Boot para que use la cuenta de Azure Storage.
+
 1. Busque el archivo *application.properties* en el directorio *resources* de la aplicación, por ejemplo:
 
    `C:\SpringBoot\storage\src\main\resources\application.properties`
@@ -242,7 +239,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
    `/users/example/home/storage/src/main/java/com/wingtiptoys/storage/StorageApplication.java`
 
-1. Abra el archivo de Java de la aplicación principal en un editor de texto y agregue las siguientes líneas al archivo:
+1. Abra el archivo de Java de la aplicación principal en un editor de texto y agregue las siguientes líneas al archivo. Reemplace wingtiptoys por los valores siguientes:
 
    ```java
    package com.wingtiptoys.storage;
@@ -270,7 +267,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
    `/users/example/home/storage/src/main/java/com/wingtiptoys/storage/WebController.java`
 
-1. Abra el archivo de Java del controlador web en un editor de texto y agregue las siguientes líneas al archivo:
+1. Abra el archivo de Java del controlador web en un editor de texto y agregue las siguientes líneas al archivo.  Cambie *wingtiptoys* por su grupo de recursos y *storage* por el nombre del artefacto.
 
    ```java
    package com.wingtiptoys.storage;
@@ -357,7 +354,7 @@ En este tutorial ha creado una nueva aplicación Java con **[Spring Initializr]*
 Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.
 
 > [!div class="nextstepaction"]
-> [Spring en Azure](/azure/java/spring-framework)
+> [Spring en Azure](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault?view=azure-java-stable)
 
 ### <a name="additional-resources"></a>Recursos adicionales
 

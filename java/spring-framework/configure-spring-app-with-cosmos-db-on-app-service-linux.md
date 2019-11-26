@@ -7,18 +7,16 @@ ms.author: brendm
 ms.reviewer: joshuapa
 ms.date: 4/24/2019
 ms.devlang: java
-ms.service: app-service, cosmos-db
+ms.service: cosmos-db
 ms.topic: article
-ms.openlocfilehash: e7360067deaa9d038440978892f093dfb28db499
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 7fcd23ad45a591614516fec97e312c71773ce657
+ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68691156"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74118039"
 ---
 # <a name="how-to-use-spring-and-cosmos-db-with-app-service-on-linux"></a>Cómo usar Spring y Cosmos DB con App Service en Linux
-
-## <a name="overview"></a>Información general
 
 Este artículo le guiará en el proceso de creación, configuración, implementación, solución de problemas y escalado de aplicaciones web de Java en Azure App Service en Linux.
 
@@ -38,6 +36,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 - [Maven 3](http://maven.apache.org/)
 
 ## <a name="clone-the-sample-java-web-app-repository"></a>Clonación del repositorio de aplicaciones web de Java de ejemplo
+
 Para este ejercicio va a usar la aplicación Todo de Spring, que es una aplicación de Java creada con [Spring Boot](https://spring.io/projects/spring-boot), [Spring Data para Cosmos DB](https://docs.microsoft.com/azure/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db) y [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction).
 1. Clone la aplicación Todo de Spring y copie el contenido de la carpeta **.prep** para inicializar el proyecto:
 
@@ -58,8 +57,11 @@ Para este ejercicio va a usar la aplicación Todo de Spring, que es una aplicaci
 
    ```bash
    cd initial\spring-todo-app
-   ``` 
+   ```
+
 ## <a name="create-an-azure-cosmos-db-from-azure-cli"></a>Creación de una instancia de Azure Cosmos DB desde la CLI de Azure
+
+En el procedimiento siguiente se crea una base de datos de Azure Cosmos mediante la CLI.
 
 1. Inicie sesión en la CLI de Azure y establezca el identificador de suscripción.
 
@@ -68,6 +70,7 @@ Para este ejercicio va a usar la aplicación Todo de Spring, que es una aplicaci
     ```
 
 2. Si es necesario, establezca el identificador de suscripción.
+
     ```bash
     az account set -s <your-subscription-id>
     ```
@@ -88,13 +91,15 @@ Solo debe usar letras minúsculas en el nombre de Cosmos DB. Asegúrese de anota
         -n <your-azure-COSMOS-DB-name-in-lower-case-letters>
      ```
 
-4. Obtenga las claves de Azure Cosmos DB y anote el valor de `primaryMasterKey` para su uso posterior.
+5. Obtenga las claves de Azure Cosmos DB y anote el valor de `primaryMasterKey` para su uso posterior.
 
     ```bash
-    az cosmosdb list-keys -g <your-azure-group-name> -n <your-azure-COSMOSDB-name>
+    az cosmosdb keys list -g <your-azure-group-name> -n <your-azure-COSMOSDB-name>
     ```
 
 ## <a name="build-and-run-the-app-locally"></a>Compilación y ejecución de la aplicación en un entorno local
+
+En el procedimiento siguiente se ejecuta la aplicación en el equipo de desarrollo.
 
 1. En la consola de su elección, configure las variables de entorno que se muestran en las siguientes secciones de código con la información de conexión de Azure y Cosmos DB que recopiló anteriormente en este artículo. Deberá proporcionar un nombre único para **WEBAPP_NAME** y un valor para las variables **REGION**.
 
@@ -139,6 +144,8 @@ set REGION=<put-your-REGION-here>
  ![Aplicación de Spring que se ejecuta localmente][SCDB01]
 
 ## <a name="deploy-to-app-service-linux"></a>Implementación en App Service en Linux
+
+En el procedimiento siguiente se implementa la aplicación en Linux en Azure.
 
 1. Abra el archivo pom.xml que copió anteriormente en el directorio **initial/spring-todo-app** del repositorio. Asegúrese de que se incluye el [complemento de Maven para Azure App Service](https://github.com/Microsoft/azure-maven-plugins/blob/develop/azure-webapp-maven-plugin/README.md) como se muestra en el archivo pom.xml siguiente. Si la versión no está establecida en la **1.6.0**, actualice el valor.
 
@@ -231,6 +238,8 @@ bash-3.2$ mvn azure-webapp:deploy
 
 ## <a name="troubleshoot-spring-todo-app-on-azure-by-viewing-logs"></a>Solución de problemas de la aplicación Todo de Spring en Azure mediante la visualización de los registros
 
+En el siguiente procedimiento se abren los archivos de registro en Azure.
+
 1. Configure el registro de la aplicación web de Java implementada en Azure App Service en Linux:
 
     ```bash
@@ -282,6 +291,8 @@ bash-3.2$ az webapp log tail --name ${WEBAPP_NAME}  --resource-group ${RESOURCEG
 
 
 ## <a name="scale-out-the-spring-todo-app"></a>Escalado horizontal de la aplicación Todo de Spring
+
+Use el procedimiento siguiente para escalar la aplicación.
 
 1. Escale horizontalmente la aplicación web de Java mediante la CLI de Azure:
 
