@@ -3,23 +3,17 @@ title: Cómo usar el iniciador de Spring Boot para Azure Active Directory
 description: Aprenda a configurar una aplicación de Spring Boot Initializer con el iniciador de Azure Active Directory.
 services: active-directory
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: active-directory
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 72916633d4b0df05957b2289ad31559a0c9319bc
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 3a1c174662d172b38e9d2c88043be24f18332356
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68283366"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812139"
 ---
 # <a name="tutorial-secure-a-java-web-app-using-the-spring-boot-starter-for-azure-active-directory"></a>Tutorial: Protección de una aplicación web de Java con la utilidad Spring Boot Starter para Azure Active Directory
 

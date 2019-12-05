@@ -1,19 +1,14 @@
 ---
 title: Limpieza de los recursos después de implementar una aplicación de Node.js en contenedor desde Visual Studio Code
 description: Parte 6 del tutorial, limpieza de recursos.
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 53fbfc2c3dc04ed30e940a680eb4c65de6591504
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 7c235cff8b5685880fc63d7e50587980502c7e8d
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686005"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467128"
 ---
 # <a name="clean-up-resources"></a>Limpieza de recursos
 

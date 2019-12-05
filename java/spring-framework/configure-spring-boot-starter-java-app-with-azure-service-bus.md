@@ -3,17 +3,15 @@ title: Cómo usar Spring Boot Starter para JMS en Azure Service Bus
 description: En este artículo se muestra cómo usar Spring JMS Starter para enviar y recibir mensajes de Azure Service Bus.
 author: seanli1988
 manager: kyliel
-ms.author: Sean.Li
+ms.author: seal
 ms.date: 08/21/2019
-ms.devlang: java
-ms.service: azure-java
 ms.topic: article
-ms.openlocfilehash: 58d8dd00deeb90b1a1b8935bcbbab471255328d4
-ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
+ms.openlocfilehash: b64095bc2971bf9d9a7308bebdb91617538796c4
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70181989"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812122"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-service-bus-jms"></a>Cómo usar Spring Boot Starter para JMS en Azure Service Bus
 
@@ -348,7 +346,7 @@ En esta sección, creará las clases Java necesarias para enviar mensajes a la c
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
-Cuando ya no lo necesite, use [Azure Portal](http://ms.portal.azure.com/) para eliminar los recursos creados en este artículo y evitar cargos inesperados.
+Cuando ya no lo necesite, use [Azure Portal](https://portal.azure.com/) para eliminar los recursos creados en este artículo y evitar cargos inesperados.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

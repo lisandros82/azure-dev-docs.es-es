@@ -1,20 +1,15 @@
 ---
 title: 'Tutorial: Creación de una función de Python en Azure Functions con Visual Studio Code'
 description: Paso 2 del tutorial en el que se muestra el uso de la extensión Azure Functions para VS Code.
-services: functions
-author: kraigb
-manager: barbkess
-ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
-ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 4c4fab3227194884e1b9a77439efbe87099a6812
-ms.sourcegitcommit: 54d34557bb83f52a215bf9020263cb9f9782b41d
+ms.openlocfilehash: 5ccb93abf37011de5075768b73ed330fd91461ea
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74118091"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466030"
 ---
 # <a name="tutorial-create-a-python-function-for-azure-functions"></a>Tutorial: Creación de una función de Python en Azure Functions
 

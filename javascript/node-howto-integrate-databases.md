@@ -1,19 +1,14 @@
 ---
 title: Usar bases de datos de Azure con aplicaciones Node.js
 description: Azure ofrece una serie de bases de datos diferentes que se pueden usar con aplicaciones web y aplicaciones Node.js.
-author: kraigb
-manager: barbkess
-ms.devlang: nodejs
 ms.topic: article
-ms.service: azure-nodejs
 ms.date: 08/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 1861b5df8cc9a54379762fac001c5cecc2f89b1f
-ms.sourcegitcommit: 60c41faa59dbb59406eb7c1715f5708b5ed892c2
+ms.openlocfilehash: 6eb7dcb97d78504c49f2ea39f5d39750dfec7215
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036083"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467281"
 ---
 # <a name="how-to-integrate-azure-databases-in-nodejs-apps"></a>Integración de bases de datos de Azure en aplicaciones Node.js
 

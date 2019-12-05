@@ -1,20 +1,15 @@
 ---
 title: Implementar aplicaciones web de Node.js en Azure
 description: Introducción a Azure App Service y otras opciones de hospedaje para aplicaciones web, incluidas las aplicaciones web progresivas (PWA)
-author: kraigb
-manager: barbkess
-ms.devlang: nodejs
 ms.topic: article
-ms.service: azure-nodejs
 ms.date: 08/20/2019
-ms.author: kraigb
 ms.custom: seo-javascript-september2019, seo-javascript-october2019
-ms.openlocfilehash: 07112f988856df2598d1f336c779a3982f9342c1
-ms.sourcegitcommit: 7e5392a0af419c650225cfaa10215d1e0e56ce71
+ms.openlocfilehash: e7cb374b645738140ead924296ef7cef9b1b61d7
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568178"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467234"
 ---
 # <a name="deploy-nodejs-web-apps-to-azure-app-service"></a>Implementación de aplicaciones web de Node.js en Azure App Service
 

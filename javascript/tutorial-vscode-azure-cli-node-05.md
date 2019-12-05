@@ -1,19 +1,14 @@
 ---
 title: Transmisión de registros desde Azure App Service
 description: Parte 5 del tutorial, visualización de registros
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
-ms.author: kraigb
-ms.openlocfilehash: ce112d535d1f89a7e153f80b9fb80032a977b8d8
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 8a173bbb7f53de2189e0ecb99b851d77704ff92d
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686146"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466763"
 ---
 # <a name="stream-logs-from-app-service"></a>Transmisión de registros desde App Service
 

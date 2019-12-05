@@ -3,20 +3,17 @@ title: Uso de Spring Data Gremlin Starter con SQL API de Azure Cosmos DB
 description: Aprenda a configurar una aplicación creada con Spring Boot Initializer con SQL API de Azure Cosmos DB.
 services: cosmos-db
 documentationcenter: java
-author: bmitchell287
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: add8fed3dd9a0add38363742f3142eb1d7d11470
-ms.sourcegitcommit: 9cd460ee16b637e701aa30078932878c0d0a7945
+ms.openlocfilehash: b5e6b3866b9b1e6a326547c053c628a282d9aaf3
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70182015"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812100"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de Spring Data Gremlin Starter con SQL API de Azure Cosmos DB
 

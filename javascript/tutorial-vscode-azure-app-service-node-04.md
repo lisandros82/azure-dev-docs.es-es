@@ -1,19 +1,14 @@
 ---
 title: Transmisión de registros desde Azure App Service a Visual Studio Code
 description: Parte 4 del tutorial, visualización de los registros o consulta del final de los registros.
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 8484efc27120d374738a933244a3fce71c7c6acb
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: cc140d7751f9b014f1a16065fd4c65b481c7d1ae
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686210"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466809"
 ---
 # <a name="stream-logs-from-azure-app-service"></a>Transmisión de registros desde Azure App Service
 

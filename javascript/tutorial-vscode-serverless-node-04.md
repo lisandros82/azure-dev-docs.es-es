@@ -1,19 +1,14 @@
 ---
 title: Implementación de la aplicación de Azure Functions desde Visual Studio Code
 description: Parte 4 del tutorial, implementación de la aplicación de Functions en la nube.
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
-ms.author: kraigb
-ms.openlocfilehash: 53d0dd11567084d42de71a0f737cf8b9f5fc5249
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 690477392fffda4cd94d7271b061c195ccceb42b
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685930"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467103"
 ---
 # <a name="deploy-the-functions-app"></a>Implementación de la aplicación de Functions
 
@@ -29,7 +24,7 @@ ms.locfileid: "71685930"
 
 1. En el siguiente indicador, escriba un nombre único global para la aplicación de funciones y presione **ENTRAR**. Los siguientes son caracteres válidos para un nombre de aplicación de funciones: "a-z", "0-9" y "-".
 
-1. En el siguiente indicador, seleccione una [región](https://azure.microsoft.com/en-us/regions/) de Azure que esté cerca de usted.
+1. En el siguiente indicador, seleccione una [región](https://azure.microsoft.com/regions/) de Azure que esté cerca de usted.
 
 1. En el panel **Salida** de VS Code para **Azure Functions** aparece el progreso:
 

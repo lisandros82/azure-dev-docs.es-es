@@ -1,25 +1,20 @@
 ---
 title: Implementación de una imagen de contenedor para una aplicación de Node.js desde Visual Studio Code
 description: Parte 4 del tutorial, implementación de la imagen en Azure App Service
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 60eb5be0b3d4049c7955195f3bb6bc85dd2b2498
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: b43f93ba97950c84302db2e18f69b506e44dc84e
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686014"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466542"
 ---
 # <a name="deploy-the-image-to-azure-app-service"></a>Implementación de la imagen en Azure App Service
 
 [Paso anterior: Creación de la imagen de aplicación](tutorial-vscode-docker-node-03.md)
 
-En este paso, implementará la imagen que insertó en un registro en [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) directamente desde Visual Studio Code.
+En este paso, implementará la imagen que insertó en un registro en [Azure App Service](https://azure.microsoft.com/services/app-service/) directamente desde Visual Studio Code.
 
 1. En el explorador de **DOCKER**, expanda los nodos de la imagen en **Registries** (Registros), haga clic con el botón derecho en `:latest` y seleccione **Deploy Image to Azure App Service** (Implementar imagen en Azure App Service).
 

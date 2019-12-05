@@ -1,20 +1,15 @@
 ---
 title: JDK de Java y soporte técnico a largo plazo para el desarrollo en Azure
 description: Descargas e instrucciones del equipo de soporte técnico de Azure para el desarrollo y ejecución de aplicaciones Java.
-author: bmitchell287
-manager: douge
-ms.devlang: java
 ms.topic: conceptual
 ms.date: 04/09/2019
-ms.author: brendm
-ms.service: azure
 ms.custom: seo-java-september2019
-ms.openlocfilehash: 51dbbc70239744c0de7a96c0545cef15bfd4013a
-ms.sourcegitcommit: 50fbde9a640468147953d62f7ae0fca4685ed5e6
+ms.openlocfilehash: 3e0bb0e457d79f337c36b0c5649f471061a2a162
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71225242"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812273"
 ---
 # <a name="java-long-term-support-for-azure-and-azure-stack"></a>Soporte técnico a largo plazo de Java para Azure y Azure Stack
 

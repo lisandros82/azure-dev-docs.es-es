@@ -1,19 +1,14 @@
 ---
 title: Cambios en el código de la aplicación y reimplementación en Azure
 description: Parte 6 del tutorial, realización de cambios y reimplementación
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/24/2019
-ms.author: kraigb
-ms.openlocfilehash: f656e7414d6b7b6cecc28d69f108bfe92eb82894
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: 9702f10795893004965631fa99dfbfab181f2292
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686127"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467160"
 ---
 # <a name="make-changes-and-redeploy"></a>Cambios y reimplementación
 

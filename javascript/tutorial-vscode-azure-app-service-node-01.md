@@ -1,19 +1,14 @@
 ---
 title: Implementación de aplicaciones de Node.js en Azure App Service desde Visual Studio Code
 description: Parte 1 del tutorial, introducción y requisitos previos.
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 9c9c7085788f39e82eaec78b11d9c679b20c24eb
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: a02cb282722447516b034869fa8b614ddb45dc5f
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686219"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467212"
 ---
 # <a name="deploy-to-azure-app-service-using-visual-studio-code"></a>Implementación en Azure App Service mediante Visual Studio Code
 

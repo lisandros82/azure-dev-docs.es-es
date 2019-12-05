@@ -1,19 +1,14 @@
 ---
 title: Implementación de un sitio web de Node.js estático en Azure desde Visual Studio Code
 description: Parte 1 del tutorial, introducción y requisitos previos.
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/23/2019
-ms.author: kraigb
-ms.openlocfilehash: 0e5a7e12d234b56899e3c814cb577002125ea052
-ms.sourcegitcommit: 2757d8bd0cc045b7d02f430d44de859f9de853f4
+ms.openlocfilehash: 8b19b32933c2405082e2d1e2aa46c7a06af1f9d1
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587131"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467092"
 ---
 # <a name="deploy-a-static-website-to-azure-from-visual-studio-code"></a>Implementación de un sitio web estático en Azure desde Visual Studio Code
 
@@ -33,7 +28,7 @@ En este tutorial, creará e implementará un sitio web estático en Azure median
 
 ### <a name="azure-subscription"></a>Suscripción de Azure
 
-Si no tiene una suscripción de Azure, [regístrese ahora](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website) para obtener una cuenta gratuita con 200 USD en crédito de Azure para probar cualquier combinación de servicios.
+Si no tiene una suscripción de Azure, [regístrese ahora](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website) para obtener una cuenta gratuita con 200 USD en crédito de Azure para probar cualquier combinación de servicios.
 
 ## <a name="sign-in-to-azure"></a>Inicio de sesión en Azure
 

@@ -2,24 +2,18 @@
 title: Uso de Spring Data JPA con Azure Database for MySQL
 description: Aprenda a configurar y usar Spring Data JPA con una base de datos de Azure Database for MySQL.
 documentationcenter: java
-author: bmitchell287
-manager: douge
-ms.author: brendm
-ms.date: 12/19/2018
-ms.devlang: java
+ms.date: 11/27/2019
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: 842dc7785f8c7c84d6e9ba464c96d65db75dc9fd
-ms.sourcegitcommit: 2610f3992cb6d21a3657032074acb981d130fdad
+ms.openlocfilehash: 83883ffd06353854a3c69c9abdc946a035dda6b1
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960781"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811967"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-database-for-mysql"></a>Uso de Spring Data JPA con Azure Database for MySQL
-
-## <a name="overview"></a>Información general
 
 En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una base de datos de [Azure Database for MySQL](/azure/mysql/) mediante [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm).
 
@@ -50,27 +44,24 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Escriba la siguiente información:
 
-   - **Nombre del servidor**: Elija un nombre único para el servidor de Azure Database for MySQL; se utilizará para crear un nombre de dominio completo como *wingtiptoysmysql.mysql.database.azure.com*.
    - **Suscripción**: especifique la suscripción de Azure que se va a usar.
    - **Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.
+   - **Nombre del servidor**: Elija un nombre único para el servidor MySQL; se utilizará para crear un nombre de dominio completo como *wingtiptoysmysql.mysql.database.azure.com*.
    - **Seleccionar origen**: para este tutorial, seleccione `Blank` para crear una nueva base de datos.
    - **Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.
    - **Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.
    - **Ubicación**: especifique la región geográfica más cercana a la base de datos.
    - **Versión**: especifique la versión de la base de datos más reciente.
-   - **Plan de tarifa**: para este tutorial, especifique el plan de tarifa menos costoso.
 
    ![Creación de propiedades de la base de datos MySQL][MYSQL02]
 
-1. Cuando haya especificado la información anterior, haga clic en **Crear**.
+1. Cuando haya especificado toda la información anterior, haga clic en **Revisar + crear**.
 
 ### <a name="configure-a-firewall-rule-for-your-server-using-the-azure-portal"></a>Configuración de una regla de firewall para el servidor mediante Azure Portal
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos de MySQL que acaba de crear.
-
-   ![Selección de la base de datos MySQL][MYSQL03]
 
 1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
 
@@ -81,8 +72,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en el recurso de Azure Database for MySQL que acaba de crear.
-
-   ![Selección de la base de datos MySQL][MYSQL03]
 
 1. Haga clic en **Cadenas de conexión** y copie el valor en el campo de texto **JDBC**.
 
@@ -257,6 +246,5 @@ Para más información sobre el uso de Azure con Java, consulte [Azure para desa
 
 [MYSQL01]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-01.png
 [MYSQL02]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-02.png
-[MYSQL03]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-03.png
 [MYSQL04]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-04.png
 [MYSQL05]: media/configure-spring-data-jpa-with-azure-mysql/create-mysql-05.png
