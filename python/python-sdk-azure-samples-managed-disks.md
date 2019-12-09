@@ -1,24 +1,20 @@
 ---
 title: Managed Disks
 description: Cree, cambie el tamaño y actualice un disco administrado.
-author: sptramer
-manager: carmonm
-ms.devlang: python
 ms.topic: conceptual
 ms.date: 6/15/2017
-ms.author: sttramer
-ms.openlocfilehash: ab80a4aebd5f43d10f0cb6d939afbdf7ea9fb1b5
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: c65e07dc4a56ef0376785df4f55d3a9fc9f129ac
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68285726"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74467023"
 ---
 # <a name="managed-disks"></a>Managed Disks
 
-Azure Managed Disks proporciona una administración de discos simplificada, escalabilidad mejorada y mejor seguridad y escala. Elimina la noción de cuenta de almacenamiento para los discos, lo que permite a los clientes escalar sin tener que preocuparse por las limitaciones asociadas con las cuentas de almacenamiento. Esta publicación proporciona una introducción rápida y referencia para utilizar el servicio desde Python.
+Azure Managed Disks proporciona una administración de discos simplificada, mejor escalabilidad y mayor seguridad. Elimina la noción de cuenta de almacenamiento para los discos, lo que permite a los clientes escalar sin tener que preocuparse por las limitaciones asociadas con las cuentas de almacenamiento. Esta publicación proporciona una introducción rápida y referencia para utilizar el servicio desde Python.
 
-Desde la perspectiva del desarrollador, la experiencia con los discos administrados en la CLI de Azure es específica del idioma de la experiencia de la CLI en otras herramientas multiplataforma. Puede usar [Azure SDK para Python](https://azure.microsoft.com/develop/python/) y el [paquete azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) para administrar discos administrados. Puede crear un cliente de proceso mediante este [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
+Desde la perspectiva del desarrollador, la experiencia con los discos administrados en la CLI de Azure dependerá de la experiencia con la CLI en otras herramientas multiplataforma. Puede usar [Azure SDK para Python](https://azure.microsoft.com/develop/python/) y el [paquete azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) para administrar discos administrados. Puede crear un cliente de proceso mediante este [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
 
 ## <a name="standalone-managed-disks"></a>Discos administrados independientes
 
@@ -124,7 +120,7 @@ storage_profile = azure.mgmt.compute.models.StorageProfile(
 )
 ```
 
-Este parámetro ``storage_profile`` ahora es válido. Para obtener un ejemplo completo sobre cómo crear una máquina virtual en Python (incluida la red, etc.), consulte el [tutorial completo sobre máquinas virtuales en Python](https://github.com/Azure-Samples/virtual-machines-python-manage).
+Este parámetro ``storage_profile`` ahora es válido. Para ve un ejemplo completo de cómo crear una máquina virtual en Python (incluida la red, etc.), consulte el [tutorial completo sobre máquinas virtuales en Python](https://github.com/Azure-Samples/virtual-machines-python-manage).
 
 También puede crear una ``storage_profile`` con sus propias imágenes.
 
@@ -166,7 +162,7 @@ async_update.wait()
 
 Antes de los discos administrados, había que crear manualmente una cuenta de almacenamiento para todas las máquinas virtuales que quería dentro del conjunto de escalado y, a continuación, usar el parámetro de lista ``vhd_containers`` para proporcionar el nombre de todas las cuentas de almacenamiento a la API de REST del conjunto de escalado. La guía de transición oficial está disponible en este artículo `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
 
-Ahora, con los discos administrados, no es necesario administrar ninguna cuenta de almacenamiento. Si está acostumbrado al SDK de VMSS para Python, su ``storage_profile`` puede ser exactamente el mismo que el que se usó para crear las máquinas virtuales:
+Ahora, con los discos administrados, no es necesario administrar ninguna cuenta de almacenamiento. Si usa el SDK de VMSS para Python, ``storage_profile`` ahora puede ser exactamente el mismo perfil de almacenamiento que usó al crear las máquinas virtuales:
 
 ```python
 'storage_profile': {

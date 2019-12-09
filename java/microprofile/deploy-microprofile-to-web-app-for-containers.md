@@ -1,25 +1,22 @@
 ---
-title: Implementación de un servicio de MicroProfile basado en Java en Azure Web Apps for Containers
+title: Implementación de un servicio MicroProfile de Java
+titleSuffix: Azure Web App for Containers
 description: Aprenda cómo implementar un servicio MicroProfile con Docker y Azure Web App for Containers
 services: container-registry;app-service
 documentationcenter: java
 author: jonathangiles
-manager: douge
-editor: jonathangiles
-ms.assetid: ''
 ms.author: jogiles
 ms.date: 09/07/2018
-ms.devlang: java
-ms.service: container-registry;app-service
+ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 4ef47693094489baae85bc7622289d9943acb62b
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 6deaced31e9cbe6ebd1ef1eb20bd0414ab5df471
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68284026"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812190"
 ---
 # <a name="deploy-a-java-based-microprofile-service-to-azure-web-app-for-containers"></a>Implementación de un servicio de MicroProfile basado en Java en Azure Web Apps for Containers
 
@@ -37,9 +34,9 @@ En este tutorial, primero vamos a crear y ejecutar el código localmente y, desp
 
 ## <a name="creating-an-azure-container-registry"></a>Creación de un recurso de Azure Container Registry
 
-Usaremos [Azure Portal](http://portal.azure.com) para crear el recurso de Azure Container Registry, pero tenga en cuenta que hay otras opciones, como la CLI de Azure. Siga estos pasos para crear un nuevo recurso de Azure Container Registry:
+Usaremos [Azure Portal](https://portal.azure.com) para crear el recurso de Azure Container Registry, pero tenga en cuenta que hay otras opciones, como la CLI de Azure. Siga estos pasos para crear un nuevo recurso de Azure Container Registry:
 
-1. Inicie sesión en [Azure Portal](http://portal.azure.com) y cree un nuevo recurso de Azure Container Registry. Proporcione un nombre de registro (tenga en cuenta que este nombre se establecerá como la propiedad `docker.registry` en `pom.xml`). Cambie los valores predeterminados como desee y haga clic en "crear".
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) y cree un nuevo recurso de Azure Container Registry. Proporcione un nombre de registro (tenga en cuenta que este nombre se establecerá como la propiedad `docker.registry` en `pom.xml`). Cambie los valores predeterminados como desee y haga clic en "crear".
 
 1. Una vez que activado el registro de contenedor (unos 30 segundos después de hacer clic en "crear"), haga clic en él y haga clic en el vínculo "Claves de acceso", en el área de menú de la izquierda. Aquí, deberá habilitar la opción "Usuario administrador" para poder acceder a este registro de contenedor desde nuestros equipos (para insertar contenedores de Docker en él), y también para habilitar el acceso desde la instancia de Azure Web App for Containers que vamos a instalar.
 
@@ -143,7 +140,7 @@ En esta fase, ya tiene la imagen de contenedor de Docker cargada en Azure Contai
 
 ## <a name="creating-an-azure-web-app-for-containers-instance"></a>Creación de una instancia de Azure Web App for Containers
 
-1. Vuelva a [Azure Portal](http://portal.azure.com) y cree una nueva instancia de Web App for Containers (en el encabezado "Web y móvil" del menú). Algunas sugerencias:
+1. Vuelva a [Azure Portal](https://portal.azure.com) y cree una nueva instancia de Web App for Containers (en el encabezado "Web y móvil" del menú). Algunas sugerencias:
 
    1. El nombre que especifique aquí será la dirección URL pública de la aplicación web (aunque más adelante puede agregar un dominio personalizado si lo desea), por lo que es una buena idea elegir un nombre que pueda recordar fácilmente.
 

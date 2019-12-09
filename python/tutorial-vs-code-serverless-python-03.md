@@ -1,20 +1,15 @@
 ---
 title: 'Tutorial: Examen de los archivos de código de Python de Azure Functions en Visual Studio Code'
 description: Paso 3 del tutorial, descripción de la plantilla de código de Python proporcionada por Azure Functions.
-services: functions
-author: kraigb
-manager: barbkess
-ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 09/02/2019
-ms.author: kraigb
 ms.custom: seo-python-october2019
-ms.openlocfilehash: f31cbb3c1ad66a97ab4bb87cdcc58c9bd815c72e
-ms.sourcegitcommit: 38fc0daead4f6ef0cf16d9f4762ad24f4dc4c3e9
+ms.openlocfilehash: 5fa6f0095dec212f935c8c2e106f63eb58784d00
+ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980947"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540510"
 ---
 # <a name="tutorial-examine-the-python-code-files-in-visual-studio-code"></a>Tutorial: Examen de los archivos de código de Python en Visual Studio Code
 
@@ -90,7 +85,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
 Las partes importantes del código son las siguientes:
 
-- Debe importar `func` desde `azure.functions`; la importación del módulo de registro es opcional, pero se recomienda.
+- Debe importar el módulo `azure.functions`; la importación del módulo de registro es opcional, pero se recomienda.
 - La función de Python obligatoria `main` recibe un objeto `func.HttpRequest` llamado `req` y devuelve un valor de tipo `func.HttpResponse`. Puede encontrar más información sobre las funcionalidades de estos objetos en las referencias de [func.HttpRequest](/python/api/azure-functions/azure.functions.httprequest?view=azure-python) y [func.HttpResponse](/python/api/azure-functions/azure.functions.httpresponse?view=azure-python).
 - Después, el cuerpo de `main` procesa la solicitud y genera una respuesta. En este caso, el código busca un parámetro `name` en la dirección URL. Si no es así, comprueba si el cuerpo de la solicitud contiene un elemento JSON (mediante `func.HttpRequest.get_json`) y si el elemento JSON contiene un valor `name` (mediante el método `get` del objeto JSON devuelto por `get_json`).
 - Si se encuentra un nombre, el código devuelve la cadena "Hello" con el nombre anexado; en caso contrario, devuelve un mensaje de error.

@@ -1,19 +1,15 @@
 ---
 title: Autenticación con las bibliotecas de administración de Azure para Python
 description: Autentique con una entidad de servicio en las bibliotecas de administración de Azure para Python.
-author: sptramer
-ms.author: sttramer
-manager: carmonm
 ms.date: 04/11/2019
 ms.topic: conceptual
-ms.devlang: python
 ms.custom: seo-python-october2019
-ms.openlocfilehash: afeaafb4289544b92324154d5c45d3410cbb3b02
-ms.sourcegitcommit: 6012460ad8d6ff112226b8f9ea6da397ef77712d
+ms.openlocfilehash: 93d41e76bc8fb58d70a3590e2ea3658014a8673a
+ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72279099"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74466441"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Autenticación con las bibliotecas de administración de Azure para Python
 
@@ -77,7 +73,7 @@ credentials = ServicePrincipalCredentials(
 > )
 > ```
 
-Si necesita más control, se recomienda usar [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) y el contenedor ADAL del SDK. Consulte el sitio web de ADAL para ver todos los ejemplos y la lista de escenarios disponibles. Por ejemplo, para la autenticación de entidad de servicio:
+Si necesita más control, se recomienda usar [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) y el contenedor ADAL del SDK. Consulte el sitio web de ADAL para ver todos los ejemplos y la lista de escenarios disponibles. Por ejemplo, para la autenticación de entidades de servicio:
 
 ```python
 import adal
@@ -215,9 +211,9 @@ client = get_client_from_cli_profile(ComputeManagementClient)
 
 ## <a name="mgmt-auth-legacy"></a>Autenticación con credenciales de token (heredado)
 
-En versiones anteriores del SDK, ADAL aún no estaba disponible y se proporciona una clase `UserPassCredentials`. Esto se considera en desuso y no debe usarse más.
+En versiones anteriores del SDK, ADAL aún no estaba disponible y se proporciona una clase `UserPassCredentials`. El uso de esta clase ha quedado en desuso y ya no debe utilizarse.
 
-Este ejemplo muestra el escenario de usuario y contraseña. No admite la autenticación de doble factor.
+En este ejemplo se muestra el escenario de usuario y contraseña, que no es compatible con 2FA.
 
 ```python
 from azure.common.credentials import UserPassCredentials

@@ -1,25 +1,17 @@
 ---
-title: Administración de cuentas de almacenamiento mediante Azure Explorer para Eclipse
+title: Administración de cuentas de almacenamiento con Azure Explorer para Eclipse
 description: Obtenga información sobre cómo administrar las cuentas de almacenamiento de Azure mediante Azure Explorer para Eclipse.
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: aea8d501dcd6eab9c60dfb25a00a7ba75ba6c556
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 2eee5bf3546712c5f43056a9d4a2b170951ee810
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68430073"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811088"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-eclipse"></a>Administración de cuentas de almacenamiento mediante Azure Explorer para Eclipse
 
@@ -118,7 +110,7 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
 [replicación de Azure Storage]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
-[Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
+[Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: https://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamaños de las cuentas de almacenamiento de Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las cuentas de almacenamiento de Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes

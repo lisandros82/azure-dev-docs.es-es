@@ -1,19 +1,14 @@
 ---
 title: Creación de una imagen de contenedor para una aplicación de Node.js desde Visual Studio Code
 description: Parte 3 del tutorial, creación de una imagen de aplicación de Node.js
-services: app-service
-author: kraigb
-manager: barbkess
-ms.service: app-service
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.author: kraigb
-ms.openlocfilehash: 1b79f84bd69853578796b4485ca669be98f41006
-ms.sourcegitcommit: c04984b6367e922dbc5973af44f8cd0ca81ce157
+ms.openlocfilehash: c3662c7d21359008bdc0cc5c3050fb2fdc7d6241
+ms.sourcegitcommit: 9d0a6de18d9b5180c1cb485eff8e2774de48d225
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686097"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540516"
 ---
 # <a name="create-your-nodejs-application-image"></a>Creación de la imagen de aplicación de Node.js
 
@@ -27,7 +22,7 @@ Si aún no tiene una aplicación para este tutorial, use la aplicación del [tut
 
 1. En Visual Studio Code, abra la **paleta de comandos** (**F1**), escriba `add docker files to workspace` y, a continuación, seleccione el comando **Docker: Add Docker files to workspace** (Agregar archivos de Docker al área de trabajo).
 
-1. Cuando se le solicite, seleccione **Node.js** para el tipo de aplicación y, a continuación, seleccione la publicación en la que escucha la aplicación.
+1. Cuando se le solicite, seleccione **Node.js** para el tipo de aplicación y, a continuación, seleccione el puerto donde la aplicación escuchará.
 
 1. El comando crea un archivo `Dockerfile` junto con algunos archivos de configuración para Docker Compose y un archivo `.dockerignore`.
 

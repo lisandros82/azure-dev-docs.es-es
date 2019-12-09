@@ -3,22 +3,16 @@ title: Uso de Spring Data MongoDB API con Azure Cosmos DB
 description: Aprenda a usar Spring Data MongoDB API con Azure Cosmos DB.
 services: cosmos-db
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 77851933366e09a7d5b0d1ae87816c563bf35e6b
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 0284f89f6a37497709947649fba3b1284416a95c
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68281906"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811939"
 ---
 # <a name="how-to-use-spring-data-mongodb-api-with-azure-cosmos-db"></a>Uso de Spring Data MongoDB API con Azure Cosmos DB
 
@@ -37,7 +31,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="create-an-azure-cosmos-db-account"></a>Creación de una cuenta de Azure Cosmos DB
 
-### <a name="create-a-cosmos-db-account-using-the-azure-portal"></a>Creación de una cuenta de Cosmos DB mediante Azure Portal
+### <a name="create-a-cosmos-db-account-using-the-azure-portal"></a>Creación de una cuenta de Cosmos DB mediante Azure Portal
 
 > [!NOTE]
 > 
@@ -71,8 +65,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Haga clic en **Todos los recursos** y, después, haga clic en la cuenta de Azure Cosmos DB que acaba de crear.
 
-   ![Selección de la cuenta de Azure Cosmos DB][COSMOSDB04]
-
 1. Haga clic en **Cadenas de conexión** y copie el valor del campo **Cadena de conexión principal**; utilizará ese valor para configurar la aplicación más adelante.
 
    ![Recuperación de la cadena de conexión de Cosmos DB][COSMOSDB06]
@@ -102,7 +94,9 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Guarde y cierre el archivo *application.properties*.
 
-## <a name="package-and-test-the-sample-application"></a>Empaquetado y prueba de la aplicación de ejemplo 
+## <a name="package-and-test-the-sample-application"></a>Empaquetado y prueba de la aplicación de ejemplo
+
+Para compilar la aplicación, vaya al directorio */gs-accessing-data-mongodb/complete*, que contiene el archivo pom.xml.
 
 1. Cree la aplicación de ejemplo con Maven y configure Maven para omitir pruebas, por ejemplo:
 
@@ -113,7 +107,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Inicie la aplicación de ejemplo; por ejemplo:
 
    ```shell
-   java -jar target/gs-accessing-data-mongodb-0.1.0.jar
+   java -jar target/accessing-data-mongodb-0.0.1-SNAPSHOT.jar
    ```
     
    La aplicación debe devolver valores similares a los siguientes:

@@ -1,24 +1,19 @@
 ---
-title: Implementación de una aplicación web Hola mundo en un contenedor Linux en la nube con el kit de herramientas de Azure para IntelliJ
+title: Implementación de una aplicación web Hola mundo en un contenedor Linux
+titleSuffix: Azure Toolkit for IntelliJ
 description: Ejecución de una aplicación web Hola mundo en un contenedor Linux y su implementación en la nube con el kit de herramientas de Azure para IntelliJ.
 services: app-service\web
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/20/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 08e318de1a802d2b1d27db2f3a7bcc37c7ec8535
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 3e36123086486e8f1d98ca135d4360962d0d23a8
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68281026"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810991"
 ---
 # <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a>Implementación de una aplicación web Hola mundo en un contenedor Linux en la nube con el kit de herramientas de Azure para IntelliJ
 

@@ -3,22 +3,16 @@ title: Uso de Spring Data JDBC con Azure SQL Database
 description: Aprenda a usar Spring Data JDBC con una base de datos de Azure SQL.
 services: sql-database
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 12/19/2018
-ms.devlang: java
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 86851ca66b55a59d788aee7bcde5d50a522442bd
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: 76fe515c6f315a340d5c306edfef31cdf736ceed
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68282166"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811985"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>Uso de Spring Data JDBC con Azure SQL Database
 
@@ -74,7 +68,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Creación de la base de datos SQL][SQL04]
 
-### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a>Configuración de una regla de firewall para el servidor SQL Server mediante Azure Portal
+### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a>Configuración de una regla de firewall para el servidor de SQL Server mediante Azure Portal
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
@@ -90,7 +84,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Configuración del firewall][SQL07]
 
-### <a name="retrieve-the-connection-string-for-your-sql-server-using-the-azure-portal"></a>Recuperación de la cadena de conexión para el servidor SQL Server con Azure Portal
+### <a name="retrieve-the-connection-string-for-your-sql-server-using-the-azure-portal"></a>Recuperación de la cadena de conexión para el servidor de SQL Server con Azure Portal
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 

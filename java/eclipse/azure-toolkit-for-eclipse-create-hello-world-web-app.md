@@ -5,23 +5,19 @@ services: app-service
 keywords: java, eclipse, aplicación web, azure app service, hello world, guía de inicio rápido
 documentationcenter: java
 author: selvasingh
-manager: douge
-editor: ''
 ms.assetid: 20d41e88-9eab-462e-8ee3-89da71e7a33f
-ms.author: brendm
 ms.reviewer: asirveda
 ms.date: 02/01/2018
-ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 3d673abe4f4efd7330307999c7a945cd5cb37179
-ms.sourcegitcommit: 3d42245ecbfaeda31abba5f3f813b28f715ffd7c
+ms.openlocfilehash: ae3d983a0b3e64489fa89d0e6a845310878b204c
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68691732"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74811434"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-app-service-using-eclipse"></a>Creación de una aplicación web Hello World para Azure App Service mediante Eclipse
 
@@ -42,7 +38,7 @@ Con el complemento de código abierto [Azure Toolkit for Eclipse](https://market
 
 1. Arrastre el botón siguiente al área de trabajo de Eclipse en ejecución para instalar el complemento Azure Toolkit for Eclipse ([otras opciones de instalación](azure-toolkit-for-eclipse-installation.md)).
 
-    [![Arrastrar al área de trabajo de Eclipse* en ejecución. *Requiere el cliente de Marketplace de Eclipse](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Arrastrar al área de trabajo de Eclipse* en ejecución. *Requiere el cliente de Marketplace de Eclipse")
+    [![Arrástrelo hasta el área de trabajo de Eclipse* en ejecución. *Requiere el cliente de Eclipse de Marketplace](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Arrástrelo hasta el área de trabajo de Eclipse* en ejecución. *Requiere el cliente de Eclipse de Marketplace")
 
 1. Para iniciar sesión en la cuenta de Azure, haga clic en **Herramientas**, a continuación, haga clic en **Azure** y, a continuación, haga clic en **Iniciar sesión**.
    ![Menú de Eclipse para iniciar sesión en Azure][I01]

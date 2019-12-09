@@ -1,25 +1,17 @@
 ---
-title: Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ
+title: Administración de cuentas de almacenamiento con Azure Explorer para IntelliJ
 description: Obtenga información sobre cómo administrar las cuentas de Azure Storage mediante Azure Explorer para IntelliJ.
-services: ''
 documentationcenter: java
-author: bmitchell287
-manager: douge
-editor: ''
-ms.assetid: ''
-ms.author: brendm
 ms.date: 02/01/2018
-ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.workload: na
-ms.openlocfilehash: 7062a125822425c5c9421edc7987b71f83b48624
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: bd5c6960f9fe5c5c4d3b1e4b639ce68d887917ad
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68278996"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810963"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a>Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ
 
@@ -119,7 +111,7 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
 [replicación de Azure Storage]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
-[Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
+[Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: https://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamaños de las cuentas de almacenamiento de Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las cuentas de almacenamiento de Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
