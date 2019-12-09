@@ -4,17 +4,15 @@ description: Documento de resumen diseñado para los responsables de la toma de 
 author: dsgrieve
 manager: maverberg
 tags: java
-ms.service: azure
-ms.devlang: java
 ms.topic: article
 ms.date: 11/19/2019
 ms.author: dagrieve
-ms.openlocfilehash: ed9b4d7e98357486367f7e7eaacac64ff05a0ff8
-ms.sourcegitcommit: 90068e30def5dfcb4289d8530ea5914728182a15
+ms.openlocfilehash: 7daf058c2abebbf2cca85dadc4f9ffe3e8771fa1
+ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74250752"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74812219"
 ---
 # <a name="reasons-to-move-to-java-11"></a>Razones para pasarse a Java 11
 
@@ -27,7 +25,7 @@ Desde Java 8, se han agregado nuevas características y se han realizado mejora
 La transición a Java 11 se puede realizar de una manera escalonada. *No* es necesario que el código use módulos de Java para ejecutarse en Java 11. Java 11 se puede usar para ejecutar código desarrollado y creado con JDK 8.
 Pero pueden surgir algunos problemas, principalmente relacionados con la API en desuso, los cargadores de clases y la reflexión.
 
-En el grupo de la plataforma Java de Microsoft estará disponible próximamente una guía completa sobre la transición de Java 8 a Java 11. Mientras tanto, hay muchas guías para realizar la transición de Java 8 a Java 9 que pueden servir de ayuda para comenzar. Por ejemplo, [Guía de migración de la plataforma Java Standard Edition a JDK 9 para Oracle](https://docs.oracle.com/javase/9/migrate/toc.htm) y [Estado del sistema de módulos: compatibilidad y migración](http://openjdk.java.net/projects/jigsaw/spec/sotms/#compatibility--migration).
+En el grupo de ingeniería de Java de Microsoft proporcionará una guía completa de la transición de Java 8 a Java 11. Mientras tanto, hay muchas guías para realizar la transición de Java 8 a Java 9 que pueden servir de ayuda para comenzar. Por ejemplo, [Guía de migración de la plataforma Java Standard Edition a JDK 9 para Oracle](https://docs.oracle.com/javase/9/migrate/toc.htm) y [Estado del sistema de módulos: compatibilidad y migración](http://openjdk.java.net/projects/jigsaw/spec/sotms/#compatibility--migration).
 
 ## <a name="high-level-changes-between-java-8-and-11"></a>Cambios generales entre Java 8 y Java 11
 
@@ -57,7 +55,7 @@ Java Flight Recorder (JFR) recopila datos de diagnóstico y generación de perfi
 Java Mission Control (JMC) proporciona una presentación gráfica de los datos recopilados por Java Flight Recorder (JFR) y es de código abierto en Java.
 11. Además de la información general sobre la aplicación en ejecución, JMC permite al usuario profundizar en los datos. JFR y JMC se pueden usar para diagnosticar problemas en tiempo de ejecución, como fugas de memoria, sobrecarga del recolector de elementos no utilizados, métodos de acceso frecuente, cuellos de botella de subprocesos y bloqueos de E/S.
 
-#### <a name="unified-logging-7ref7"></a>Registro Unificado \[[7](#ref7)\]
+#### <a name="unified-logging-7ref7"></a>Registro unificado \[[7](#ref7)\]
 
 Java 11 tiene un sistema de registro común para todos los componentes de JVM.
 Este sistema de registro unificado permite al usuario definir qué componentes se van a registrar y a qué nivel. Este registro detallado es útil para realizar el análisis de la causa principal de los bloqueos de JVM y para diagnosticar problemas de rendimiento en un entorno de producción.
@@ -66,7 +64,7 @@ Este sistema de registro unificado permite al usuario definir qué componentes s
 
 Se ha agregado una nueva API a la interfaz de herramientas de la Máquina virtual Java (JVMTI) para el muestreo de las asignaciones de montones de Java. El muestreo tiene poca sobrecarga y se puede habilitar de un modo continuado. Aunque la asignación de montones se puede supervisar con Java Flight Recorder (JFR), el método de muestreo de JFR solo trabaja con asignaciones. La implementación de JFR también puede perder algunas asignaciones. Por el contrario, el muestreo de montones de Java 11 puede proporcionar información sobre los objetos activos y los inactivos.
 
-Los proveedores de soluciones de supervisión de rendimiento de aplicaciones (APM) comienzan a usar esta nueva característica y el grupo de la plataforma Java investiga su posible uso con las herramientas de supervisión del rendimiento de Azure.
+Los proveedores de soluciones de supervisión de rendimiento de aplicaciones (APM) comienzan a usar esta nueva característica y el grupo de ingeniería de Java investiga su posible uso con las herramientas de supervisión del rendimiento de Azure.
 
 #### <a name="stackwalker-9ref9"></a>StackWalker \[[9](#ref9)\]
 
