@@ -4,12 +4,12 @@ description: Cómo instalar Azure SDK para Python con PIP o GitHub. Azure SDK se
 ms.date: 10/31/2019
 ms.topic: conceptual
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 39de0959f3d73306412c39b32a4e13766d1500e9
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: d3d162bc14f27a9b2bc3fb033dab36dcd1dfeb89
+ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466403"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992489"
 ---
 # <a name="install-the-azure-sdk-for-python"></a>Instalación de Azure SDK para Python
 
@@ -19,7 +19,7 @@ Azure SDK para Python se ha probado y es compatible con las versiones 2.7 y 3.5.
 
 ## <a name="install-sdk-libraries-using-pip"></a>Instalación de bibliotecas del SDK con PIP
 
-Azure SDK para Python se compone de una serie de bibliotecas individuales que aprovisionan o funcionan con servicios específicos de Azure. Puede instalar cada una de ellos mediante `pip install <library>` con los nombres que se muestran en la [lista de bibliotecas del SDK](https://github.com/Azure/azure-sdk-for-python/blob/master/packages.md). (Esta lista proporciona vínculos a archivos Léame útiles para cada biblioteca).
+Azure SDK para Python se compone de una serie de bibliotecas individuales que aprovisionan o funcionan con servicios específicos de Azure. Puede instalar cada una de ellas mediante `pip install <library>`. Consulte la [página de la versión del SDK](https://azure.github.io/azure-sdk/releases/latest/python.html) para obtener instrucciones específicas y la documentación de cada biblioteca.
 
 Por ejemplo, si utiliza Azure Storage, puede instalar la biblioteca `azure-storage-file`, `azure-storage-blob` o `azure-storage-queue`. Si usa tablas de Azure Cosmos DB, instale `azure-cosmosdb-table`. Azure Functions se admite mediante la biblioteca `azure-functions`, y así sucesivamente. Las bibliotecas que comienzan por `azure-mgmt-` proporcionan la API para aprovisionar los recursos de Azure.
 
