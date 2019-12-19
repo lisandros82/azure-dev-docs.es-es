@@ -3,12 +3,12 @@ title: Creación de una entidad de servicio de Azure con Node.js
 description: Aprenda a usar la autenticación de entidad de servicio en Azure con Node.js y JavaScript.
 ms.topic: article
 ms.date: 06/17/2017
-ms.openlocfilehash: 4303d1e31431d38c37b300f6f19ca1e658008441
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 1a85d185d6272a72b0f8029822b01174f9a043ce
+ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466787"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75010582"
 ---
 # <a name="create-an-azure-service-principal-with-nodejs"></a>Creación de una entidad de servicio de Azure con Node.js 
 
@@ -23,6 +23,8 @@ En este tema se muestran tres técnicas para crear una entidad de servicio.
 - Portal de Azure
 - CLI de Azure 2.0
 - SDK de Azure para Node.js
+
+[!INCLUDE [chrome-note](includes/chrome-note.md)]
 
 ## <a name="create-a-service-principal-using-the-azure-portal"></a>Creación de una entidad de servicio con Azure Portal
 

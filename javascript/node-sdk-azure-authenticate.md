@@ -3,12 +3,12 @@ title: Autenticación con los módulos de administración de Azure para Node.js
 description: Autenticación con una entidad de servicio en los módulos de administración de Azure para Node.js
 ms.topic: article
 ms.date: 06/17/2017
-ms.openlocfilehash: bf368183b63dbe42dd02d8236cf7e7b73cbc1845
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 76233fb6e6d15829783ff98b3af672abc7eba226
+ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74467275"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75010522"
 ---
 # <a name="authenticate-with-the-azure-modules-for-nodejs"></a>Autenticación con los módulos de Azure para Node.js
 
@@ -17,6 +17,8 @@ Todas las API de servicio requieren autenticación a través de un objeto `crede
 - Autenticación básica
 - Inicio de sesión interactivo
 - Autenticación de entidad de servicio
+
+[!INCLUDE [chrome-note](includes/chrome-note.md)]
 
 ## <a name="basic-authentication"></a>Autenticación básica
 

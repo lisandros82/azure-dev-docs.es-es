@@ -8,18 +8,22 @@ ms.topic: article
 ms.service: multiple
 ms.assetid: 10f457e3-578b-4655-8cd1-51339226ee7d
 ms.custom: seo-java-september2019
-ms.openlocfilehash: 9be02a678157292772d7c7109bf8625e8c9bb74f
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 868849e9df89138d943421886961821d4d679db9
+ms.sourcegitcommit: 5c65d22b5203b0c17806463d349a6ede93a99fa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812431"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "75010541"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-java"></a>Autenticación con las bibliotecas de Azure para Java
 
+En este artículo se muestra cómo autenticar con las bibliotecas de Azure para Java.
+
+[!INCLUDE [chrome-note](includes/chrome-note.md)]
+
 ## <a name="connect-to-services-with-connection-strings"></a>Conexión a los servicios con cadenas de conexión
 
-En este artículo se muestra cómo autenticar con las bibliotecas de Azure para Java. La mayoría de las bibliotecas de servicio de Azure utilizan una cadena de conexión o una clave segura para la autenticación. Por ejemplo, SQL Database incluye información de nombre de usuario y contraseña en la cadena de conexión JDBC:
+La mayoría de las bibliotecas de servicio de Azure utilizan una cadena de conexión o una clave segura para la autenticación. Por ejemplo, SQL Database incluye información de nombre de usuario y contraseña en la cadena de conexión JDBC:
 
 ```java
 String url = "jdbc:sqlserver://myazuredb.database.windows.net:1433;" +
