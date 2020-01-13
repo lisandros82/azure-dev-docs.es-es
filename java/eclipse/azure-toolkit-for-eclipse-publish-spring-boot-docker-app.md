@@ -1,7 +1,7 @@
 ---
 title: Publicación de una aplicación de Spring Boot como un contenedor de Docker
 titleSuffix: Azure Toolkit for Eclipse
-description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con el kit de herramientas de Azure para Eclipse.
+description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con el Azure Toolkit for Eclipse.
 documentationcenter: java
 ms.date: 02/01/2018
 ms.service: multiple
@@ -20,7 +20,7 @@ ms.locfileid: "75191117"
 
 [Docker] es una solución de código abierto que ayuda a los desarrolladores a automatizar la implementación, el escalado y la administración de sus aplicaciones que se ejecutan en contenedores.
 
-Este tutorial le guía por los pasos necesarios para implementar una aplicación Spring Boot como un contenedor de Docker en Microsoft Azure con el kit de herramientas de Azure para Eclipse.
+Este tutorial le guía por los pasos necesarios para implementar una aplicación Spring Boot como un contenedor de Docker en Microsoft Azure con el Azure Toolkit for Eclipse.
 
 [!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
 

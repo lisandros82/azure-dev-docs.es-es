@@ -1,7 +1,7 @@
 ---
 title: Publicación de una aplicación de Spring Boot como un contenedor de Docker
 titleSuffix: Azure Toolkit for IntelliJ
-description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con el kit de herramientas de Azure para IntelliJ.
+description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con Azure Toolkit for IntelliJ.
 documentationcenter: java
 ms.date: 11/13/2018
 ms.service: multiple

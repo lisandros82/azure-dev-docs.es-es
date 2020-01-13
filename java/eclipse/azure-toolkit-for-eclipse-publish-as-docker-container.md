@@ -1,7 +1,7 @@
 ---
 title: Publicación de una aplicación web como un contenedor de Docker
 titleSuffix: Azure Toolkit for Eclipse
-description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con el kit de herramientas de Azure para Eclipse.
+description: Aprenda a publicar una aplicación web en Microsoft Azure como un contenedor de Docker con el Azure Toolkit for Eclipse.
 documentationcenter: java
 ms.date: 02/01/2018
 ms.service: multiple
@@ -16,7 +16,7 @@ ms.locfileid: "75191052"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse-deprecated"></a>Publicación de una aplicación web como contenedor de Docker con Azure Toolkit for Eclipse (EN DESUSO)
 
-Los contenedores de Docker son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El kit de herramientas de Azure para Eclipse simplifica este proceso para los desarrolladores de Java, ya que agrega características de *publicación como contenedor de Docker* para su implementación en Microsoft Azure. En este artículo se le guía por los pasos necesarios para publicar aplicaciones en Azure como contenedores de Docker.
+Los contenedores de Docker son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El Azure Toolkit for Eclipse simplifica este proceso para los desarrolladores de Java, ya que agrega características de *publicación como contenedor de Docker* para su implementación en Microsoft Azure. En este artículo se le guía por los pasos necesarios para publicar aplicaciones en Azure como contenedores de Docker.
 
 > [!NOTE]
 > Hay más información disponible sobre Docker en el [sitio web de Docker].
