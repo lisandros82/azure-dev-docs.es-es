@@ -3,12 +3,12 @@ title: Uso de un registro de contenedor en Visual Studio Code
 description: Parte 2 del tutorial, uso de un registro de contenedor
 ms.topic: conceptual
 ms.date: 09/20/2019
-ms.openlocfilehash: 7d51e8011824ec19e9530f9bc94bcb2ce07f2851
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: c5e9ff3cd803ef4d57408199682c71e4b57f2d77
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466630"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191040"
 ---
 # <a name="use-a-container-registry"></a>Uso de un registro de contenedor
 
@@ -20,9 +20,13 @@ En este tutorial se usa [Azure Container Registry](https://azure.microsoft.com/s
 
 ## <a name="create-an-azure-container-registry"></a>Creación de una instancia de Azure Container Registry
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com), seleccione **Crear un recurso** > **Contenedores** > **Container Registry**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) y seleccione **Crear un recurso**.
 
-    ![Creación de un registro de contenedor en Azure Portal](media/deploy-containers/portal-01.png)
+    ![Creación de un recurso nuevo en Azure Portal](media/deploy-containers/portal-01a.png)
+
+1. En la página siguiente, seleccione **Contenedores** > **Container Registry**.
+
+    ![Creación de un registro de contenedor en Azure Portal](media/deploy-containers/portal-01b.png)
 
 1. En el formulario **Crear Registro de contenedor** que aparece, escriba los valores adecuados:
 
@@ -50,6 +54,8 @@ En este tutorial se usa [Azure Container Registry](https://azure.microsoft.com/s
     ```bash
     docker login <registry_name>.azurecr.io -u <username> -p <password>
     ```
+
+    Para aumentar la seguridad, use `--password-stdin` en lugar de `-p <password>` y, después, pegue la contraseña cuando se le pida.
 
 1. En Visual Studio Code, abra el explorador de **Docker** y asegúrese de que el punto de conexión del registro que acaba de configurar esté visible en **Registros**:
 

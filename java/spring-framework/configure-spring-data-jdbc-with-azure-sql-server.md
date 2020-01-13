@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 76fe515c6f315a340d5c306edfef31cdf736ceed
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 028e54c54410caf9e81448fd8df8283532591895
+ms.sourcegitcommit: 7722fc50eeab0f97bd0ea9cb3263da87244af406
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811985"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492207"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>Uso de Spring Data JDBC con Azure SQL Database
 
@@ -20,7 +20,7 @@ ms.locfileid: "74811985"
 
 En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una instancia de [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -30,7 +30,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 * [Curl ](https://curl.haxx.se/) o una utilidad HTTP similar para probar la funcionalidad.
 * Un cliente [Git](https://git-scm.com/downloads).
 
-## <a name="create-an-azure-sql-satabase"></a>Creación de una instancia de Azure SQL Database
+## <a name="create-an-azure-sql-database"></a>Creación de una base de datos de Azure SQL
 
 ### <a name="create-a-sql-database-server-using-the-azure-portal"></a>Creación de un servidor de SQL Database mediante Azure Portal
 
@@ -46,27 +46,26 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Especifique la siguiente información:
 
-   - **Nombre de la base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.
+   - **Nombre de base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.
    - **Suscripción**: especifique la suscripción de Azure que se va a usar.
    - **Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.
    - **Seleccionar origen**: para este tutorial, seleccione `Blank database` para crear una nueva base de datos.
 
    ![Especificación de las propiedades de la base de datos SQL][SQL02]
    
-1. Haga clic en **Servidor**, después en **Crear un servidor nuevo** y, después, especifique la siguiente información:
+1. Haga clic en **Servidor**, después en **Crear nuevo** y, después, especifique la siguiente información:
 
    - **Nombre del servidor**: elija un nombre único para el servidor SQL; se utilizará para crear un nombre de dominio completo como *wingtiptoyssql.database.windows.net*.
    - **Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.
    - **Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.
    - **Ubicación**: especifique la región geográfica más cercana a la base de datos.
 
-   ![Especificación del servidor SQL Server][SQL03]
 
-1. Cuando haya especificado la información anterior, haga clic en **Seleccionar**.
+1. Cuando haya especificado la información anterior, haga clic en **Aceptar**.
 
-1. Para este tutorial, especifique el **plan de tarifa** menos costoso y, después, haga clic en **Crear**.
+1. Haga clic en **Revisar y crear**.
 
-   ![Creación de la base de datos SQL][SQL04]
+1. Revise la configuración y haga clic en **Finalizar**.
 
 ### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a>Configuración de una regla de firewall para el servidor de SQL Server mediante Azure Portal
 
@@ -74,9 +73,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Haga clic en **Todos los recursos**; después, haga clic en el servidor SQL Server que acaba de crear.
 
-   ![Selección del servidor SQL Server][SQL05]
-
-1. En la sección **Introducción**, haga clic en **Mostrar configuración del firewall**.
+1. En el panel de navegación de la izquierda, haga clic en **Información general** y en **Establecer el firewall del servidor**.
 
    ![Visualización de la configuración del firewall][SQL06]
 
@@ -89,8 +86,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos SQL que acaba de crear.
-
-   ![Selección de la base de datos SQL][SQL08]
 
 1. Haga clic en **Cadenas de conexión**, después haga clic en **JDBC** y copie el valor en el campo de texto JDBC.
 
@@ -115,7 +110,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
     ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `spring.datasource.url` | Especifica una versión modificada de la cadena JDBC de SQL que se mencionó anteriormente en este artículo. |
    | `spring.datasource.username` | Especifica el nombre del administrador de SQL que se mencionó anteriormente en este artículo, con el nombre abreviado del servidor anexado. |

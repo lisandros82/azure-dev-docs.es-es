@@ -2,16 +2,16 @@
 title: Uso de Spring Data JDBC con Azure Database for MySQL
 description: Aprenda a usar Spring Data JDBC con una base de datos de Azure Database for MySQL.
 documentationcenter: java
-ms.date: 12/19/2018
+ms.date: 01/07/2020
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: 323613fa8508f4e52c602763b40f15c4d2ffbc54
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: a36484cb6858422f4d9b0e6a5c72a793f3686514
+ms.sourcegitcommit: 3b8ccf447921a55f16c25795914d9eed64c2b9cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812004"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755660"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-mysql"></a>Uso de Spring Data JDBC con MySQL de Azure
 
@@ -19,7 +19,7 @@ ms.locfileid: "74812004"
 
 En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una base de datos de [Azure Database for MySQL](/azure/mysql/) mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -46,27 +46,26 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Escriba la siguiente información:
 
-   - **Nombre del servidor**: Elija un nombre único para el servidor MySQL; se utilizará para crear un nombre de dominio completo como *wingtiptoysmysql.mysql.database.azure.com*.
    - **Suscripción**: especifique la suscripción de Azure que se va a usar.
    - **Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.
-   - **Seleccionar origen**: para este tutorial, seleccione `Blank` para crear una nueva base de datos.
-   - **Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.
+   - **Nombre del servidor**: Elija un nombre único para el servidor MySQL; se utilizará para crear un nombre de dominio completo como *wingtiptoysmysql.mysql.database.azure.com*.
+   - **Origen de datos**: para este tutorial, seleccione `Blank` para crear una nueva base de datos.
+   - **Nombre de usuario de administrador**: especifique el nombre del administrador de base de datos.
    - **Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.
    - **Ubicación**: especifique la región geográfica más cercana a la base de datos.
    - **Versión**: especifique la versión de la base de datos más reciente.
-   - **Plan de tarifa**: para este tutorial, especifique el plan de tarifa menos costoso.
 
    ![Creación de propiedades de la base de datos MySQL][MYSQL02]
 
-1. Cuando haya especificado la información anterior, haga clic en **Crear**.
+1. Cuando haya especificado toda la información anterior, haga clic en **Revisar + crear**.
+
+1. Revise las especificaciones y haga clic en **Crear**.
 
 ### <a name="configure-a-firewall-rule-for-your-server-using-the-azure-portal"></a>Configuración de una regla de firewall para el servidor mediante Azure Portal
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en el recurso de Azure Database for MySQL que acaba de crear.
-
-   ![Selección de la base de datos MySQL][MYSQL03]
 
 1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
 
@@ -77,8 +76,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
 1. Haga clic en **Todos los recursos** y seleccione el recurso de Azure Database for MySQL que acaba de crear.
-
-   ![Selección de la base de datos MySQL][MYSQL03]
 
 1. Haga clic en **Cadenas de conexión** y copie el valor en el campo de texto **JDBC**.
 
@@ -93,7 +90,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `host` | Especifica el nombre completo del servidor MySQL que se mencionó anteriormente en este artículo. |
    | `user` | Especifica el administrador de MySQL y el nombre de servidor abreviado que se mencionaron anteriormente en este artículo. |
@@ -170,7 +167,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
     ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `spring.datasource.url` | Especifica la cadena de JDBC de MySQL que se mencionó anteriormente en este artículo, con la zona horaria agregada. |
    | `spring.datasource.username` | Especifica el nombre del administrador de MySQL que se mencionó anteriormente en este artículo, con el nombre abreviado del servidor anexado. |
@@ -250,6 +247,5 @@ Para más información sobre el uso de Azure con Java, consulte [Azure para desa
 
 [MYSQL01]: media/configure-spring-data-jdbc-with-azure-mysql/create-mysql-01.png
 [MYSQL02]: media/configure-spring-data-jdbc-with-azure-mysql/create-mysql-02.png
-[MYSQL03]: media/configure-spring-data-jdbc-with-azure-mysql/create-mysql-03.png
 [MYSQL04]: media/configure-spring-data-jdbc-with-azure-mysql/create-mysql-04.png
 [MYSQL05]: media/configure-spring-data-jdbc-with-azure-mysql/create-mysql-05.png

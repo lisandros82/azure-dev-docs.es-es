@@ -7,14 +7,14 @@ ms.date: 02/01/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 0d57d691853cf16dba21cda9cea670629528c144
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 8b601f2faf1431cf393db3560077e299d2a52f4c
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812513"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191062"
 ---
-# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para IntelliJ
+# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij-deprecated"></a>Publicación de una aplicación web como contenedor de Docker con Azure Toolkit for IntelliJ (EN DESUSO)
 
 Los contenedores de Docker son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El kit de herramientas de Azure para IntelliJ simplifica este proceso para los desarrolladores de Java, ya que agrega características de *publicación como contenedor de Docker* para su implementación en Microsoft Azure. En este artículo se le guía por los pasos necesarios para publicar aplicaciones en Azure como contenedores de Docker.
 
@@ -69,7 +69,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
       
    d. En la pestaña **OS and Size** (Sistema operativo y tamaño), realice lo siguiente:      
       * **Host OS** (Sistema operativo del host): escriba el sistema operativo de la máquina virtual que contiene el host. 
-      * **Tamaño**: escriba el tamaño de la máquina virtual del host.   
+      * **Size**: escriba el tamaño de la máquina virtual del host.   
        
    e. En la pestaña **Resource Group** (Grupo de recursos), seleccione una de las siguientes acciones:      
       * **New resource group** (Nuevo grupo de recursos): cree un grupo de recursos para su host.

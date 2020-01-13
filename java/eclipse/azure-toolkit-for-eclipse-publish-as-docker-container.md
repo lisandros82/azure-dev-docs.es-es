@@ -7,14 +7,14 @@ ms.date: 02/01/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 2d81c2a23a58c2dfdb036988b8831efe0c821392
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: d1e384525ec32141b945f50d1d5be7190e84b239
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811802"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191052"
 ---
-# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para Eclipse
+# <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse-deprecated"></a>Publicación de una aplicación web como contenedor de Docker con Azure Toolkit for Eclipse (EN DESUSO)
 
 Los contenedores de Docker son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El kit de herramientas de Azure para Eclipse simplifica este proceso para los desarrolladores de Java, ya que agrega características de *publicación como contenedor de Docker* para su implementación en Microsoft Azure. En este artículo se le guía por los pasos necesarios para publicar aplicaciones en Azure como contenedores de Docker.
 
@@ -57,7 +57,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 4. En la ventana **Configure the new virtual machine** (Configurar la nueva máquina virtual), especifique las siguientes opciones de su host de Docker (el asistente genera automáticamente la mayor parte de las opciones, pero puede modificarla).
 
-   a. **Nombre**: escriba un nombre único para el host de Docker. (No es lo mismo que el nombre de imagen de Docker que especificó antes).
+   a. **Name**: escriba un nombre único para el host de Docker. (No es lo mismo que el nombre de imagen de Docker que especificó antes).
 
    b. **Suscripción**: escriba la suscripción de Azure que usa para el host.
 
@@ -65,7 +65,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
    d. En la pestaña **Host OS and Size** (Sistema operativo y tamaño del host): 
    * **Host OS** (Sistema operativo del host): escriba el sistema operativo de la máquina virtual que contiene el host.
-   * **Tamaño**: escriba el tamaño de la máquina virtual del host.
+   * **Size**: escriba el tamaño de la máquina virtual del host.
 
    e. En la pestaña **Resource Group** (Grupo de recursos): 
    * **New resource group** (Nuevo grupo de recursos): cree un grupo de recursos para el host.

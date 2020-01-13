@@ -7,14 +7,14 @@ ms.date: 02/01/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: ece88bc262cf6b7c626cd50364c1133b098bb0f7
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: d11dfce0baa04fd19d54f37832bf61b785818390
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811838"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191117"
 ---
-# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para Eclipse
+# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse-deprecated"></a>Publicación de una aplicación de Spring Boot como contenedor de Docker con Azure Toolkit for Eclipse (EN DESUSO)
 
 [Spring Framework] es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes.
 

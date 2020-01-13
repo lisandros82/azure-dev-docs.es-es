@@ -3,24 +3,24 @@ title: Implementación de una aplicación web de Spring Boot en Azure App Servic
 description: Este tutorial le guiará por los pasos necesarios para implementar una aplicación Spring Boot como una aplicación web de Linux en Microsoft Azure.
 services: azure app service
 documentationcenter: java
-ms.date: 11/12/2019
+ms.date: 12/31/2019
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: 63e9b6bda4edb332441df20b5a6e7b2637aff610
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: a98575021be229ed067ce424cd101721c98f9ea4
+ms.sourcegitcommit: 3b8ccf447921a55f16c25795914d9eed64c2b9cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811891"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755714"
 ---
 # <a name="deploy-a-spring-boot-application-on-azure-app-service-for-container"></a>Implementación de una aplicación de Spring Boot en Azure App Service for Container
 
-En este tutorial se explica cómo usar [Docker] para incluir su aplicación de [Spring Boot] en un contenedor e implementar su propia imagen de docker en un host Linux en [Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
+En este tutorial se explica cómo usar [Docker] para incluir su aplicación de [Spring Boot] en un contenedor e implementar su propia imagen de Docker en un host Linux en [Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
@@ -98,15 +98,11 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
    
    ![Crear una instancia de Azure Container Registry][AR01]
 
-1. Cuando aparezca la página de información de la plantilla de Azure Container Registry, haga clic en **Crear**. 
-
-   ![Crear una instancia de Azure Container Registry][AR02]
-
-1. Cuando aparezca la página **Crear Registro de contenedor**, escriba su **Nombre del Registro** y **Grupo de recursos**, elija **Habilitar** para el **Usuario administrador** y haga clic en **Crear**.
+1. Cuando aparezca la página **Crear registro de contenedor**, indique los valores de **Nombre del Registro**, **Suscripción**, **Grupo de recursos** y **Ubicación**. Seleccione **Habilitar** para el **Usuario administrador**. A continuación, haga clic en **Crear**.
 
    ![Configurar Azure Container Registry][AR03]
 
-1. Una vez que se haya creado el Registro de contenedor, desplácese hasta él en Azure Portal y haga clic en **Claves de acceso**. Tome nota del nombre de usuario y la contraseña para usarlos en los pasos siguientes.
+1. Una vez que se haya creado el Registro de contenedor, vaya hasta él en Azure Portal y haga clic en **Claves de acceso**. Tome nota del nombre de usuario y la contraseña para usarlos en los pasos siguientes.
 
    ![Claves de acceso de Azure Container Registry][AR04]
 
@@ -114,7 +110,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 1. Vaya al directorio de proyecto completado de la aplicación Spring Boot (por ejemplo: "*C:\SpringBoot\gs-spring-boot-docker\complete*" o " */users/robert/SpringBoot/gs-spring-boot-docker/complete*") y abra el archivo *pom.xml* con un editor de texto.
 
-1. Actualice la colección `<properties>` del archivo *pom.xml* con la última versión de [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) y el valor del servidor de inicio de sesión y la configuración de acceso de Azure Container Registry de la sección anterior de este tutorial. Por ejemplo:
+1. Actualice la colección `<properties>` del archivo *pom.xml* con la última versión de [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin), el valor del servidor de inicio de sesión y la configuración de acceso de Azure Container Registry de la sección anterior de este tutorial. Por ejemplo:
 
    ```xml
    <properties>
@@ -126,22 +122,28 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
    </properties>
    ```
 
-1. Agregue [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) a la colección `<plugins>` en el archivo *pom.xml*, especifique la imagen base en `<from>/<image>` y el nombre de la imagen final `<to>/<image>`, especifique el nombre de usuario y la contraseña de la sección anterior en `<to>/<auth>`. Por ejemplo:
+1. Agregue [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin) a la colección `<plugins>` en el archivo *pom.xml*.  En este ejemplo se usa la versión 1.8.0. 
+
+Especifique la imagen de base en `<from>/<image>`, aquí `openjdk:8-jre-alpine`. Especifique el nombre de la imagen final que se compilará a partir de la base en `<to>/<image>`.  
+
+La autenticación `{docker.image.prefix}` es el **Servidor de inicio de sesión** que se mostró anteriormente en la página del registro. `{project.artifactId}` es el nombre y el número de versión del archivo JAR de la primera compilación en Mavin del proyecto.
+
+Especifique el nombre de usuario y la contraseña del panel del registro en el nodo `<to>/<auth>`. Por ejemplo:
 
    ```xml
    <plugin>
      <artifactId>jib-maven-plugin</artifactId>
      <groupId>com.google.cloud.tools</groupId>
-     <version>${jib-maven-plugin.version}</version>
+     <version>1.8.0</version>
      <configuration>
         <from>
             <image>openjdk:8-jre-alpine</image>
         </from>
         <to>
-            <image>${docker.image.prefix}/${project.artifactId}</image>
+            <image>{docker.image.prefix}/{project.artifactId}</image>
             <auth>
-               <username>${username}</username>
-               <password>${password}</password>
+               <username>{username}</username>
+               <password>{password}</password>
             </auth>
         </to>
      </configuration>
@@ -156,46 +158,60 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 > [!NOTE]
 >
-> Cuando usa Jib para insertar la imagen en Azure Container Registry, la imagen no seguirá el formato *Dockerfile*, consulte [este](https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html) documento para más información.
+> Cuando se usa Jib para insertar la imagen en Azure Container Registry, la imagen no sigue el formato *Dockerfile*. Consulte [este](https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html) documento para más información.
 >
 
 ## <a name="create-a-web-app-on-linux-on-azure-app-service-using-your-container-image"></a>Crear una aplicación web en Linux en Azure App Service mediante la imagen de contenedor
 
 1. Vaya a [Azure Portal] e inicie sesión.
 
-2. Haga clic en el icono de menú **+ Crear un recurso**, a continuación, haga clic en **Web** y, a continuación, haga clic en **Web App for Containers**.
+2. Haga clic en el icono de menú **+ Crear un recurso**, haga clic en **Web** y, a continuación, haga clic en **Web App for Containers**.
    
    ![Crear una aplicación web en Azure Portal][LX01]
 
 3. Cuando aparezca la página **Aplicación web en Linux**, especifique la información siguiente:
 
-   a. Escriba un nombre único para el campo **Nombre de aplicación**, por ejemplo: "*wingtiptoyslinux*".
+   * Seleccione su **Suscripción** en la lista desplegable.
 
-   b. Seleccione su **Suscripción** en la lista desplegable.
+   * Seleccione un **Grupo de recursos** existente o especifique un nombre para crear uno nuevo.
 
-   c. Seleccione un **Grupo de recursos** existente o especifique un nombre para crear uno nuevo.
+   * Escriba un nombre único para el campo **Nombre de aplicación**, por ejemplo: "*wingtiptoyslinux*".
 
-   d. Elija *Linux* como el **Sistema operativo**.
+   * Especifique `Docker Container` en **Publicar**.
 
-   e. Haga clic en **Plan de App Service/Ubicación** y elija un plan de App Service existente o haga clic en **Crear nuevo** para crear un nuevo plan de App Service.
+   * Elija *Linux* como **Sistema operativo**.
 
-   f. Haga clic en **Configurar contenedor** y especifique la información siguiente:
+   * Seleccione la **Región**.
 
-   * Elija **Contenedor único** y **Azure Container Registry**.
+   * Acepte **Plan de Linux**, elija un **Plan de App Service** existente o haga clic en **Crear nuevo** para crear uno nuevo.
 
-   * **Registro**: Elija el nombre del contenedor creado anteriormente. Por ejemplo: "*wingtiptoysregistry*".
-
-   * **Imagen**: elija el nombre de la imagen; por ejemplo: "*gs-spring-boot-docker*".
-   
-   * **Etiqueta**: elija la etiqueta de la imagen; por ejemplo: "*más reciente*".
-   
-   * **Archivo de inicio**: déjela en blanco, ya que la imagen ya tiene el comando de inicio.
-   
-   e. Cuando haya especificado la información anterior, haga clic en **Aplicar**.
+   * Haga clic en **Siguiente: Docker**.
 
    ![Configurar aplicaciones web][LX02]
 
-4. Haga clic en **Create**(Crear).
+      En la página **Aplicación web**, seleccione **Docker** y especifique la siguiente información:
+
+   * Seleccione **Contenedor único**.
+
+   * **Registro**: elija el contenedor, por ejemplo: "*wingtiptoysregistry*".
+
+   * **Imagen**: seleccione la imagen creada anteriormente; por ejemplo, "*gs-spring-boot-docker*".
+
+   * **Etiqueta**: elija la etiqueta de la imagen; por ejemplo: "*más reciente*".
+   
+   * **Comando de inicio**: déjela en blanco, ya que la imagen ya tiene el comando de inicio.
+   
+   Cuando haya especificado toda la información anterior, haga clic en **Revisar + crear**.
+
+   ![Configurar aplicaciones web][LX02-A]
+
+   * Haga clic en **Revisar + crear**.
+   
+Revise la información y haga clic en **Crear**.
+
+Cuando la implementación finalice, haga clic en **Ir al recurso**.  La página de implementación muestra la URL para acceder a la aplicación.
+
+   ![Obtención de la URL de implementación][LX02-B]
 
 > [!NOTE]
 >
@@ -203,13 +219,13 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 >
 > 1. Vaya a [Azure Portal] e inicie sesión.
 > 
-> 2. Haga clic en el icono de **App Services** y seleccione la aplicación web en la lista.
+> 2. Haga clic en el icono de **App Services** y seleccione la aplicación en la página **App Services**.
 >
-> 4. Haga clic en **Configuración**. (Elemento 1 de la imagen siguiente).
+> 4. En el panel de navegación de la izquierda, haga clic en **Configuración**.
 >
-> 5. En la sección **Configuración de la aplicación**, agregue un nuevo valor llamado **PORT** y especifique como valor su número de puerto personalizado. (Elementos 2, 3 y 4 de la imagen siguiente).
+> 5. En la sección **Configuración de la aplicación**, agregue un nuevo valor llamado **PORT** y especifique como valor su número de puerto personalizado.
 >
-> 6. Haga clic en **Save**(Guardar). (Vea el elemento n.º 5 de la imagen siguiente).
+> 6. Haga clic en **OK**. A continuación, haga clic en **Save**(Guardar).
 >
 > ![Guardar un número de puerto personalizado en Azure Portal][LX03]
 >
@@ -284,12 +300,11 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 
 [SB01]: ./media/deploy-spring-boot-java-app-on-linux/SB01.png
 [SB02]: ./media/deploy-spring-boot-java-app-on-linux/SB02.png
-
 [AR01]: ./media/deploy-spring-boot-java-app-on-linux/AR01.png
-[AR02]: ./media/deploy-spring-boot-java-app-on-linux/AR02.png
 [AR03]: ./media/deploy-spring-boot-java-app-on-linux/AR03.png
 [AR04]: ./media/deploy-spring-boot-java-app-on-linux/AR04.png
-
 [LX01]: ./media/deploy-spring-boot-java-app-on-linux/LX01.png
 [LX02]: ./media/deploy-spring-boot-java-app-on-linux/LX02.png
+[LX02-A]: ./media/deploy-spring-boot-java-app-on-linux/LX02-A.png
+[LX02-B]: ./media/deploy-spring-boot-java-app-on-linux/LX02-B.png
 [LX03]: ./media/deploy-spring-boot-java-app-on-linux/LX03.png

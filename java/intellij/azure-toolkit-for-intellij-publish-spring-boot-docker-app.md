@@ -7,14 +7,14 @@ ms.date: 11/13/2018
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: eb8458301036ffedfce98844c22aa4ef1aafb0e0
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 00d6d77c78a1b38bbeb5369301956b2cfce166a5
+ms.sourcegitcommit: fc3408b6e153c847dd90026161c4c498aa06e2fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812503"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75191128"
 ---
-# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ
+# <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij-deprecated"></a>Publicación de una aplicación de Spring Boot como contenedor de Docker con Azure Toolkit for IntelliJ (EN DESUSO)
 
 [Spring Framework] es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes.
 
@@ -110,7 +110,7 @@ IntelliJ importa la aplicación Spring Boot como un proyecto y muestra la estruc
 
 ### <a name="create-a-deployment-ready-artifact"></a>Creación de un artefacto preparado para la implementación
 
-Para publicar la aplicación Spring Boot, debe crear un artefacto preparado para la implementación. Para ello, siga los pasos que se describen a continuación:
+Para publicar la aplicación Spring Boot, debe crear un artefacto preparado para la implementación. Siga estos pasos:
 
 1. Abra el proyecto de aplicación web en IntelliJ.
 

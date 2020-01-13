@@ -1,5 +1,5 @@
 ---
-title: Cómo usar Spring Boot Starter para Azure Active Directory B2C
+title: Uso de Spring Boot Starter para Azure Active Directory B2C
 description: Aprenda a configurar una aplicación de Spring Boot Initializer con el iniciador de Azure Active Directory B2C.
 services: active-directory-b2c
 documentationcenter: java
@@ -11,12 +11,12 @@ ms.service: active-directory-b2c
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 7996e4f2947e08fc7a802a741b958988e58829e8
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 87134da87f47b1c808648a8b6e2f77650c9141bf
+ms.sourcegitcommit: a1f7e0f0cfd5c9d0806a7d44acdf2a54d578d8fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812165"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319682"
 ---
 # <a name="tutorial-secure-a-java-web-app-using-the-spring-boot-starter-for-azure-active-directory-b2c"></a>Tutorial: Protección de una aplicación web de Java con Spring Boot Starter para Azure Active Directory B2C.
 
@@ -34,7 +34,7 @@ En este tutorial, aprenderá a:
 
 Si no tiene una suscripción a Azure, cree una [cuenta gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) antes de empezar.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -144,7 +144,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `azure.activedirectory.b2c.tenant` | Contiene el valor de `${your-tenant-name` de AD B2C anterior. |
    | `azure.activedirectory.b2c.client-id` | Contiene el valor de `${your-client-id}` de la aplicación que completó anteriormente. |
