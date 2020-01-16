@@ -10,12 +10,12 @@ ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 33e590106a5686eafa89924e22aeef05aa4f6df7
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 887925fd652194c38db99c30e1db505ecfcee918
+ms.sourcegitcommit: 8c84b6db37d0f78d66779fb6489cc8fe063055b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812090"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75913978"
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de la utilidad Spring Boot Starter con SQL API de Azure Cosmos DB
 
@@ -23,7 +23,7 @@ Azure Cosmos DB es un servicio de base de datos de distribución global que perm
 
 En este artículo se muestra cómo crear una base de datos de Azure Cosmos DB mediante Azure Portal, cómo usar **[Spring Initializr]** para crear una aplicación Spring Boot personalizada y, después, cómo agregar el [iniciador de Spring Boot para Cosmos DB en Azure] a su aplicación personalizada para almacenar datos en Azure Cosmos DB y recuperarlos mediante Spring Data y SQL API de Cosmos DB.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -91,12 +91,6 @@ La aplicación simple de Spring Boot ya está lista para su edición.
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-cosmosdb-spring-boot-starter</artifactId>
     </dependency>
-
-    <dependency>
-        <groupId>io.projectreactor.netty</groupId>
-        <artifactId>reactor-netty</artifactId>
-        <version>0.8.3.RELEASE</version>
-    </dependency>
     ```
 
 1. Compruebe que el elemento *properties* indica las versiones requeridas de Java y Azure:
@@ -104,7 +98,7 @@ La aplicación simple de Spring Boot ya está lista para su edición.
     ```xml
     <properties>
        <java.version>1.8</java.version>
-       <azure.version>2.2.0.M1</azure.version>
+       <azure.version>2.2.0</azure.version>
     </properties>
     ```
 
