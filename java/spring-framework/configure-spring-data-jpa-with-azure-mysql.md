@@ -6,18 +6,18 @@ ms.date: 11/27/2019
 ms.service: mysql
 ms.tgt_pltfrm: multiple
 ms.topic: conceptual
-ms.openlocfilehash: 83883ffd06353854a3c69c9abdc946a035dda6b1
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 927cc72a526651be71a7983a298ca2c6718f4546
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811967"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022086"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-database-for-mysql"></a>Uso de Spring Data JPA con Azure Database for MySQL
 
 En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una base de datos de [Azure Database for MySQL](/azure/mysql/) mediante [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -63,7 +63,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos de MySQL que acaba de crear.
 
-1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
+1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**. (Para este ejercicio, la dirección IP es la del equipo de desarrollo, que es el cliente.  Puede usarlo tanto para **Dirección IP inicial** como para **Dirección IP final**. Consulte también la nota del encabezado *Creación de una base de datos con la utilidad de línea de comandos de MySQL*).
 
    ![Configuración de la seguridad de la conexión][MYSQL04]
 
@@ -86,7 +86,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `host` | Especifica el nombre completo del servidor MySQL que se mencionó anteriormente en este artículo. |
    | `user` | Especifica el administrador de MySQL y el nombre de servidor abreviado que se mencionaron anteriormente en este artículo. |
@@ -110,6 +110,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    
    mysql>
    ```
+   > Nota: Si recibe un error que indica que el servidor no reconoce esta dirección IP, se mostrará la dirección IP que usa el cliente.  Vuelva y asígnela tal y como se describió anteriormente: *Configure una regla de firewall para el servidor mediante Azure Portal*.
 
 1. Cree una base de datos denominada *mysqldb* mediante la escritura de un comando `mysql` similar al ejemplo siguiente:
 
@@ -165,7 +166,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
     ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `spring.jpa.database-platform` | Especifica la plataforma de base de datos de JPA. |
    | `spring.datasource.url` | Especifica la cadena JDBC de MySQL que se mencionó anteriormente en este artículo. |

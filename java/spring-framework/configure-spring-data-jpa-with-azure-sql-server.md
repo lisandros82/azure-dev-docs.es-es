@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: d5c90992f4b669bf6089d0c0118496dfa33d67f1
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: a57fbc5dc8be0848f0b68fd1a45a1478de52b419
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811948"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022129"
 ---
 # <a name="how-to-use-spring-data-jpa-with-azure-sql-database"></a>Uso de Spring Data JPA con Azure SQL Database
 
@@ -20,7 +20,7 @@ ms.locfileid: "74811948"
 
 En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una instancia de [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) mediante [Java Persistence API (JPA)](https://docs.oracle.com/javaee/7/tutorial/persistence-intro.htm).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -46,7 +46,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Especifique la siguiente información:
 
-   - **Nombre de la base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.
+   - **Nombre de base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.
    - **Suscripción**: especifique la suscripción de Azure que se va a usar.
    - **Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.
    - **Seleccionar origen**: para este tutorial, seleccione `Blank database` para crear una nueva base de datos.
@@ -76,7 +76,7 @@ Después de crear la base de datos SQL y el servidor, puede configurar las opcio
 
    ![Visualización de la configuración del firewall][SQL06]
 
-1. En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
+1. En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**. (Para este ejercicio, la dirección IP es la del equipo de desarrollo, que es el cliente.  Puede usarlo tanto para **Dirección IP inicial** como para **Dirección IP final**).
 
    ![Configuración del firewall][SQL07]
 
@@ -114,7 +114,7 @@ Después de crear la base de datos SQL y el servidor, puede configurar las opcio
     ```
    Donde:
 
-   | Parámetro | DESCRIPCIÓN |
+   | Parámetro | Descripción |
    |---|---|
    | `spring.datasource.url` | Especifica una versión modificada de la cadena JDBC de SQL que se mencionó anteriormente en este artículo. |
    | `spring.datasource.username` | Especifica el nombre del administrador de SQL que se mencionó anteriormente en este artículo, con el nombre abreviado del servidor anexado. |

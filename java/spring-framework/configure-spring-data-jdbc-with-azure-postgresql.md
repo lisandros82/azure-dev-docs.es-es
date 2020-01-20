@@ -7,12 +7,12 @@ ms.date: 12/26/2019
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: b5abc7479a52aa84cd3f05ffb56e5c7f31d0c533
-ms.sourcegitcommit: 94ca8c28d8d3e954cf118f1f46ac905c3a470b38
+ms.openlocfilehash: 956867a355ffdd64dbeac8e85df4d0ced4362d16
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75502390"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022108"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-postgresql"></a>Uso de Spring Data JDBC con PostgreSQL de Azure
 
@@ -66,7 +66,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos de PostgreSQL que acaba de crear.
 
-1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
+1. Haga clic en **Seguridad de la conexión** y, en las **reglas de firewall**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**. (Para este ejercicio, la dirección IP es la del equipo de desarrollo, que es el cliente.  Puede usarlo tanto para **Dirección IP inicial** como para **Dirección IP final**).
 
    ![Configuración de la seguridad de la conexión][POSTGRESQL03]
 
@@ -105,6 +105,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    
    postgres=>
    ```
+   > Nota: Si recibe un error que indica que el servidor no reconoce esta dirección IP, se mostrará la dirección IP que usa el cliente.  Vuelva y asígnela tal y como se describió anteriormente: *Configure una regla de firewall para el servidor mediante Azure Portal*.
 
 1. Cree una base de datos denominada *mypgsqldb* mediante la escritura de un comando `psql` similar al ejemplo siguiente:
 

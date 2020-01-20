@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.service: sql-database
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 028e54c54410caf9e81448fd8df8283532591895
-ms.sourcegitcommit: 7722fc50eeab0f97bd0ea9cb3263da87244af406
+ms.openlocfilehash: d5e7ff3a31f8fb66b4231770c86094244752b439
+ms.sourcegitcommit: 2ad3f7ce8c87331f8aff759ac2a3dc1b29581866
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492207"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022115"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a>Uso de Spring Data JDBC con Azure SQL Database
 
@@ -77,7 +77,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Visualización de la configuración del firewall][SQL06]
 
-1. En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.
+1. En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**. (Para este ejercicio, la dirección IP es la del equipo de desarrollo, que es el cliente.  Puede usarlo tanto para **Dirección IP inicial** como para **Dirección IP final**).
 
    ![Configuración del firewall][SQL07]
 
