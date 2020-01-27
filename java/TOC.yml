@@ -152,8 +152,16 @@
       items:
         - name: Adición de un certificado raíz
           href: java-sdk-add-certificate-ca-store.md
-        - name: Autenticar
+        - name: Authenticate
           href: java-sdk-azure-authenticate.md
+        - name: Migración de Java a Azure
+          items:
+            - name: Información general
+              href: migration-overview.md
+            - name: Tomcat a Azure App Service
+              href: migrate-tomcat-to-tomcat-app-service.md
+            - name: Tomcat a contenedores en AKS
+              href: migrate-tomcat-to-containers-on-azure-kubernetes-service.md
     - name: Ejemplos de código
       items:
         - name: Service Fabric
