@@ -4,20 +4,20 @@ description: Paso 7 del tutorial, limpieza de recursos de Azure
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 5a890ae2db4f9aa9bd3ca09364467adb022beed8
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: 8145b33ae52427d55c9b3de9fcf6fb20467b7ba9
+ms.sourcegitcommit: a8073315f751631ab983618fa9f812eb95d8b2dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466056"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125268"
 ---
 # <a name="tutorial-clean-up-resources-after-deploying-to-azure-app-service-on-linux-from-visual-studio-code"></a>Tutorial: Limpieza de recursos después de la implementación en Azure App Service en Linux desde Visual Studio Code
 
 [Paso anterior: transmisión de registros](tutorial-deploy-app-service-on-linux-06.md)
 
-El servicio de aplicaciones de Azure que ha creado incluye un plan de App Service de respaldo que puede incurrir en costos. Para limpiar los recursos, haga clic con el botón derecho en el servicio de aplicaciones, en el explorador de **Azure: App Service**, y seleccione **Eliminar**.
+El servicio de aplicaciones de Azure que ha creado incluye un plan de App Service de respaldo que puede incurrir en costos. Para evitar estos costos, elimine el grupo de recursos que contiene todos los recursos.
 
-También puede visitar [Azure Portal](https://portal.azure.com), seleccionar **Grupos de recursos** en el panel de navegación izquierdo, seleccionar el grupo de recursos que se creó en el proceso de este tutorial y, a continuación, usar el comando **Eliminar grupo de recursos**.
+[!INCLUDE [delete-resource-group](includes/delete-resource-group.md)]
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -34,7 +34,7 @@ También hay otras extensiones de Azure para VS Code que pueden resultarle úti
 Algunas extensiones populares son:
 
 - [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
-- [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+- [Funciones de Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Herramientas de la CLI de Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
 - [Herramientas de Azure Resource Manager (ARM)](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 

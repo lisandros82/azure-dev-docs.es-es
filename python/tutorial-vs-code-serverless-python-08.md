@@ -2,24 +2,26 @@
 title: 'Tutorial: Limpie los recursos utilizados con código de Python en Azure Functions'
 description: Paso 8 del tutorial, limpieza de recursos de Azure para evitar incurrir en cargos continuos.
 ms.topic: conceptual
-ms.date: 09/12/2019
+ms.date: 01/15/2020
 ms.custom: seo-python-october2019
-ms.openlocfilehash: 441e3de83dfc56bc8c5b1b2adbcfb2042fe83355
-ms.sourcegitcommit: 68a4044b9fa3291c9e7e2f68ae0049328f9c01bb
+ms.openlocfilehash: 264c09a8d84c7115bb0a56d0455d576187695db0
+ms.sourcegitcommit: a8073315f751631ab983618fa9f812eb95d8b2dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992442"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125258"
 ---
 # <a name="tutorial-clean-up-azure-resources-for-azure-functions"></a>Tutorial: Limpieza de los recursos de Azure para Azure Functions
 
 [Paso anterior: adición de un enlace de almacenamiento](tutorial-vs-code-serverless-python-07.md)
 
-En este artículo se muestra cómo quitar los recursos de Azure creados en este tutorial. La aplicación de funciones de Azure que ha creado con Visual Studio Code incluye recursos que pueden incurrir en costos mínimos.
+En este artículo se muestra cómo quitar los recursos de Azure creados en este tutorial. La aplicación de funciones de Azure que ha creado con Visual Studio Code incluye recursos que pueden incurrir en costos mínimos. Para más información, consulte los [precios de Azure Functions](https://azure.microsoft.com/pricing/details/functions/).
 
-Para limpiar los recursos, haga clic con el botón derecho en el explorador de **Azure: Functions** y seleccione **Eliminar aplicación de funciones**. Para más información, consulte los [precios de Azure Functions](https://azure.microsoft.com/pricing/details/functions/).
+La mejor manera de limpiar los recursos es eliminar el grupo de recursos que contiene todos los recursos individuales que se usan en este tutorial. Entre los recursos están la aplicación de funciones, la cuenta de almacenamiento y el plan de App Service correspondiente.
 
-También puede visitar [Azure Portal](https://portal.azure.com), seleccionar **Grupos de recursos** en el panel de navegación izquierdo, seleccionar el grupo de recursos que se creó en el proceso de este tutorial y, a continuación, usar el comando **Eliminar grupo de recursos**.
+[!INCLUDE [delete-resource-group](includes/delete-resource-group.md)]
+
+En Visual Studio Code, en el menú contextual de la aplicación de funciones en el explorador **Azure: Functions**, es posible que vea un comando **Delete Function App** (Eliminar aplicación de funciones). El comando solo elimina la aplicación de funciones pero deja otros recursos, lo que puede incurrir en costos continuos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
