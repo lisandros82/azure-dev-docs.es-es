@@ -5,12 +5,12 @@ author: yevster
 ms.author: yebronsh
 ms.topic: conceptual
 ms.date: 1/20/2020
-ms.openlocfilehash: fbf1faabbefcb987cf398a45005eb480ec16b27d
-ms.sourcegitcommit: 3585b1b5148e0f8eb950037345bafe6a4f6be854
+ms.openlocfilehash: d32c38d763901152135b965484362031dfac7f0a
+ms.sourcegitcommit: 367780fe48d977c82cb84208c128b0bf694b1029
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76288594"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76825799"
 ---
 # <a name="migrate-java-applications-to-azure"></a>Migración de aplicaciones de Java a Azure
 
@@ -129,9 +129,9 @@ Busque en las filas el tipo de aplicación de Java y, en las columnas, el destin
 
 |Destino&nbsp;→<br><br>Tipo de&nbsp;aplicación&nbsp;↓|Aplicación<br>Servicio<br>Java SE|Aplicación<br>Servicio<br>Tomcat|Aplicación<br>Servicio<br>WildFly|Azure<br>Spring<br>Nube|AKS|Virtual Machines|
 |---|---|---|---|---|---|---|
-| Spring Boot/<br>aplicaciones JAR | planeado | planeado        | planeado | planeado | planeado        | planeado |
-| Spring Cloud/<br>microservicios   | N/D     | N/D            | N/D     | planeado | planeado        | planeado |
-| Aplicaciones web<br>en Tomcat     | N/D     | [disponible][2] | N/D     | N/D     | [disponible][3] | planeado |
+| Spring Boot/<br>aplicaciones JAR | [disponible][5] | planeado        | planeado | planeado | planeado        | planeado |
+| Spring Cloud/<br>microservicios   | N/D            | N/D            | N/D     | planeado | planeado        | planeado |
+| Aplicaciones web<br>en Tomcat     | N/D            | [disponible][2] | N/D     | N/D     | [disponible][3] | planeado |
 
 **Aplicaciones de Java EE**
 
@@ -139,12 +139,14 @@ Busque en las filas el tipo de aplicación de Java EE que se ejecuta en un serv
 
 |Destino&nbsp;→<br><br>Servidor de aplicaciones&nbsp;↓|Aplicación<br>Servicio<br>Java SE|Aplicación<br>Servicio<br>Tomcat|Aplicación<br>Servicio<br>WildFly|Azure<br>Spring<br>Nube|AKS|Virtual Machines|
 |---|---|---|---|---|---|---|
-| WildFly /<br>JBoss AS | N/D | N/D | planeado | N/D | planeado | planeado |
-| WebLogic              | N/D | N/D | planeado | N/D | planeado | planeado |
-| WebSphere             | N/D | N/D | planeado | N/D | planeado | planeado |
-| JBoss EAP             | N/D | N/D | planeado | N/D | N/D     | planeado |
+| WildFly /<br>JBoss AS | N/D | N/D | planeado | N/D | planeado | planeado        |
+| WebLogic              | N/D | N/D | planeado | N/D | planeado | [disponible][4] |
+| WebSphere             | N/D | N/D | planeado | N/D | planeado | planeado        |
+| JBoss EAP             | N/D | N/D | planeado | N/D | N/D     | planeado        |
 
 <!-- reference links, for use with tables -->
 [1]: media/migration-overview/logo_azure.svg
 [2]: migrate-tomcat-to-tomcat-app-service.md
 [3]: migrate-tomcat-to-containers-on-azure-kubernetes-service.md
+[4]: migrate-weblogic-to-virtual-machines.md
+[5]: migrate-java-se-to-java-se-app-service.md

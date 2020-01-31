@@ -1,18 +1,14 @@
 ---
 title: Autenticación con el SDK de Azure para Go
 description: Obtenga información sobre los métodos de autenticación disponibles en el SDK de Azure para Go y cómo utilizarlos.
-author: sptramer
-ms.author: sttramer
-manager: carmonm
 ms.date: 09/05/2018
 ms.topic: conceptual
-ms.devlang: go
-ms.openlocfilehash: 34a3995b4eb5cc9012ca03b11fa8199460b9f9d4
-ms.sourcegitcommit: 2efdb9d8a8f8a2c1914bd545a8c22ae6fe0f463b
+ms.openlocfilehash: b4bf09dbb3f59c77c2914ae9c9091dc0af31b093
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68292081"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871990"
 ---
 # <a name="authentication-methods-in-the-azure-sdk-for-go"></a>Métodos de autenticación en el SDK de Azure para Go
 
@@ -28,7 +24,7 @@ El SDK de Azure para Go ofrece varios tipos diferentes de autenticación, median
 | Credenciales de cliente | Tiene una entidad de servicio configurada que está preparada para esta aplicación o una clase de aplicaciones a las que pertenece. Para más información, consulte [Creación de una entidad de servicio con la CLI de Azure]. |
 | Identidades administradas de recursos de Azure | La aplicación se ejecuta en un recurso de Azure que se ha configurado con una identidad administrada. Para más información, consulte [Identidades administradas para recursos de Azure]. |
 | Token del dispositivo | La aplicación está diseñada para usarse __solo__ interactivamente. Los usuarios pueden tener habilitada la autenticación multifactor. Los usuarios tienen acceso a un explorador web para iniciar sesión. Para más información, consulte [Use device token authentication](#use-device-token-authentication) (Uso de la autenticación por tokens del dispositivo).|
-| Nombre de usuario/contraseña | Tiene una aplicación interactiva que no puede utilizar ningún otro método de autenticación. Los usuarios no tienen habilitada la autenticación multifactor para su inicio de sesión de AAD. |
+| Nombre de usuario y contraseña | Tiene una aplicación interactiva que no puede utilizar ningún otro método de autenticación. Los usuarios no tienen habilitada la autenticación multifactor para su inicio de sesión de AAD. |
 
 > [!IMPORTANT]
 > Si usa un tipo de autenticación diferente a las credenciales de cliente, la aplicación debe estar registrada en Azure Active Directory. Para más información, consulte [Integración de aplicaciones con Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
@@ -43,7 +39,7 @@ El SDK de Azure para Go ofrece varios tipos diferentes de autenticación, median
 Estos tipos de autenticación están disponibles a través de diferentes métodos.
 
 * [_La autenticación basada en entornos_](#use-environment-based-authentication) lee las credenciales directamente desde el entorno del programa.
-* [_La autenticación basada en archivos_ ](#use-file-based-authentication) carga un archivo que contiene las credenciales de la entidad de servicio.
+* [_La autenticación basada en archivos_](#use-file-based-authentication) carga un archivo que contiene las credenciales de la entidad de servicio.
 * [_La autenticación basada en cliente_](#use-an-authentication-client) utiliza un objeto en el código y le hace responsable de proporcionar las credenciales durante la ejecución del programa.
 * [_La autenticación de token de dispositivo_](#use-device-token-authentication) requiere que los usuarios inicien sesión interactivamente mediante un explorador web con un token.
 
@@ -60,7 +56,7 @@ La autenticación basada en entornos es compatible con todos los métodos de aut
 
 * Credenciales de cliente
 * Certificados X509
-* Nombre de usuario/contraseña
+* Nombre de usuario y contraseña
 * Identidades administradas de recursos de Azure
 
 Si un tipo de autenticación tiene valores no establecidos o se rechaza, el SDK intenta automáticamente con el siguiente tipo de autenticación. Cuando no hay más tipos disponibles para probar, el SDK de devuelve un error.
@@ -68,7 +64,7 @@ Si un tipo de autenticación tiene valores no establecidos o se rechaza, el SDK 
 En la tabla siguiente se detallan las variables de entorno que deben configurarse para cada tipo de autenticación admitida por la autenticación basada en entornos.
 
 
-|  Tipo de autenticación   |     Variable de entorno     |                                                                                                     DESCRIPCIÓN                                                                                                      |
+|  Tipo de autenticación   |     Variable de entorno     |                                                                                                     Descripción                                                                                                      |
 |------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Credenciales de cliente** |      `AZURE_TENANT_ID`       |                                                                    El identificador del inquilino de Active Directory al que pertenece la entidad de servicio.                                                                     |
 |                        |      `AZURE_CLIENT_ID`       |                                                                                       El nombre o identificador de la entidad de servicio.                                                                                       |
@@ -85,7 +81,7 @@ En la tabla siguiente se detallan las variables de entorno que deben configurars
 
 Si necesita conectarse a un punto de conexión de nube o de administración distinto de la nube pública Azure predeterminada, establezca las siguientes variables de entorno. Las razones más comunes para establecerlas son si se usa Azure Stack, una nube en una región geográfica diferente o el modelo de implementación clásico de Azure.
 
-| Variable de entorno | DESCRIPCIÓN  |
+| Variable de entorno | Descripción  |
 |----------------------|--------------|
 | `AZURE_ENVIRONMENT` | El nombre del entorno de nube al que se conectará. |
 | `AZURE_AD_RESOURCE` | El identificador de recurso de Active Directory que se usará al conectarse, como el URI de un punto de conexión de administración. |
@@ -101,7 +97,7 @@ authorizer, err := auth.NewAuthorizerFromEnvironment()
 
 Para autenticarse en Azure Stack, debe establecer las siguientes variables:
 
-| Variable de entorno | DESCRIPCIÓN  |
+| Variable de entorno | Descripción  |
 |----------------------|--------------|
 | `AZURE_AD_ENDPOINT` | El punto de conexión de Active Directory. |
 | `AZURE_AD_RESOURCE` | El identificador de recurso de Active Directory. |
@@ -166,7 +162,7 @@ En la tabla siguiente se enumeran los tipos en el SDK que se ajustan a la interf
 | Autenticación basada en certificados | [ClientCertificateConfig] |
 | Credenciales de cliente | [ClientCredentialsConfig] |
 | Identidades administradas de recursos de Azure | [MSIConfig] |
-| Nombre de usuario/contraseña | [UsernamePasswordConfig] |
+| Nombre de usuario y contraseña | [UsernamePasswordConfig] |
 
 [ClientCertificateConfig]: https://godoc.org/github.com/Azure/go-autorest/autorest/azure/auth#ClientCertificateConfig
 [ClientCredentialsConfig]: https://godoc.org/github.com/Azure/go-autorest/autorest/azure/auth#ClientCredentialsConfig

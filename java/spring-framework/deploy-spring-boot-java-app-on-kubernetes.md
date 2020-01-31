@@ -9,12 +9,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.custom: mvc
-ms.openlocfilehash: d30148a3f4d1fc63585b6ca4141566ba2cac4146
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: eefd56cf6fc2c290d585dfe4274b7395a6d77be3
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811923"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872180"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Kubernetes Service
 
@@ -22,7 +22,7 @@ ms.locfileid: "74811923"
 
 Este tutorial le indica cómo combinar estas dos populares tecnologías de código abierto para desarrollar e implementar una aplicación de Spring Boot en Microsoft Azure. Concretamente, *[Spring Boot]* se usa para el desarrollo de aplicaciones, *[Kubernetes]* para la implementación de contenedores y [Azure Kubernetes Service (AKS)] para hospedar la aplicación.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
@@ -78,7 +78,7 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
 
 ## <a name="create-an-azure-container-registry-using-the-azure-cli"></a>Creación de una instancia de Azure Container Registry mediante la CLI de Azure
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 1. Inicie sesión en una cuenta de Azure:
    ```azurecli
@@ -117,7 +117,7 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
    ```xml
    <properties>
       <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
-      <jib-maven-plugin.version>1.7.0</jib-maven-plugin.version>
+      <jib-maven-plugin.version>1.8.0</jib-maven-plugin.version>
       <java.version>1.8</java.version>
    </properties>
    ```
@@ -202,7 +202,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
 ### <a name="deploy-with-kubectl"></a>Implementación con kubectl
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 1. Ejecute el contenedor en el clúster de Kubernetes mediante el comando `kubectl run`. Proporcione un nombre de servicio para la aplicación en Kubernetes y el nombre de la imagen completa. Por ejemplo:
    ```
@@ -240,7 +240,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
 ### <a name="deploy-with-the-kubernetes-web-interface"></a>Implementación con la interfaz web de Kubernetes
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 1. Abra el sitio web de configuración del clúster de Kubernetes en el explorador predeterminado:
    ```

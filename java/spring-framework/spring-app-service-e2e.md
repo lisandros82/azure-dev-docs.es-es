@@ -6,12 +6,12 @@ ms.author: karler
 ms.date: 11/12/2019
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: aa26952b320392beb553f327920fe5bd905a0b85
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 47f318708fbe786b2fd0b58dc7d68cdd5c975856
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811829"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872140"
 ---
 # <a name="deploy-a-spring-app-to-app-service-with-mysql"></a>Implementación de una aplicación Spring en App Service con MySQL
 
@@ -19,7 +19,7 @@ Este tutorial le guiará en el proceso de creación, configuración, implementac
 
 Este tutorial se basa en la popular aplicación de ejemplo Spring PetClinic. En este tema, probará una versión HSQLDB de la aplicación localmente y, a continuación, la implementará en [Azure App Service](/azure/app-service/containers). Después, configurará e implementará una versión que usa [Azure Database for MySQL](/azure/mysql). Por último, aprenderá a acceder a los registros de la aplicación y a escalar horizontalmente aumentando el número de trabajadores que ejecutan la aplicación.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 * [CLI de Azure](https://docs.microsoft.com/cli/azure/overview)
 * [Java 8](http://java.oracle.com/)
@@ -121,7 +121,7 @@ Después, actualice el archivo *pom.xml* para configurar Maven para una implemen
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <configuration>
         <schemaVersion>v2</schemaVersion>
         <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>

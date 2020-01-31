@@ -1,26 +1,20 @@
 ---
 title: Introducción a los módulos de Azure para Node.js
 description: Empezar a trabajar con la autenticación y la administración de recursos con los módulos de Azure para Node.js
-author: karlerickson
-manager: douge
-ms.author: karler
 ms.date: 06/17/2017
 ms.topic: conceptual
-ms.prod: azure
-ms.devlang: nodejs
-ms.service: azure-nodejs
-ms.openlocfilehash: 3ba92eae7d6d287cec668dbd1bfcac8e52b04017
-ms.sourcegitcommit: f799dd4590dc5a5e646d7d50c9604a9975dadeb1
+ms.openlocfilehash: 66aface16b4281c541f0f40a3f0f6cbc12be8f89
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68690834"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872130"
 ---
 # <a name="get-started-with-the-azure-modules-for-nodejs"></a>Introducción a los módulos de Azure para Node.js
 
 Esta guía le ayudará a instalar los módulos de Node.js de Azure, a autenticarse en Azure con una entidad de servicio y a ejecutar código de ejemplo que cree recursos en su suscripción de Azure y permita conectarse a los servicios en la nube de Azure.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - Una cuenta de Azure. Si no tiene una, [obtenga una versión de evaluación gratuita](https://azure.microsoft.com/free/).
 - [Node.js](https://nodejs.org)
@@ -266,6 +260,6 @@ Explore más [código de Node.js de ejemplo](https://azure.microsoft.com/resourc
 
 Hay una [referencia](/javascript/api/overview/azure/) disponible para todos los paquetes.
 
-## <a name="get-help-and-give-feedback"></a>Obtener ayuda y proporcionar comentarios
+## <a name="get-help-and-give-feedback"></a>Obtención de ayuda y ofrecimiento de comentarios
 
 Puede publicar preguntas a la comunidad en [Stack Overflow](https://stackoverflow.com/questions/tagged/azure+node.js). Puede informar sobre errores y abrir incidencias en los módulos de Azure para Node.js en el [GitHub del proyecto](https://github.com/Azure/azure-sdk-for-node).

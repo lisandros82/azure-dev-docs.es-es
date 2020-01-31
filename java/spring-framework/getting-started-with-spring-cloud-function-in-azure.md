@@ -9,12 +9,12 @@ ms.date: 07/17/2019
 ms.service: azure-functions
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: a65c694e335650c0d5974aba48bd93576dd4c710
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 12ca26bae42c17395c70448ffc5bf3f01dde9b8e
+ms.sourcegitcommit: 4cf22356d6d4817421b551bd53fcba76bdb44cc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811852"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76872150"
 ---
 # <a name="getting-started-with-spring-cloud-function-in-azure"></a>Introducción a Spring Cloud Function en Azure
 
@@ -22,7 +22,7 @@ Este artículo le explica cómo usar [Spring Cloud Function](https://spring.io/p
 
 [!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Para desarrollar funciones con Java, debe tener instalado lo siguiente:
 
@@ -40,7 +40,7 @@ Vamos a crear una función clásica "Hello, World", que se ejecuta en Azure Func
 
 Recibirá un objeto JSON `User` simple, que contiene un nombre de usuario, y devolverá un objeto `Greeting`, que contiene el mensaje de bienvenida para ese usuario.
 
-El proyecto que se creamos aquí está disponible en [https://github.com/Azure-Samples/hello-spring-function-azure ](https://github.com/Azure-Samples/hello-spring-function-azure), por lo que puede usar ese repositorio de ejemplo directamente si desea ver el trabajo final que se detalla en este inicio rápido.
+El proyecto que se creamos aquí está disponible en [https://github.com/Azure-Samples/hello-spring-function-azure](https://github.com/Azure-Samples/hello-spring-function-azure), por lo que puede usar ese repositorio de ejemplo directamente si desea ver el trabajo final que se detalla en este inicio rápido.
 
 ## <a name="create-a-new-maven-project"></a>Creación de un nuevo proyecto de Maven
 
@@ -64,7 +64,7 @@ Debe cambiar esas propiedades directamente cerca de la parte superior del archiv
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <azure.functions.maven.plugin.version>1.3.2</azure.functions.maven.plugin.version>
+    <azure.functions.maven.plugin.version>1.4.0</azure.functions.maven.plugin.version>
     <azure.functions.java.library.version>1.3.0</azure.functions.java.library.version>
     <functionAppName>my-spring-function</functionAppName>
     <functionAppRegion>westus</functionAppRegion>
