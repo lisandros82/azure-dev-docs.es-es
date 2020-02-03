@@ -158,10 +158,14 @@
           items:
             - name: Información general
               href: migration-overview.md
+            - name: Spring a Azure App Service
+              href: migrate-java-se-to-java-se-app-service.md
             - name: Tomcat a Azure App Service
               href: migrate-tomcat-to-tomcat-app-service.md
             - name: Tomcat a contenedores en AKS
               href: migrate-tomcat-to-containers-on-azure-kubernetes-service.md
+            - name: WebLogic a Azure Virtual Machines
+              href: migrate-weblogic-to-virtual-machines.md
     - name: Ejemplos de código
       items:
         - name: Service Fabric
