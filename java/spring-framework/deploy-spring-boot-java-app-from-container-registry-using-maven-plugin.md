@@ -10,12 +10,12 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
-ms.openlocfilehash: 1c5254c041c57e1fc04ce9553d6902047eec878a
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 729efd44b5b2489462c55c29f669d7bbbde8740c
+ms.sourcegitcommit: d9f585bea70b01ba6657a75ea245d8519d4a5aad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74811914"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967248"
 ---
 # <a name="use-maven-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Uso de Maven en Azure Web Apps para implementar una aplicación de Spring Boot de Azure Container Registry en Azure App Service
 
@@ -28,7 +28,7 @@ En este artículo se muestra cómo implementar una aplicación de [Spring Boot] 
 > El complemento Maven de Azure Web Apps está disponible actualmente como versión preliminar. Por ahora, solo se admite la publicación FTP, aunque se van a agregar características adicionales en el futuro.
 > 
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
@@ -61,7 +61,7 @@ En esta sección, clone una aplicación de Spring Boot en contenedor y pruébela
 
 1. Clone el proyecto de ejemplo [Spring Boot on Docker Getting Started] (inicial de Spring Boot en Docker) en el directorio que ha creado, por ejemplo:
    ```shell
-   git clone -b https://github.com/spring-guides/gs-spring-boot-docker
+   https://github.com/spring-guides/gs-spring-boot-docker.git
    ```
 
 1. Cambie de directorio al del proyecto finalizado, por ejemplo:
@@ -98,7 +98,7 @@ En esta sección, clone una aplicación de Spring Boot en contenedor y pruébela
 
 En esta sección, va a crear una entidad de servicio de Azure que usa el complemento Maven cuando implementa el contenedor en Azure.
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 2. Inicie sesión en la cuenta de Azure mediante la CLI de Azure:
    ```azurecli
@@ -108,15 +108,9 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
 
 3. Cree una entidad de servicio de Azure:
    ```azurecli
-   az ad sp create-for-rbac --name "uuuuuuuu" --password "pppppppp"
+   az ad sp create-for-rbac --name <ServicePrincipalName>
    ```
-   Donde:
-
-   | Parámetro  |                    DESCRIPCIÓN                     |
-   |------------|----------------------------------------------------|
-   | `uuuuuuuu` | Especifica el nombre de usuario para la entidad de servicio. |
-   | `pppppppp` | Especifica la contraseña de la entidad de servicio.  |
-
+La autenticación basada en contraseña no tiene ningún parámetro de autenticación y se usa con una contraseña aleatoria que se crea automáticamente.
 
 4. Azure responde con un archivo JSON que es similar al siguiente:
    ```json
@@ -137,7 +131,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
 
 ## <a name="create-an-azure-container-registry-using-the-azure-cli"></a>Creación de una instancia de Azure Container Registry mediante la CLI de Azure
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 1. Inicie sesión en una cuenta de Azure:
    ```azurecli
@@ -188,7 +182,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
    ```
    Donde:
 
-   |   Elemento    |                                 DESCRIPCIÓN                                  |
+   |   Elemento    |                                 Descripción                                  |
    |--------------|------------------------------------------------------------------------------|
    |    `<id>`    |         Contiene el nombre del registro de contenedor privado de Azure.          |
    | `<username>` |         Contiene el nombre del registro de contenedor privado de Azure.          |
@@ -212,7 +206,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
    ```
    Donde:
 
-   |     Elemento     |                                                                                   DESCRIPCIÓN                                                                                   |
+   |     Elemento     |                                                                                   Descripción                                                                                   |
    |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |     `<id>`      |                                Especifica un nombre único que Maven utiliza para buscar la configuración de seguridad al implementar la aplicación web en Azure.                                |
    |   `<client>`    |                                                             Contiene el valor `appId` de la entidad de servicio.                                                             |
@@ -239,7 +233,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
    ```
    Donde:
 
-   |           Elemento           |                                                                       DESCRIPCIÓN                                                                       |
+   |           Elemento           |                                                                       Descripción                                                                       |
    |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
    | `<azure.containerRegistry>` |                                              Especifica el nombre del registro de contenedor privado de Azure.                                               |
    |   `<docker.image.prefix>`   | Especifica la dirección URL del registro de contenedor privado de Azure, que se crea agregando ".azurecr.io" al nombre del registro de contenedor privado. |
@@ -269,7 +263,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
    ```
    Donde:
 
-   |     Elemento     |                                       DESCRIPCIÓN                                       |
+   |     Elemento     |                                       Descripción                                       |
    |-----------------|-----------------------------------------------------------------------------------------|
    |  `<serverId>`   |  Especifica la propiedad que contiene el nombre del registro de contenedor privado de Azure.   |
    | `<registryUrl>` | Especifica la propiedad que contiene la dirección URL del registro de contenedor privado de Azure. |
@@ -318,7 +312,7 @@ Abra el archivo `pom.xml` de la aplicación de Spring Boot en un editor de texto
 
 Hay varios valores que se pueden modificar en el complemento Maven; puede encontrar una descripción detallada de cada uno de estos elementos en la documentación del [complemento Maven de Azure Web Apps]. Dicho esto, hay varios valores que merece la pena destacar en este artículo:
 
-| Elemento | DESCRIPCIÓN |
+| Elemento | Descripción |
 |---|---|
 | `<version>` | Especifica la versión del [complemento Maven de Azure Web Apps]. Debe comprobar la versión que aparece en el [repositorio central de Maven](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para asegurarse de que está utilizando la versión más reciente. |
 | `<authentication>` | Especifica la información de autenticación de Azure que, en este ejemplo, incluye un elemento `<serverId>` que contiene `azure-auth`; Maven utiliza ese valor para buscar los valores de la entidad de servicio de Azure en el archivo *settings.xml* que se definió en una sección anterior de este artículo. |
