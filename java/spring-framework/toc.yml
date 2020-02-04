@@ -20,6 +20,8 @@
         - name: Spring Data
           expanded: true
           items:
+            - name: "Guía de desarrollo de Azure Cosmos\_DB"
+              href: how-to-guides-spring-data-cosmosdb.md
             - name: Iniciador de Azure Cosmos DB
               href: configure-spring-boot-starter-java-app-with-cosmos-db.md
             - name: Azure Cosmos DB con App Service en Linux

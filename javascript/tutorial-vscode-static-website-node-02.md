@@ -4,12 +4,12 @@ description: Parte 2 del tutorial, creación de una aplicación de ejemplo
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: buhollan
-ms.openlocfilehash: bc930b7c6a3454ca335fec5a955113a45fa2f0f2
-ms.sourcegitcommit: e77f8f652128b798dbf972078a7b460ed21fb5f8
+ms.openlocfilehash: b236f64f04be0c0b8faa74eb67ce22f96ec595aa
+ms.sourcegitcommit: 367780fe48d977c82cb84208c128b0bf694b1029
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74466553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76825849"
 ---
 # <a name="create-the-app"></a>Creación de la aplicación
 
@@ -42,7 +42,7 @@ En este paso, usará la interfaz de la línea de comandos (CLI) para [Angular](h
     npm start
     ```
 
-1. Abra [http://localhost:3000](http://localhost:3000) en un explorador para comprobar que la aplicación está funcionando:
+1. Abra [http://localhost:4200](http://localhost:4200) en un explorador para comprobar que la aplicación está funcionando:
 
     ![La aplicación de Angular de ejemplo en funcionamiento](media/static-website/local-app-angular.png)
 

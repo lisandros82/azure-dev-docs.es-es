@@ -5,24 +5,18 @@ author: yevster
 ms.author: yebronsh
 ms.topic: conceptual
 ms.date: 1/20/2020
-ms.openlocfilehash: da516609aaf976db929664bf0402a48f378034d3
-ms.sourcegitcommit: 3585b1b5148e0f8eb950037345bafe6a4f6be854
+ms.openlocfilehash: dbcf1f0989208f960f31fec13a65477d87b1a042
+ms.sourcegitcommit: 367780fe48d977c82cb84208c128b0bf694b1029
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76288614"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76825837"
 ---
 # <a name="migrate-tomcat-applications-to-containers-on-azure-kubernetes-service"></a>Migración de aplicaciones de Tomcat a contenedores en Azure Kubernetes Service
 
 En esta guía se describe lo que hay que tener en cuenta para migrar una aplicación de Tomcat existente a un contenedor de Azure Kubernetes Service (AKS).
 
 ## <a name="pre-migration-steps"></a>Pasos previos a la migración
-
-* [Recursos externos de inventario](#inventory-external-resources)
-* [Secretos de inventario](#inventory-secrets)
-* [Uso de la persistencia de inventario](#inventory-persistence-usage)
-* [Casos especiales](#special-cases)
-* [Pruebas en contexto](#in-place-testing)
 
 [!INCLUDE [inventory-external-resources](includes/migration/inventory-external-resources.md)]
 
@@ -75,7 +69,7 @@ Si se utiliza [AccessLogValve](https://tomcat.apache.org/tomcat-9.0-doc/api/org/
 
 Antes de crear imágenes de contenedor, migre la aplicación al JDK y Tomcat que piensa usar en AKS. Pruebe la aplicación exhaustivamente para garantizar su compatibilidad y rendimiento.
 
-### <a name="parametrize-the-configuration"></a>Parametrización de la configuración
+### <a name="parameterize-the-configuration"></a>Parametrización de la configuración
 
 En la migración previa, es probable que haya identificado secretos y dependencias externas, como orígenes de bits, en los archivos *server.xml* y *context.xml*. En cada elemento identificado, reemplace los nombres de usuario, contraseñas, cadenas de conexión o direcciones URL por una variable de entorno.
 
@@ -128,7 +122,7 @@ Clone el [repositorio de GitHub Tomcat on Containers Quickstart](https://github.
 
 #### <a name="open-ports-for-clustering-if-needed"></a>Apertura de los puertos para la agrupación en clústeres, si es necesario
 
-Si tiene previsto usar la [agrupación en clústeres de Tomcat](https://tomcat.apache.org/tomcat-9.0-doc/cluster-howto.html) en AKS, asegúrese de que los intervalos de puertos necesarios estén expuestos en el archivo Dockerfile. Para especificar la dirección IP del servidor en `server.xml`, asegúrese de usar un valor de una variable que se inicializa durante el inicio del contenedor en la dirección IP del pod.
+Si tiene previsto usar la [agrupación en clústeres de Tomcat](https://tomcat.apache.org/tomcat-9.0-doc/cluster-howto.html) en AKS, asegúrese de que los intervalos de puertos necesarios estén expuestos en el archivo Dockerfile. Para especificar la dirección IP del servidor en *server.xml*, asegúrese de usar un valor de una variable que se inicializa durante el inicio del contenedor en la dirección IP del pod.
 
 Como alternativa, el estado de sesión se puede [conservar en una ubicación alternativa](#identify-session-persistence-mechanism) para que esté disponible para todas las réplicas.
 
@@ -218,7 +212,7 @@ Incluya los [parámetros externos como variables de entorno](https://kubernetes.
 
 Si su aplicación requiere almacenamiento no volátil, configure uno o más [volúmenes persistentes](/azure/aks/azure-disks-dynamic-pv).
 
-Quizás quiera [crear un volumen persistente con Azure Files](/azure/aks/azure-files-dynamic-pv), montado en el directorio de registros de Tomcat ( */tomcat_logs*) para conservar los registros de forma centralizada.
+Quizás quiera crear un volumen persistente con Azure Files, montado en el directorio de registros de Tomcat ( */tomcat_logs*) para conservar los registros de forma centralizada. Para más información, consulte [Creación dinámica y uso de un volumen persistente con Azure Files en Azure Kubernetes Service (AKS)](/azure/aks/azure-files-dynamic-pv).
 
 ### <a name="configure-keyvault-flexvolume"></a>Configuración de un volumen flexible de KeyVault
 
@@ -236,7 +230,7 @@ Ahora que ha migrado la aplicación a AKS, debe comprobar que funciona como se e
 
 1. Considere la posibilidad de [agregar un nombre DNS](/azure/aks/ingress-static-ip#configure-a-dns-name) a la dirección IP asignada al controlador de entrada o al equilibrador de carga de la aplicación.
 
-1. Considere la posibilidad de [agregar gráficos de Helm para la aplicación](https://helm.sh/docs/topics/charts/). Un gráfico de Helm permite parametrizar la implementación de la aplicación para que un conjunto de clientes más diverso puedan usarla y personalizarla.
+1. Considere la posibilidad de [agregar gráficos de Helm para la aplicación](https://helm.sh/docs/topics/charts/). Un gráfico de Helm permite parametrizar la implementación de la aplicación para que un conjunto de clientes más diverso pueda usarla y personalizarla.
 
 1. Diseñe e implemente una estrategia de DevOps. Para mantener la confiabilidad y, al mismo tiempo, aumentar la velocidad de desarrollo, considere la posibilidad de [automatizar las implementaciones y pruebas con Azure Pipelines](/azure/devops/pipelines/ecosystems/kubernetes/aks-template).
 
