@@ -6,12 +6,12 @@ manager: kyliel
 ms.author: seal
 ms.date: 08/21/2019
 ms.topic: article
-ms.openlocfilehash: b64095bc2971bf9d9a7308bebdb91617538796c4
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 17baf4899bd47b15bc60d02b853605c422d3c82b
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812122"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002321"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-service-bus-jms"></a>Cómo usar Spring Boot Starter para JMS en Azure Service Bus
 
@@ -23,11 +23,11 @@ Spring Boot Starter para JMS en Azure Service Bus proporciona integración de Sp
 
 En este artículo se muestra cómo usar Spring Boot Starter para JMS en Azure Service Bus para enviar y recibir mensajes de `queues` y `topics` de Service Bus.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Se necesitan los siguientes requisitos previos para este artículo:
 
-1. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) o registrarse para obtener una [cuenta gratuita](https://azure.microsoft.comfree/).
+1. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) o registrarse para obtener una [cuenta gratuita](https://azure.microsoft.com/free/).
 
 1. Un kit de desarrollo de Java (JDK) compatible (versión 8 o posterior). Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 
@@ -94,7 +94,7 @@ En esta sección, verá cómo configurar la aplicación para usar una cola o un 
 
     **Descripciones de los campos**
 
-    | Campo                                     | DESCRIPCIÓN                                                                                     |
+    | Campo                                     | Descripción                                                                                     |
     |-------------------------------------------|-------------------------------------------------------------------------------------------------|
     | `spring.jms.servicebus.connection-string` | Especifique la cadena de conexión que obtuvo en el espacio de nombres de Service Bus desde Azure Portal. |
     | `spring.jms.servicebus.idle-timeout`      | Especifique el tiempo de expiración de inactividad en milisegundos. El valor recomendado para este tutorial es 1800000.   |
@@ -123,7 +123,7 @@ En esta sección, verá cómo configurar la aplicación para usar una cola o un 
 
     **Descripciones de los campos**
 
-    | Campo                                     | DESCRIPCIÓN                                                                                       |
+    | Campo                                     | Descripción                                                                                       |
     |-------------------------------------------|---------------------------------------------------------------------------------------------------|
     | `spring.jms.servicebus.connection-string` | Especifique la cadena de conexión que obtuvo en el espacio de nombres de Service Bus desde Azure Portal.   |
     | `spring.jms.servicebus.topic-client-id`   | Especifique el identificador de cliente de JMS si usa un tema de Azure Service Bus con una suscripción durable. |

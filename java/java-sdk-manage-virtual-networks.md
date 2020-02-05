@@ -6,12 +6,12 @@ ms.assetid: 92736911-3df6-46e7-b751-25bb36bf89b9
 ms.topic: article
 ms.date: 3/30/2017
 ms.reviewer: asirveda
-ms.openlocfilehash: 9f66434c67cabd08304faecb56e51107a2aeb8ee
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 3c537d7d7030ea46bdbc7d6873819ea8e12f03b3
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812304"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002365"
 ---
 # <a name="create-and-manage-azure-virtual-networks-from-your-java-apps"></a>Creación y administración de redes virtuales de Azure desde las aplicaciones Java
 
@@ -173,9 +173,9 @@ Este ejemplo crea una red virtual con dos subredes y con una máquina virtual en
 
 | Clase utilizada en el ejemplo | Notas
 |-------|-------|
-| [Red](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network._network) | Representación en forma de objeto local de la red virtual creada a partir de `azure.networks().define()...create()`. Use el encadenamiento `update()...apply()` para actualizar una red virtual existente.
-| [Subred](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network._subnet) | Crear subredes en la red virtual al definir o actualizar la red mediante `withSubnet()`. Obtener representaciones de objeto de una subred con `Network.subnets().get()` o `Network.subnets().entrySet()`. Estos objetos tienen métodos para consultar las propiedades de la subred.
-| [NetworkSecurityGroup](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network._network_security_group) | Se crea mediante el encadenamiento `azure.networkSecurityGroups().define()...create()` y se aplica a las subredes mediante la actualización o creación de subredes en una red virtual. 
+| [Network](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network.network) | Representación en forma de objeto local de la red virtual creada a partir de `azure.networks().define()...create()`. Use el encadenamiento `update()...apply()` para actualizar una red virtual existente.
+| [Subred](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network.subnet) | Crear subredes en la red virtual al definir o actualizar la red mediante `withSubnet()`. Obtener representaciones de objeto de una subred con `Network.subnets().get()` o `Network.subnets().entrySet()`. Estos objetos tienen métodos para consultar las propiedades de la subred.
+| [NetworkSecurityGroup](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network.networksecuritygroup) | Se crea mediante el encadenamiento `azure.networkSecurityGroups().define()...create()` y se aplica a las subredes mediante la actualización o creación de subredes en una red virtual. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

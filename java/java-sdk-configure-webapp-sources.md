@@ -5,12 +5,12 @@ author: rloutlaw
 ms.assetid: 833e9c78-1e50-4c23-a611-f73a2f0c2983
 ms.topic: article
 ms.date: 03/30/2017
-ms.openlocfilehash: 8ed90b7fff9c973481af1603e14fdb5858d5b9e0
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: e8cda5ca26b57e7c64d577fb5542295c930f5623
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812342"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002470"
 ---
 # <a name="configure-azure-app-service-deployment-sources-from-your-java-applications"></a>Configurar orígenes de implementación de Azure App Service desde las aplicaciones Java
 
@@ -153,12 +153,12 @@ La cuarta aplicación implementa el código en la rama principal cada vez que in
 
 | Clase utilizada en el ejemplo | Notas
 |-------|-------|
-| [WebApp](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._web_app) | Creada con la cadena fluida `azure.webApps().define()....create()`. Crea una aplicación web de App Service y los recursos necesarios para la aplicación. La mayoría de los métodos consultan el objeto para obtener detalles de configuración, pero los métodos de verbo como `restart()` cambian el estado de la aplicación web.
-| [WebContainer](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._web_container) | Clase con campos públicos estáticos usados como parámetros de `withWebContainer()` al definir una aplicación web que ejecuta un webcontainer de Java. Tiene opciones para versiones de Tomcat y Jetty.
-| [PublishingProfile](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._publishing_profile) | Se obtiene a través de un objeto WebApp mediante el método `getPublishingProfile()`. Contiene información de implementación de FTP y Git, incluido el nombre de usuario de implementación y la contraseña (que es distinto al de la cuenta de Azure o las credenciales de la entidad de servicio).
-| [AppServicePlan](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._app_service_plan) | Devuelto por `azure.appServices().appServicePlans().getByResourceGroup()`. Hay métodos disponibles para comprobar la capacidad, el nivel y el número de aplicaciones web que se ejecutan en el plan.
-| [AppServicePricingTier](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._app_service_pricing_tier) | Clase con campos públicos estáticos que representa los niveles de App Service. Permite definir un nivel de plan en línea durante la creación de aplicaciones con `withPricingTier()` o directamente al definir un plan a través de `azure.appServices().appServicePlans().define()`
-| [JavaVersion](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice._java_version) | Clase con campos públicos estáticos que representa las versiones de Java admitidas por App Service. Se usa con `withJavaVersion()` durante la cadena `define()...create()` al crear una aplicación web nueva.
+| [WebApp](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.webapp) | Creada con la cadena fluida `azure.webApps().define()....create()`. Crea una aplicación web de App Service y los recursos necesarios para la aplicación. La mayoría de los métodos consultan el objeto para obtener detalles de configuración, pero los métodos de verbo como `restart()` cambian el estado de la aplicación web.
+| [WebContainer](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.webcontainer) | Clase con campos públicos estáticos usados como parámetros de `withWebContainer()` al definir una aplicación web que ejecuta un webcontainer de Java. Tiene opciones para versiones de Tomcat y Jetty.
+| [PublishingProfile](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.publishingprofile) | Se obtiene a través de un objeto WebApp mediante el método `getPublishingProfile()`. Contiene información de implementación de FTP y Git, incluido el nombre de usuario de implementación y la contraseña (que es distinto al de la cuenta de Azure o las credenciales de la entidad de servicio).
+| [AppServicePlan](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.appserviceplan) | Devuelto por `azure.appServices().appServicePlans().getByResourceGroup()`. Hay métodos disponibles para comprobar la capacidad, el nivel y el número de aplicaciones web que se ejecutan en el plan.
+| [AppServicePricingTier](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.PricingTier) | Clase con campos públicos estáticos que representa los niveles de App Service. Permite definir un nivel de plan en línea durante la creación de aplicaciones con `withPricingTier()` o directamente al definir un plan a través de `azure.appServices().appServicePlans().define()`
+| [JavaVersion](https://docs.microsoft.com/java/api/com.microsoft.azure.management.appservice.javaversion) | Clase con campos públicos estáticos que representa las versiones de Java admitidas por App Service. Se usa con `withJavaVersion()` durante la cadena `define()...create()` al crear una aplicación web nueva.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

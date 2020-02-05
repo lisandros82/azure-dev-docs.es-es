@@ -6,12 +6,12 @@ manager: kyliel
 ms.author: seal
 ms.date: 08/21/2019
 ms.topic: article
-ms.openlocfilehash: 2d888d225a8bcf5c957da11e18ea86d09ec8e897
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 8c62a68ff2a9912d88361adc6ef3b8dc2ea29c98
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812053"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002294"
 ---
 # <a name="how-to-use-spring-cloud-azure-stream-binder-for-azure-service-bus"></a>Cómo usar Spring Cloud Azure Stream Binder para Azure Service Bus
 
@@ -21,11 +21,11 @@ Azure proporciona una plataforma de mensajería asincrónica denominada [Azure S
 
 En este artículo se muestra cómo usar Spring Cloud Stream Binder para enviar y recibir mensajes de `queues` y `topics` de Azure Service Bus.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Se necesitan los siguientes requisitos previos para este artículo:
 
-1. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) o registrarse para obtener una [cuenta gratuita](https://azure.microsoft.comfree/).
+1. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) o registrarse para obtener una [cuenta gratuita](https://azure.microsoft.com/free/).
 
 1. Un kit de desarrollo de Java (JDK) compatible (versión 8 o posterior). Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 
@@ -119,7 +119,7 @@ Puede configurar la aplicación en función de la cadena de conexión o un archi
 
     **<a name="fd">Descripciones de los campos</a>**
 
-    |                                        Campo                                   |                                                                                   DESCRIPCIÓN                                                                                    |
+    |                                        Campo                                   |                                                                                   Descripción                                                                                    |
     |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |               `spring.cloud.azure.servicebus.connection-string`                |                                        Especifique la cadena de conexión que obtuvo en el espacio de nombres de Service Bus desde Azure Portal.                                   |
     |               `spring.cloud.stream.bindings.input.destination`                 |                            Especifique la cola o el tema de Service Bus que usó en este tutorial.                         |
@@ -235,7 +235,7 @@ En esta sección, se crean las clases Java necesarias para enviar mensajes a Ser
 
 ## <a name="build-and-test-your-application"></a>Compilación y prueba de la aplicación
 
-1. Abra el símbolo del sistema.
+1. Abra un símbolo del sistema.
 
 1. Cambie el directorio a la ubicación del archivo *pom.xml*; por ejemplo:
 

@@ -6,12 +6,12 @@ ms.assetid: b55923b7-d60a-460d-b77c-af5fac67f1cc
 ms.topic: article
 ms.date: 3/30/2017
 ms.reviewer: asirveda
-ms.openlocfilehash: bd956502c6cd5910f6c22844840aeec6cb1ec8aa
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: 092bb328c4d7e68da9c75a43eaa9c31173d79864
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812294"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002541"
 ---
 # <a name="manage-azure-virtual-machine-scale-sets-from-your-java-applications"></a>Administración de conjuntos de escalado de máquinas virtuales de Azure desde aplicaciones Java
 
@@ -226,11 +226,11 @@ Escale el número de máquinas virtuales en el conjunto de escalado mediante `wi
    
 | Clase utilizada en el ejemplo | Notas
 |-------|-------|
-| [VirtualMachineScaleSet](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._virtual_machine_scale_set) | Consultar, iniciar, detener, actualizar y eliminar todas las máquinas virtuales en el conjunto de escalado.
-| [VirtualMachineScaleSetVM](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._virtual_machine_scale_set_v_m) | Recuperado de `virtualMachineScaleSet.virtualMachines().get()` o `list()`, le permite consultar, iniciar, detener, configurar y eliminar máquinas virtuales en el conjunto de escalado.
-| [VirtualMachineScaleSetNetworkInterface](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network._virtual_machine_scale_set_network_interface) | Devuelto desde `virtualMachineScaleSet.listNetworkInterfaces()`, es una representación de solo lectura de una interfaz de red en una máquina virtual en un conjunto de escalado.
-| [VirtualMachineScaleSetSkuTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types) | Clase de campos estáticos usados para establecer el [nivel del conjunto de escalado de máquinas virtuales](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/) que se utiliza para definir cuántos recursos pueden consumir los miembros del conjunto de escalado.
-| [VirtualMachineScaleSetNicIpConfiguration](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network._virtual_machine_scale_set_nic_i_p_configuration) | Se usa para consultar la configuración de IP asociada con una interfaz de red en una máquina virtual del conjunto de escalado.
+| [VirtualMachineScaleSet](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.virtualmachinescaleset) | Consultar, iniciar, detener, actualizar y eliminar todas las máquinas virtuales en el conjunto de escalado.
+| [VirtualMachineScaleSetVM](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.virtualmachinescalesetvm) | Recuperado de `virtualMachineScaleSet.virtualMachines().get()` o `list()`, le permite consultar, iniciar, detener, configurar y eliminar máquinas virtuales en el conjunto de escalado.
+| [VirtualMachineScaleSetNetworkInterface](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network.virtualmachinescalesetnetworkinterface) | Devuelto desde `virtualMachineScaleSet.listNetworkInterfaces()`, es una representación de solo lectura de una interfaz de red en una máquina virtual en un conjunto de escalado.
+| [VirtualMachineScaleSetSkuTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.virtualmachinescalesetskutypes) | Clase de campos estáticos usados para establecer el [nivel del conjunto de escalado de máquinas virtuales](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/) que se utiliza para definir cuántos recursos pueden consumir los miembros del conjunto de escalado.
+| [VirtualMachineScaleSetNicIpConfiguration](https://docs.microsoft.com/java/api/com.microsoft.azure.management.network.virtualmachinescalesetnicipconfiguration) | Se usa para consultar la configuración de IP asociada con una interfaz de red en una máquina virtual del conjunto de escalado.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

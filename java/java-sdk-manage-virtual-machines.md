@@ -6,12 +6,12 @@ ms.assetid: 88629aee-6279-433e-a08b-4f8e290446d0
 ms.topic: article
 ms.date: 3/30/2017
 ms.reviewer: asirveda
-ms.openlocfilehash: a4ea556fa9fa43575d56d041e0d177ed834555cb
-ms.sourcegitcommit: b3b7dc6332c0532f74d210b2a5cab137e38a6750
+ms.openlocfilehash: c1b8145fd2e7085f524329f958c43797df6c6b1a
+ms.sourcegitcommit: 6fa28ea675ae17ffb9ac825415e2e26a3dfe7107
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74812307"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77002419"
 ---
 # <a name="manage-azure-virtual-machines-from-your-java-applications"></a>Administración de máquinas virtuales de Azure desde las aplicaciones Java
 
@@ -152,12 +152,12 @@ El ejemplo registra información acerca de ambas máquinas virtuales y las elimi
 
 | Clase utilizada en el ejemplo | Notas
 |-------|-------|
-| [VirtualMachine](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._virtual_machine) | Consulte las propiedades de las máquinas virtuales y administre su estado. Recuperadas en forma de lista con `azure.virtualMachines().list()` o por nombre o identificador `azure.virtualMachines().getByResourceGroup()`
-| [VirtualMachineSizeTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._virtual_machine_size_types) | Clase con valores estáticos que se corresponden con las [opciones de tamaño de máquina virtual](https://azure.microsoft.com/pricing/details/virtual-machines/linux/); la usa el método `withSize()` para definir los recursos asignados a la máquina virtual.
-| [Disco](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._disk) | Cree un disco para almacenar datos con `withData()` o con una imagen de sistema operativo, con el método `withLinux` o `withWindows` correspondiente al definir el disco. Conecte discos a las máquinas virtuales en el momento de creación (`using withNewDataDisk` o `withExistingDataDisk`) o después con `update()..apply()` en el objeto VirtualMachine.
-| [DiskSkuTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._disk_sku_types) | Clase con valores estáticos para definir un disco con un plan de almacenamiento estándar o [premium](https://docs.microsoft.com/azure/storage/storage-premium-storage).
-| [KnownLinuxVirtualMachineImage](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._known_linux_virtual_machine_image) | Clase con un conjunto de opciones de máquina virtual Linux para su uso con el método `withPopularLinuxImage()` al definir una máquina virtual.
-| [KnownWindowsVirtualMachineImage](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute._known_windows_virtual_machine_image) | Clase con un conjunto de opciones de imagen de máquina virtual Windows para su uso con el método `withPopularWindowsImage()` al definir una máquina virtual.
+| [VirtualMachine](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.virtualmachine) | Consulte las propiedades de las máquinas virtuales y administre su estado. Recuperadas en forma de lista con `azure.virtualMachines().list()` o por nombre o identificador `azure.virtualMachines().getByResourceGroup()`
+| [VirtualMachineSizeTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.virtualmachinesizetypes) | Clase con valores estáticos que se corresponden con las [opciones de tamaño de máquina virtual](https://azure.microsoft.com/pricing/details/virtual-machines/linux/); la usa el método `withSize()` para definir los recursos asignados a la máquina virtual.
+| [Disco](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.disk) | Cree un disco para almacenar datos con `withData()` o con una imagen de sistema operativo, con el método `withLinux` o `withWindows` correspondiente al definir el disco. Conecte discos a las máquinas virtuales en el momento de creación (`using withNewDataDisk` o `withExistingDataDisk`) o después con `update()..apply()` en el objeto VirtualMachine.
+| [DiskSkuTypes](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.diskskutypes) | Clase con valores estáticos para definir un disco con un plan de almacenamiento estándar o [premium](https://docs.microsoft.com/azure/storage/storage-premium-storage).
+| [KnownLinuxVirtualMachineImage](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.knownlinuxvirtualmachineimage) | Clase con un conjunto de opciones de máquina virtual Linux para su uso con el método `withPopularLinuxImage()` al definir una máquina virtual.
+| [KnownWindowsVirtualMachineImage](https://docs.microsoft.com/java/api/com.microsoft.azure.management.compute.knownwindowsvirtualmachineimage) | Clase con un conjunto de opciones de imagen de máquina virtual Windows para su uso con el método `withPopularWindowsImage()` al definir una máquina virtual.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
